@@ -14,15 +14,13 @@ Plain static HTML with one shared `style.css`, system fonts, and no analytics or
 
 Edit on a `feature/*` branch off `develop`, then merge to `main` to publish.
 
-## app-ads.txt (to do)
+## app-ads.txt
 
-`/app-ads.txt` is deliberately **not** in the repo yet, because it must contain the real AdMob publisher ID.
-Once you have one (AdMob > Settings > Account information, `pub-XXXXXXXXXXXXXXXX`), create `app-ads.txt`
-in the repo root with exactly this line, with your ID in place of the X's:
+`/app-ads.txt` authorises Google AdMob to sell ads in our apps. It contains the AdMob publisher ID:
 
 ```
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-7073759238735744, DIRECT, f08c47fec0942fa0
 ```
 
-It will then be served at `https://st-projects-00.github.io/app-ads.txt`. For AdMob to find it, the
+The same line covers every app on this AdMob account, so there's nothing to add per game. It's served at `https://st-projects-00.github.io/app-ads.txt`. For AdMob to find it, the
 **developer website** in every app's Play Store listing must be exactly `https://st-projects-00.github.io`.
