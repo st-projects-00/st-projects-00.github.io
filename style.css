@@ -1,0 +1,57 @@
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #1a1d24;
+  --muted: #5f6570;
+  --line: #dde0e5;
+  --soft: #f4f5f7;
+  --link: #1f5fbf;
+  --accent: #2f8a5b;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171c;
+    --fg: #e6e8ec;
+    --muted: #a0a6b0;
+    --line: #2e333b;
+    --soft: #1d2127;
+    --link: #8ab4f8;
+    --accent: #6fcf97;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--fg);
+  background: var(--bg);
+  margin: 0;
+  padding: 32px 16px 64px;
+  overflow-wrap: break-word;
+}
+main { max-width: 720px; margin: 0 auto; }
+h1 { font-size: 28px; line-height: 1.25; margin: 0 0 4px; }
+h2 { font-size: 18px; margin-top: 32px; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+h3 { font-size: 16px; margin: 20px 0 4px; }
+a { color: var(--link); }
+.date, .muted { color: var(--muted); }
+.date { margin-top: 0; margin-bottom: 28px; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 8px 0 16px; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { background: var(--soft); }
+.table-wrap table.wide { min-width: 640px; }
+code { background: var(--soft); padding: 1px 5px; border-radius: 3px; font-size: .92em; }
+.note { background: var(--soft); border-left: 3px solid var(--accent); padding: 10px 14px; border-radius: 4px; }
+ul.apps { list-style: none; padding: 0; }
+ul.apps li { border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; margin: 12px 0; }
+ul.apps li b { font-size: 17px; }
+ol li, ul li { margin: 4px 0; }
+footer { max-width: 720px; margin: 40px auto 0; padding-top: 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+@media (max-width: 480px) {
+  body { padding-top: 20px; font-size: 16px; }
+  h1 { font-size: 24px; }
+  table { font-size: 14px; }
+  th, td { padding: 7px 8px; }
+}
