@@ -34,7 +34,7 @@
 <tr><td>The backups of your save (the last 5 earlier versions)</td><td>Deleted immediately</td></tr>
 <tr><td>The record linking your Play Games player ID to your data (with when you first and last signed in)</td><td>Deleted immediately</td></tr>
 <tr><td>Your player account ID on your purchase records (the purchase owner, the ID the game sent with the purchase check, and the order tag we received from Google Play)</td><td>Removed immediately</td></tr>
-<tr><td>Purchase and order records (product, order ID, purchase time, status)</td><td><strong>Kept for 7 years after the purchase</strong> for tax, refunds and fraud prevention, then deleted automatically by a daily clean-up job. After you delete your cloud data, they no longer carry anything that identifies you.</td></tr>
+<tr><td>Purchase and order records (product, order ID, purchase time, status)</td><td><strong>Kept for 7 years after the purchase</strong> for tax, refunds and fraud prevention, then deleted automatically by a daily clean-up job. After you delete your cloud data, they no longer carry anything that identifies you, except that a purchase the game checks again gets Google's order tag back (see below).</td></tr>
 <tr><td>Server logs (time, request type and result, IP address, device user agent, and for purchase checks the product and order ID)</td><td>Deleted automatically by Google Cloud after 30 days (the default)</td></tr>
 </tbody>
 </table>
@@ -43,7 +43,7 @@
 
 <h2>Your purchases</h2>
 <p>The days left on a <strong>Moonwell card</strong> can no longer be restored on another phone from our purchase records. They stay in the save on the phone you are using (and if you sign in again later, that save is uploaded to a new cloud save). Everything else you bought was added to your game when you bought it.</p>
-<p>Google Play keeps its own copy of the tag on each order, and we cannot remove it. Our server removes the tag from its own records, so signing in again does not by itself link your old purchases to you again. But if your phone sends a purchase to our server to be checked again, the server reads the tag from Google Play again, and that purchase record is linked to your player account ID again. Every purchase in this game is used up when it is delivered, so the game does not send it to be checked again, and in practice your old purchases are not linked to you again.</p>
+<p>After you delete your cloud data, your purchases are no longer linked to you, and they stay that way unless you sign in to Play Games again. Google Play keeps its own copy of the tag on each order, and we cannot remove it. When the game checks a purchase with our server again, the server writes Google's tag (your player account ID) back onto that purchase record, but it does not link the record to you or restore it to you. Only signing in to Play Games again with the same account could link such a purchase to you again. In this game every purchase is used up when it is delivered, so the game does not check it again, and in practice your old purchases are not linked to you again.</p>
 
 <h2>Data on your phone</h2>
 <p>Deleting cloud data does not touch the progress saved on your phone. To remove that too, tap <strong>Reset progress</strong> on the Account tab, clear the app's storage in Android settings, or uninstall the app. If your phone backs up app data to your Google account, or copied it from an old phone during device transfer, you can manage that in your phone's backup settings.</p>
