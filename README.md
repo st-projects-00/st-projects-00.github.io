@@ -6,8 +6,8 @@ https://st-projects-00.github.io
 | Path | Page |
 |---|---|
 | `/` | Developer page listing the apps |
-| `/petal-pop/privacy/` | Petal Pop privacy policy (the URL for Play Console) |
-| `/petal-pop/delete-data/` | Petal Pop data deletion page (the deletion URL for Play's Data safety form) |
+| `/petal-pop/privacy/` | Petalwick privacy policy (the URL for Play Console) |
+| `/petal-pop/delete-data/` | Petalwick data deletion page (the deletion URL for Play's Data safety form) |
 
 Plain static HTML with one shared `style.css`, system fonts, and no analytics or trackers.
 `.nojekyll` turns off Jekyll processing.
