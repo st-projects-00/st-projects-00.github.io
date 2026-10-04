@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Petalwick Data Deletion</title>
+<meta name="description" content="How to delete your Petalwick cloud save and other data.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+<h1>Delete your Petalwick data</h1>
+<p class="date">Petalwick by ST Projects &middot; package <code>com.stprojects.petalpop</code></p>
+
+<p>Petalwick has no accounts of its own: the only account link is your Google Play Games sign-in, and this page is how you delete that link and its data. The data we keep on our server that is linked to you is your <strong>cloud save</strong> and the tag on purchases you made, which exist only if you played while signed in to Google Play Games. You can delete them yourself in the game, or ask us to delete them by email.</p>
+
+<h2>Option 1: in the game (immediate)</h2>
+<ol>
+<li>Open Petalwick and open the <strong>shop</strong>.</li>
+<li>Go to the <strong>Account</strong> tab.</li>
+<li>Tap <strong>Delete cloud data</strong> and confirm.</li>
+</ol>
+<p>The button appears while you are signed in to cloud save. If you see "Not signed in", tap <strong>Sign in</strong> first. You need an internet connection.</p>
+
+<h2>Option 2: by email</h2>
+<p>Email <a href="mailto:battlearenaunlimited@gmail.com?subject=Petalwick%20data%20deletion">battlearenaunlimited@gmail.com</a> with the subject "Petalwick data deletion". Include the <strong>Player code</strong> shown on the Account tab while you are signed in (it looks like <code>3FA9-0C21-7B4E</code>), so we can find your data. If you can't open the game, send the order number (it starts with GPA.) from a Google Play receipt instead. We will reply within 30 days, and we will confirm when your data has been deleted.</p>
+
+<h2>What is deleted, what is kept, and for how long</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Data</th><th>What happens</th></tr></thead>
+<tbody>
+<tr><td>Your cloud save and its summary (level, gems, stars, last played, device label)</td><td>Deleted immediately</td></tr>
+<tr><td>The backups of your save (the last 5 earlier versions)</td><td>Deleted immediately</td></tr>
+<tr><td>The record linking your Play Games player ID to your data (with when you first and last signed in)</td><td>Deleted immediately</td></tr>
+<tr><td>Your player account ID on your purchase records (the purchase owner, the ID the game sent with the purchase check, and the order tag we received from Google Play)</td><td>Removed immediately</td></tr>
+<tr><td>Purchase and order records (product, order ID, purchase time, status)</td><td><strong>Kept for 7 years after the purchase</strong> for tax, refunds and fraud prevention, then deleted automatically by a daily clean-up job. After you delete your cloud data, they no longer carry anything that identifies you, except that a purchase the game checks again gets Google's order tag back (see below).</td></tr>
+<tr><td>Server logs (time, request type and result, IP address, device user agent, the product and order ID for purchase checks, the order ID for refund notifications, and, on cloud-save requests, the first 12 characters of your player account ID (your Player code))</td><td>Deleted automatically by Google Cloud after 30 days (the default)</td></tr>
+</tbody>
+</table>
+</div>
+<p>After you delete your cloud data, cloud save stays off on that phone until you tap <strong>Sign in</strong> again.</p>
+
+<h2>Your purchases</h2>
+<p><strong>Remove ads</strong> stays tied to your Google Play account, so you can still get it back with <strong>Restore purchases</strong> on the Account tab. The days left on a <strong>Monthly card</strong> can no longer be restored on another phone from our purchase records. They stay in the save on the phone you are using (and if you sign in again later, that save is uploaded to a new cloud save). Everything else you bought was added to your game when you bought it.</p>
+<p>After you delete your cloud data, your purchases are no longer linked to you, and they stay that way unless you sign in to Play Games again. Google Play keeps its own copy of the tag on each order, and we cannot remove it. When the game checks a purchase with our server again, the server writes Google's tag (your player account ID) back onto that purchase record, but it does not link the record to you or restore it to you. The game normally checks <strong>Remove ads</strong> this way each time it starts. If you sign in to Play Games again with the same account, purchases that Google still tags with your account and that carry the tag on our record again can be linked to you again. In practice that is Remove ads: cards and other purchases are used up when they are delivered, so the game does not check them again, and the days left on a card are not linked to you again. Deleting your cloud data never stops Remove ads coming back from Google Play.</p>
+
+<h2>Data on your phone</h2>
+<p>Deleting cloud data does not touch the progress saved on your phone. It does remove your Play Games player ID, display name and session token from the phone, and cloud save stays off until you sign in again. To remove your progress and purchase information, tap <strong>Reset progress</strong> on the Account tab (if you are signed in, this also replaces your cloud save with a fresh start). To remove everything the game keeps on your phone, including settings, clear the app's storage in Android settings or uninstall the app. If your phone backs up app data to your Google account, or copied it from an old phone during device transfer, you can manage that in your phone's backup settings.</p>
+
+<h2>Ad data</h2>
+<p>Information collected by Google AdMob to show ads is held by Google, not by us. You can reset or delete your advertising ID in your phone's settings, and learn more in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a>.</p>
+
+<p>See the full <a href="/petalwick/privacy/">Petalwick privacy policy</a>.</p>
+</main>
+<footer>This page is provided by the developer of Petalwick, ST Projects.</footer>
+</body>
+</html>
