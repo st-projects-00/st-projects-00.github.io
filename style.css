@@ -43,7 +43,7 @@ th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--lin
 th { background: var(--soft); }
 .table-wrap table.wide { min-width: 640px; }
 code { background: var(--soft); padding: 1px 5px; border-radius: 3px; font-size: .92em; }
-.note { background: var(--soft); border-left: 3px solid var(--accent); padding: 10px 14px; border-radius: 4px; }
+.note { background: var(--soft); border-inline-start: 3px solid var(--accent); padding: 10px 14px; border-radius: 4px; }
 ul.apps { list-style: none; padding: 0; }
 ul.apps li { border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; margin: 12px 0; }
 ul.apps li b { font-size: 17px; }
@@ -55,3 +55,5 @@ footer { max-width: 720px; margin: 40px auto 0; padding-top: 12px; border-top: 1
   table { font-size: 14px; }
   th, td { padding: 7px 8px; }
 }
+.lang-picker { text-align: end; margin: 0 0 8px; }
+.lang-picker select { font: inherit; color: var(--fg); background: var(--soft); border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; }
