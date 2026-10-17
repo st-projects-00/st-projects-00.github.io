@@ -14,13 +14,25 @@
     vi: 'Tiếng Việt', 'zh-CN': '简体中文', 'zh-TW': '繁體中文', zu: 'isiZulu'
   };
   var ALIAS = { iw: 'he', 'in': 'id', tl: 'fil' };
+  // The writing system each translation uses. A phone set to the same language in another script
+  // (e.g. Punjabi in Arabic script, Serbian in Latin) is not sent to it: its next language, or English, is used.
+  var SCRIPT = {};
+  ('af:Latn am:Ethi ar:Arab az:Latn bn:Beng bs:Latn es:Latn fil:Latn fr:Latn gu:Gujr he:Hebr hi:Deva hy:Armn id:Latn ' +
+   'ja:Jpan ka:Geor kk:Cyrl km:Khmr kn:Knda ko:Kore ky:Cyrl lo:Laoo mk:Cyrl ml:Mlym mn:Cyrl mr:Deva ms:Latn my:Mymr ' +
+   'ne:Deva nl:Latn pa:Guru pt:Latn ro:Latn ru:Cyrl rw:Latn si:Sinh so:Latn sq:Latn sr:Cyrl sw:Latn ta:Taml te:Telu ' +
+   'tg:Cyrl th:Thai ti:Ethi tk:Latn tr:Latn ur:Arab uz:Latn vi:Latn zu:Latn').split(' ').forEach(function (x) { x = x.split(':'); SCRIPT[x[0]] = x[1]; });
   function pick(tag) {
     if (!tag) return null;
-    tag = String(tag).replace('_', '-');
-    var base = tag.split('-')[0].toLowerCase();
-    if (base === 'zh') return /Hant|TW|HK|MO/i.test(tag) ? 'zh-TW' : 'zh-CN';
-    if (ALIAS[base]) return ALIAS[base];
-    return NAMES[base] && base !== 'en' ? base : null;
+    var parts = String(tag).replace(/_/g, '-').split('-'), base = parts[0].toLowerCase(), sc = null;
+    for (var i = 1; i < parts.length; i++) if (/^[A-Za-z]{4}$/.test(parts[i])) sc = parts[i].charAt(0).toUpperCase() + parts[i].slice(1).toLowerCase();
+    if (base === 'zh') {
+      if (sc) return sc === 'Hant' ? 'zh-TW' : sc === 'Hans' ? 'zh-CN' : null;
+      return /-(TW|HK|MO)(-|$)/i.test(parts.join('-')) ? 'zh-TW' : 'zh-CN';
+    }
+    var code = ALIAS[base] || base;
+    if (!NAMES[code] || code === 'en') return null;
+    if (sc && sc !== SCRIPT[code]) return null;
+    return code;
   }
   var m = location.pathname.match(/^(\/petalwick\/[^/]+\/)([^/]+\/)?/);
   if (!m) return;
