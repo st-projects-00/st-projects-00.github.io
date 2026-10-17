@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidade do Battle Arena Worlds</title>
+<meta name="description" content="Quais informações o jogo Android Battle Arena Worlds coleta, por quê e o que acontece com elas.">
+<link rel="stylesheet" href="/style.css">
+<script src="/battle-arena-worlds/lang.js"></script>
+</head>
+<body>
+<main>
+<h1>Política de privacidade do Battle Arena Worlds</h1>
+<p class="note translation-note">Esta é uma tradução. Se ela divergir da <a href="/battle-arena-worlds/privacy/?lang=en">versão em inglês</a>, prevalece a versão em inglês.</p>
+<p class="date">Em vigor desde 9 de outubro de 2026</p>
+
+<p>Battle Arena Worlds é um jogo multijogador de battle royale para Android, publicado pela ST Projects ("nós"), uma desenvolvedora independente sediada nos Estados Unidos. Esta política explica quais informações o jogo coleta, por quê e o que acontece com elas. Ela se aplica ao app Android publicado com o nome de pacote <code>com.stprojects.battlearenaworlds</code>.</p>
+
+<p class="note">Em resumo: você não precisa se cadastrar nem fazer login. Quando o jogo é iniciado, ele conecta você ao Epic Online Services em segundo plano com uma conta de jogador anônima vinculada ao seu celular, e não ao seu nome ou e-mail. Se quiser, você pode entrar com o Google para que a conta sobreviva a uma reinstalação ou a um celular novo. Essa conta é usada para as partidas online e para a sua carteira da loja (moedas, gemas e os cosméticos que você possui), que mantemos no nosso servidor. As compras são feitas pelo Google Play. O jogo não tem anúncios, chat nem voz, nem serviços próprios de análise ou de relatórios de falhas, e não pode acessar sua localização, contatos, fotos, câmera, microfone ou arquivos.</p>
+
+<h2>Sua conta de jogador (Epic Online Services)</h2>
+<p>Os recursos online usam o <strong>Epic Online Services</strong> (EOS), fornecido pela Epic Games. O jogo nunca pede uma conta Epic, um endereço de e-mail ou uma senha. Em vez disso, quando é iniciado, ele entra com um <strong>ID de dispositivo</strong> anônimo:</p>
+<ul>
+<li>Na primeira execução, o SDK da Epic no jogo cria um ID de dispositivo para esta instalação e o guarda no armazenamento do app no seu celular. Ao fazer isso, ele envia à Epic a marca e o modelo do seu celular, que a Epic usa para diagnóstico.</li>
+<li>Em seguida, a Epic fornece ao jogo um <strong>ID de jogador</strong> (a Epic o chama de ProductUserId): um código aleatório de 32 caracteres que identifica sua conta neste jogo. Ele não está vinculado a nenhuma conta Epic nem endereço de e-mail, e só fica vinculado a uma conta Google se você escolher entrar com o Google (veja abaixo).</li>
+<li>O jogo cria um <strong>nome do jogador</strong> para você, "Player" seguido de quatro dígitos aleatórios (por exemplo, Player4821), e o envia à Epic junto com o login. Você não pode alterá-lo, e ele nunca contém seu nome real.</li>
+</ul>
+<p>A Epic processa essas informações para fornecer o login, o matchmaking e as conexões entre jogadores, de acordo com a <a href="https://www.epicgames.com/site/privacypolicy">Política de Privacidade da Epic Games</a>.</p>
+
+<h2>Login opcional com o Google</h2>
+<p>Na aba Configurações do jogo, você pode tocar em <strong>Entrar com o Google</strong>. É opcional: o jogo, as partidas online e a loja funcionam sem isso. Seu único objetivo é manter sua conta de jogador, e portanto sua carteira, se você reinstalar o jogo, apagar os dados dele ou mudar para um celular novo.</p>
+<ul>
+<li>O Android mostra a tela de login do Google. Na primeira vez, o Google informa que compartilhará seu nome, endereço de e-mail e foto de perfil com o app. Em seguida, o Google fornece ao jogo um <strong>token de ID do Google</strong> assinado.</li>
+<li>O jogo envia esse token somente à <strong>Epic</strong>. A Epic o verifica e vincula o ID da sua conta Google ao seu ID de jogador. O jogo não lê nem guarda seu nome, endereço de e-mail ou foto, e <strong>nosso servidor nunca recebe o token nem nenhum dado da sua conta Google</strong>.</li>
+<li>Após uma reinstalação ou em um celular novo, entrar com a mesma conta Google traz de volta o mesmo ID de jogador e a mesma carteira. Se o celular já tiver progresso sob outro ID de jogador, o jogo pergunta qual progresso manter. A Epic exclui o ID de jogador que você não mantiver; a carteira dele permanece no nosso servidor, onde ninguém pode entrar nela, até que você nos peça para excluí-la.</li>
+<li>O jogo mantém um pequeno arquivo no seu celular registrando a qual ID de jogador sua conta Google está vinculada.</li>
+<li><strong>Sair</strong> mantém o vínculo com o Google e retorna o celular a uma nova conta de convidado vazia. Entrar novamente traz sua conta de volta.</li>
+</ul>
+<p>A aba Configurações também mostra seu <strong>código do jogador</strong>: os primeiros 12 caracteres do seu ID de jogador, que você pode copiar e informar quando entrar em contato conosco.</p>
+
+<h2>Partidas online</h2>
+<p>Quando você toca para jogar online, o jogo procura uma sala (um lobby do EOS) de até 10 jogadores. Enquanto você está em uma sala, o jogo publica estes dados para que os jogos dos outros jogadores os leiam:</p>
+<ul>
+<li>Seu ID de jogador e nome do jogador, e o herói que você escolheu.</li>
+<li>Dados técnicos usados para escolher qual celular será o anfitrião da partida: quanta memória seu celular tem, seu nível de desempenho gráfico, se está em Wi-Fi ou dados móveis, se a economia de bateria está ativada e seus tempos de ping até os outros jogadores.</li>
+<li>A versão do jogo e o estado da sua conexão com a partida.</li>
+</ul>
+<p>O celular de um jogador é o anfitrião de cada partida online, e os outros celulares se conectam a ele pelo serviço ponto a ponto da Epic. Quando uma conexão direta é possível, os celulares de uma partida trocam tráfego de rede diretamente, de modo que cada um pode ver os endereços IP dos outros. Caso contrário, o tráfego passa pelos servidores de retransmissão da Epic. Durante a partida, o jogo do anfitrião recebe seus movimentos, seu herói, os cosméticos que você está usando e seus resultados na partida, e repassa cópias do estado da partida aos celulares dos outros jogadores para que a partida possa continuar se o anfitrião sair. Os outros jogadores veem seu nome do jogador no feed de eliminações e nos resultados.</p>
+<p>O jogo <strong>não tem chat de texto nem chat de voz</strong>, nem lista de amigos, convites ou status de presença.</p>
+
+<h2>Sua carteira da loja (nosso servidor)</h2>
+<p>A loja vende apenas cosméticos. Para impedir que os saldos sejam editados no celular, sua carteira é mantida no nosso servidor e registrada sob o seu <strong>ID de jogador</strong>. Depois que você entra na Epic, o jogo envia ao nosso servidor o token de login que a Epic emitiu para você, que comprova seu ID de jogador, e nosso servidor fornece ao jogo uma sessão que dura 30 dias. Nosso servidor armazena:</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Informação</th><th>Por quê</th></tr></thead>
+<tbody>
+<tr><td>Seu ID de jogador</td><td>Para saber qual carteira é a sua.</td></tr>
+<tr><td>Suas moedas e gemas</td><td>Seus saldos, para que não possam ser alterados no celular.</td></tr>
+<tr><td>Os cosméticos que você possui e os que está usando</td><td>Para que você os mantenha e para que o jogo possa restaurar seu visual a partir do nosso servidor. (Outros jogadores veem o que você usa porque seu celular envia os itens equipados ao anfitrião da partida durante a partida.)</td></tr>
+<tr><td>Se você comprou o pacote inicial, quando sua carteira foi criada e quando foi alterada pela última vez</td><td>O pacote inicial é vendido uma única vez por conta, durante seus primeiros 7 dias.</td></tr>
+<tr><td>Moedas ganhas hoje e o dia do seu último bônus de primeira vitória</td><td>Para aplicar o limite diário de moedas e o bônus uma vez por dia.</td></tr>
+<tr><td>Dinheiro real gasto neste mês civil</td><td>Para aplicar o limite mensal de gastos (veja "Compras").</td></tr>
+<tr><td>Registros das partidas e compras já creditadas a você (o ID da partida com o seu ID de jogador, ou um hash unidirecional do token de compra)</td><td>Para que a mesma partida ou compra nunca seja creditada duas vezes.</td></tr>
+</tbody>
+</table>
+</div>
+<p>Ao final de cada partida, o jogo do anfitrião da partida (ou o seu próprio jogo, em uma partida solo) informa ao nosso servidor o ID de jogador, a colocação, o número de eliminações e o tempo de sobrevivência de cada jogador, com o ID da partida, a duração da partida e a data. Nosso servidor calcula as moedas a partir desse relatório, com limites diários, e as adiciona à carteira de cada jogador.</p>
+<p>Nosso servidor não armazena seu nome do jogador, seu endereço de e-mail, o modelo do seu celular nem seu token de login da Epic.</p>
+
+<h2>Compras (Google Play Billing)</h2>
+<p>As gemas e o pacote inicial são comprados pelo <strong>Google Play Billing</strong>. Você paga ao Google, e os termos de pagamento do Google e a <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a> se aplicam ao pagamento. Nunca vemos nem armazenamos o número do seu cartão, seus dados bancários, seu endereço de cobrança ou o e-mail da sua conta Google. O jogo também pergunta ao Google Play em qual país está sua conta do Play; a resposta fica no seu celular e não é enviada para nós.</p>
+<p>Quando você inicia uma compra, o jogo fornece ao Google Play um hash unidirecional (MD5) do seu ID de jogador como identificador de conta do pedido (o "ID de conta ofuscado" do Google). Depois que você paga, o jogo envia o produto e o token de compra do Google Play ao nosso servidor. O servidor pede ao Google Play que confirme que a compra é genuína, que não foi usada antes e que não foi reembolsada, e só então adiciona as gemas à sua carteira. Mantemos um registro de cada compra para podermos confirmar compras, evitar fraudes, processar reembolsos e cumprir obrigações fiscais e legais:</p>
+<ul>
+<li>O produto, o número do pedido do Google Play, o horário da compra, se foi uma compra de teste e seu status (por exemplo, reembolsada, com a data e o motivo informados pelo Google).</li>
+<li>Seu ID de jogador e o identificador de conta que o Google Play informa para o pedido (o hash do seu ID de jogador).</li>
+</ul>
+<p>O registro é arquivado sob um hash unidirecional (SHA-256) do token de compra. O token em si não é guardado. O Google também avisa nosso servidor quando uma compra é feita, reembolsada ou cancelada, e nosso servidor pede ao Google uma lista de compras reembolsadas várias vezes por dia. Nosso servidor mantém um log desses avisos, arquivado sob o mesmo hash e o número do pedido.</p>
+<p><strong>Idade e limite de gastos.</strong> Compras com dinheiro real são para jogadores com 18 anos ou mais. Antes da sua primeira compra com dinheiro real, o jogo pergunta se você tem 18 anos ou mais. Se você responder que tem menos de 18 anos, as compras com dinheiro real são desativadas naquele celular (as moedas continuam funcionando). Sua resposta fica guardada somente no seu celular. As compras com dinheiro real também são limitadas a <strong>US$200 por mês civil</strong> (UTC). O jogo verifica o limite no seu celular, e nosso servidor o verifica para a sua conta, contando cada compra pelo preço de tabela nos EUA, antes que a tela de compra do Google Play seja aberta.</p>
+<p>A loja não tem loot boxes nem itens pagos aleatórios.</p>
+
+<h2>Informações armazenadas no seu celular</h2>
+<p>O jogo salva o seguinte no armazenamento próprio do app no seu celular:</p>
+<ul>
+<li>Configurações: o herói que você escolheu, a sensibilidade dos controles, o disparo automático e o toque para construir, o número de bots, os volumes de som e a qualidade gráfica, e o nível gráfico que o jogo aprendeu ser adequado ao seu celular.</li>
+<li>Seu nível, seus pontos de experiência e sua última colocação e eliminações.</li>
+<li>Seu nome do jogador gerado e o ID de dispositivo da Epic (mantido pelo SDK da Epic). Se você entrou com o Google, a qual ID de jogador sua conta Google está vinculada.</li>
+<li>Uma cópia da sua carteira como nosso servidor a enviou pela última vez, para que a loja funcione offline; resultados de partidas e compras aguardando envio ao nosso servidor; sua resposta à pergunta sobre idade; e o total de gastos deste mês.</li>
+<li>Um ID aleatório para esta instalação, usado apenas pela loja no celular antes que o login na Epic seja concluído. Ele nunca é enviado ao nosso servidor.</li>
+<li>Enquanto você está em uma partida online, uma breve anotação da sala e da partida (para que o jogo possa voltar a ela se for fechado). Ela é excluída quando a partida termina.</li>
+<li>Um pequeno arquivo de desempenho por sessão (a taxa de quadros e as configurações gráficas do jogo), mantido no seu celular e nunca enviado.</li>
+</ul>
+<p>O app permite o <strong>Backup automático</strong> do Android, então o Android pode incluir esses dados no backup do seu dispositivo na sua conta Google, ou copiá-los para um celular novo, dependendo das configurações do seu celular. Esse backup é gerenciado pelo Google, e nós não podemos vê-lo.</p>
+
+<h2>Permissões</h2>
+<p>O jogo nunca pede uma permissão a você. Seu manifesto Android declara apenas permissões que o Android concede sem perguntar:</p>
+<ul>
+<li>Acesso à internet e visualização do estado da rede e do Wi-Fi (para jogar online e para saber se você está em Wi-Fi ou dados móveis).</li>
+<li>Google Play Billing e a verificação de licença do Google Play.</li>
+<li>Vibração, manter o celular ativo e alterar as configurações de áudio (usadas pelo motor do jogo).</li>
+<li>Serviço em primeiro plano (sincronização de dados) e iniciar após o celular reiniciar: usados pelas bibliotecas que baixam e configuram os dados do jogo a partir do Google Play e pela biblioteca de tarefas em segundo plano do Android.</li>
+<li>Uma permissão própria do app, que somente o próprio app possui, usada por bibliotecas Android dentro dele.</li>
+</ul>
+<p>O jogo não solicita permissões de localização, contatos, câmera, microfone, fotos ou armazenamento, e não pode acessá-los. O login opcional com o Google usa o Gerenciador de credenciais do Android e a biblioteca de login do Google, e só é executado quando você toca em Entrar com o Google (ou, depois que você entrou, para verificar o vínculo quando necessário). O pacote do app também inclui bibliotecas do Google Play Services que o motor do jogo adiciona por padrão: a antiga biblioteca Google Sign-In e o Play Games Services (que se inicializam quando o app é iniciado; não configuramos um jogo do Play Games, então nenhum login ou perfil do Play Games é criado), e bibliotecas de localização, Drive e FIDO que nada no jogo chama. Sem as permissões correspondentes, a biblioteca de localização não pode acessar sua localização.</p>
+
+<h2>Anúncios, análise e relatórios de falhas</h2>
+<p>O Battle Arena Worlds <strong>não exibe anúncios</strong> e não contém nenhum SDK de publicidade. Ele não contém serviços próprios de análise ou de relatórios de falhas e não rastreia você em outros apps ou sites.</p>
+
+<h2>Informações compartilhadas com terceiros</h2>
+<p>A <strong>Epic Games</strong> (Epic Online Services) fornece o login anônimo, as salas e as conexões entre jogadores, e recebe as informações descritas em "Sua conta de jogador" e "Partidas online". Se você entrar com o Google, a Epic também recebe seu token de ID do Google e mantém o vínculo entre sua conta Google e seu ID de jogador. <a href="https://www.epicgames.com/site/privacypolicy">Política de Privacidade da Epic Games</a>.</p>
+<p>O <strong>Google</strong> fornece o login opcional com o Google; portanto, se você o usar, o Google saberá que você entrou no Battle Arena Worlds. O <strong>Google Play</strong> processa os pagamentos e recebe o identificador de conta em hash nos seus pedidos. Nosso servidor entra em contato com o Google Play para verificar as compras. <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>.</p>
+<p>O <strong>Google Cloud</strong> hospeda nosso servidor e nosso banco de dados. O Google processa esses dados em nosso nome. <a href="https://cloud.google.com/terms/cloud-privacy-notice">Aviso de Privacidade do Google Cloud</a>.</p>
+<p><strong>Outros jogadores</strong> nas suas partidas online veem seu nome do jogador, seu herói e os cosméticos que você usa, e os celulares deles recebem os dados da partida descritos em "Partidas online".</p>
+<p>Não vendemos suas informações e não as compartilhamos com mais ninguém, exceto quando a lei exigir.</p>
+
+<h2>Onde suas informações são armazenadas</h2>
+<p>Nosso servidor é executado no Google Cloud em <strong>us-central1 (Estados Unidos)</strong>. O jogo é oferecido pelo Google Play em muitos países. Onde quer que você o use, as informações descritas em "Sua carteira da loja" e "Compras" são enviadas ao nosso servidor nos Estados Unidos, onde as leis de proteção de dados podem ser diferentes das do lugar onde você está. A Epic processa as informações que recebe conforme descrito na política de privacidade dela.</p>
+
+<h2>Como suas informações são protegidas</h2>
+<p>Toda a comunicação entre o app e o nosso servidor é criptografada em trânsito (HTTPS). Nosso servidor só abre uma sessão para um ID de jogador com um token de login assinado pela Epic, e suas sessões são vinculadas a este app e ao seu ID de jogador e expiram após 30 dias. Ele limita quantas solicitações aceita, para evitar abusos.</p>
+<p>Os logs do nosso servidor registram o horário, o tipo de solicitação e seu resultado, quanto tempo levou e o endereço IP de origem. Os logs de solicitações do Google Cloud também registram o endereço completo da solicitação e o user agent do seu dispositivo (que pode incluir a versão do app e do Android). Algumas linhas de log incluem os primeiros 12 caracteres do seu ID de jogador, o produto, o número do pedido do Google Play, os itens que você compra com moedas ou gemas, as moedas creditadas após uma partida ou os primeiros 12 caracteres do hash do token de compra. Os logs nunca contêm seu ID de jogador completo, seus tokens de login ou de sessão, nem tokens de compra. Nós os usamos para segurança, para limitar abusos e para corrigir problemas. Por padrão, o Google Cloud os mantém por cerca de 30 dias.</p>
+
+<h2>Por quanto tempo guardamos</h2>
+<ul>
+<li><strong>No seu celular:</strong> até você apagar os dados do app ou desinstalá-lo. A anotação para voltar à partida é excluída ao final de cada partida.</li>
+<li><strong>Sua carteira e os registros de partidas e compras já creditadas a você:</strong> enquanto sua conta existir, até que você os exclua no jogo ou nos peça por e-mail. Atualmente não há exclusão automática de carteiras inativas. Se introduzirmos uma, informaremos aqui.</li>
+<li><strong>Registros de compras e pedidos:</strong> mantidos por 7 anos após a compra, para fins fiscais, reembolsos e prevenção de fraudes. Depois, uma rotina diária de limpeza exclui cada registro, com o registro do pedido e seus avisos de reembolso ou cancelamento.</li>
+<li><strong>Logs do servidor:</strong> cerca de 30 dias por padrão, depois excluídos automaticamente pelo Google Cloud.</li>
+<li><strong>Epic Online Services:</strong> mantidos pela Epic de acordo com a política de privacidade dela. O vínculo com o Google é mantido até você excluir seus dados no jogo.</li>
+</ul>
+
+<h2>Como excluir seus dados</h2>
+<p><strong>No jogo:</strong> na aba Configurações, em Conta, toque em <strong>Excluir meus dados</strong> e confirme duas vezes (é necessária uma conexão com a internet). Isso exclui imediatamente:</p>
+<ul>
+<li>no nosso servidor: sua carteira (moedas, gemas, cosméticos possuídos e equipados, total de gastos) e os registros de partidas e compras creditadas a você. Seu ID de jogador e o identificador de conta do Google Play são removidos dos seus registros de compra, que são mantidos sem eles para fins fiscais, reembolsos e prevenção de fraudes (veja "Por quanto tempo guardamos"). Sua sessão é encerrada. Uma compra que já foi creditada não pode ser creditada novamente;</li>
+<li>na Epic: o vínculo com sua conta Google, se você tiver criado um, e o ID de dispositivo, para que ninguém possa entrar novamente nesse ID de jogador;</li>
+<li>no seu celular: os arquivos da loja (a cópia da sua carteira, as compras aguardando envio, sua resposta à pergunta sobre idade e o total de gastos deste mês), o registro do seu login com o Google e a anotação para voltar à partida.</li>
+</ul>
+<p>Em seguida, o jogo inicia uma nova conta de jogador vazia. Se você jogar novamente, começará com uma carteira vazia. Moedas, gemas e cosméticos excluídos não podem ser restaurados. Se você desinstalou o jogo, mas tinha entrado com o Google, pode reinstalá-lo, entrar com a mesma conta Google e excluir a partir dali.</p>
+<p><strong>Por e-mail:</strong> se você não puder usar o jogo, envie um e-mail para <a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a>, informe que se trata do Battle Arena Worlds e inclua seu código do jogador (Configurações &gt; Conta) ou o número do pedido (começa com GPA.) do recibo do Google Play de qualquer compra de gemas ou do pacote inicial. Responderemos em até 30 dias e confirmaremos quando seus dados tiverem sido excluídos. Quando os excluímos por e-mail, seu celular ainda guarda o mesmo ID de jogador, então o jogo abrirá uma nova carteira vazia sob ele na próxima vez que for iniciado. Para evitar isso, apague os dados do jogo ou desinstale-o. Se você nunca comprou nada e não tem mais o jogo, sua carteira não contém nome, e-mail nem dados de contato, e não temos como identificá-la.</p>
+<p>O Google Play mantém sua própria cópia do identificador de conta em hash em cada pedido, e não podemos removê-la. O restante do registro que a Epic mantém para o seu ID de jogador (o nome do jogador e o modelo do celular) é mantido pela Epic de acordo com a própria política de privacidade dela. As etapas completas estão na <a href="/battle-arena-worlds/delete-data/">página de exclusão de dados</a>.</p>
+
+<h2>Seus direitos</h2>
+<p><strong>Se você estiver no EEE, no Reino Unido ou na Suíça</strong>, a lei de proteção de dados (GDPR ou UK GDPR) dá a você o direito de acessar os dados pessoais que mantemos sobre você, corrigi-los, excluí-los, restringir ou se opor à forma como os usamos e receber uma cópia deles. Você também pode apresentar uma reclamação à autoridade local de proteção de dados. Usamos suas informações para fornecer o jogo, as partidas online e a loja que você usa, para nossos interesses legítimos de prevenir fraudes e trapaças e manter o serviço seguro, e para cumprir obrigações legais, como manter registros fiscais.</p>
+<p><strong>Se você estiver na Califórnia ou em outro estado dos EUA com lei de privacidade</strong>, você tem o direito de saber quais informações pessoais coletamos, de excluí-las ou corrigi-las, e de recusar sua venda ou compartilhamento. Não vendemos informações pessoais e não as compartilhamos para publicidade comportamental entre contextos. Não trataremos você de forma diferente por exercer esses direitos.</p>
+<p>Você mesmo pode excluir seus dados no jogo (veja "Como excluir seus dados"). Para exercer qualquer um desses direitos, envie-nos um e-mail para o endereço abaixo com seu código do jogador (Configurações &gt; Conta) ou o número do seu pedido do Google Play. Responderemos em até 30 dias.</p>
+
+<h2>Crianças</h2>
+<p>Battle Arena Worlds é um jogo de combate que não é direcionado a crianças menores de 13 anos, e não coletamos intencionalmente informações pessoais delas. Se você acredita que uma criança menor de 13 anos usou o jogo, entre em contato conosco pelo endereço abaixo e excluiremos os dados que pudermos encontrar.</p>
+
+<h2>Alterações nesta política</h2>
+<p>Se esta política mudar, a versão atualizada será publicada neste endereço com uma nova data de vigência. Se a mudança for significativa, também a mencionaremos no app ou na página dele na loja.</p>
+
+<h2>Contato</h2>
+<p><a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a></p>
+
+<h2>Resumo de segurança dos dados</h2>
+<p>Esta tabela resume os dados que o app processa, nos termos usados pela seção Segurança dos dados do Google Play. "Coletados" inclui dados processados para nós pela Epic e pelo Google Cloud como nossos prestadores de serviço.</p>
+<div class="table-wrap">
+<table class="wide">
+<thead><tr><th>Tipo de dado</th><th>Coletado / compartilhado</th><th>Obrigatório ou opcional</th><th>Finalidades</th></tr></thead>
+<tbody>
+<tr><td>IDs de usuário (o ID de jogador da Epic e o nome do jogador gerado; e, se você entrar com o Google, o ID da sua conta Google, que a Epic vincula ao seu ID de jogador)</td><td>Coletado. Não compartilhado.</td><td>ID e nome do jogador: obrigatórios. ID da conta Google: opcional</td><td>Funcionalidade do app, Gerenciamento de contas, Prevenção de fraudes, segurança e conformidade</td></tr>
+<tr><td>IDs do dispositivo ou outros IDs (o ID de dispositivo da Epic)</td><td>Coletado (pela Epic para o login). Não compartilhado.</td><td>Obrigatório</td><td>Funcionalidade do app, Gerenciamento de contas</td></tr>
+<tr><td>Histórico de compras (produto, número do pedido, horário, status)</td><td>Coletado. Não compartilhado.</td><td>Opcional: só se você fizer uma compra</td><td>Funcionalidade do app, Prevenção de fraudes, segurança e conformidade</td></tr>
+<tr><td>Atividade no app: outras ações (resultados de partidas, moedas, cosméticos possuídos e equipados)</td><td>Coletado. Não compartilhado.</td><td>Obrigatório</td><td>Funcionalidade do app, Prevenção de fraudes, segurança e conformidade</td></tr>
+<tr><td>Informações e desempenho do app: outros dados de desempenho (memória do celular, nível de desempenho, tipo de rede, economia de bateria, ping, modelo do celular)</td><td>Coletado (pela Epic para o matchmaking e o login). Não compartilhado.</td><td>Obrigatório</td><td>Funcionalidade do app</td></tr>
+</tbody>
+</table>
+</div>
+<p>Todos esses dados são criptografados em trânsito. Você pode excluir seus dados no jogo (Configurações &gt; Excluir meus dados) ou nos pedir por e-mail, conforme descrito em "Como excluir seus dados". Os registros de compra são então mantidos até 7 anos após cada compra, sem o seu ID de jogador.</p>
+</main>
+<footer>Esta política é fornecida pela desenvolvedora do Battle Arena Worlds, ST Projects.</footer>
+</body>
+</html>
