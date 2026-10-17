@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battle Arena Worlds データ削除</title>
+<meta name="description" content="Battle Arena Worlds のアカウントデータを削除する方法。">
+<link rel="stylesheet" href="/style.css">
+<script src="/battle-arena-worlds/lang.js"></script>
+</head>
+<body>
+<main>
+<h1>Battle Arena Worlds のデータを削除する</h1>
+<p class="note translation-note">これは翻訳です。<a href="/battle-arena-worlds/delete-data/?lang=en">英語版</a>と内容が異なる場合は、英語版が優先されます。</p>
+<p class="date">Battle Arena Worlds（ST Projects）&middot; パッケージ <code>com.stprojects.battlearenaworlds</code></p>
+
+<p>Battle Arena Worlds には会員登録がありません。ゲームを起動すると、スマホに紐づく匿名のプレイヤー アカウントで Epic Online Services にサインインし、ショップのウォレット（コイン、ジェム、所持しているコスメティック）は、そのアカウントの<strong>プレイヤー ID</strong> で当方のサーバーに保管されます。Google でログインすることを選んだ場合、Epic はあなたの Google アカウントもそのプレイヤー ID に紐づけます。このページでは、これらのデータを削除する方法を説明します。</p>
+
+<h2>ゲーム内で削除する（推奨）</h2>
+<ol>
+<li>Battle Arena Worlds を開き、インターネットに接続します。</li>
+<li><strong>設定</strong>タブを開きます。<strong>アカウント</strong>で <strong>データを削除</strong> をタップします。</li>
+<li>2 回確認します。確認中の購入がある場合は、先にゲームが警告します。</li>
+</ol>
+<p>削除は直ちに行われます。その後、ゲームはスマホで新しい空のプレイヤー アカウントを開始します。ゲームをアンインストールしていても、Google でログインしていた場合はこの方法を使えます。再インストールし、設定で同じ Google アカウントでログインしてから、データを削除 をタップしてください。</p>
+
+<h2>またはメールで依頼する</h2>
+<p>ゲームを使用できない場合は、件名を「Battle Arena Worlds data deletion」として <a href="mailto:battlearenaunlimited@gmail.com?subject=Battle%20Arena%20Worlds%20data%20deletion">battlearenaunlimited@gmail.com</a> 宛てにメールし、次のいずれかを記載してください。</p>
+<ul>
+<li>ゲーム内の設定 &gt; アカウントに表示される<strong>プレイヤーコード</strong>（タップするとコピーできます）。または</li>
+<li>ゲーム内でジェムまたはスターターパックを購入した際の Google Play の領収書にある<strong>注文番号</strong>（GPA. で始まります）。Google Play からの領収書メール、または Play ストア アプリの お支払いと定期購入 &gt; 予算と履歴 で確認できます。当方の購入記録がその注文とプレイヤー ID を結び付けているため、それによってウォレットを特定します。</li>
+</ul>
+<p>30 日以内に返信し、データの削除が完了したらお知らせします。メールで削除した場合、スマホには同じプレイヤー ID が残っているため、次回起動時にゲームがその ID で新しい空のウォレットを開きます。これを防ぐには、メールの送信前または送信後に、ゲームのデータを消去するか、アンインストールしてください。</p>
+<p>何も購入したことがなく、すでにゲームをお持ちでない場合、ウォレットは氏名、メールアドレス、連絡先のないランダムなプレイヤー ID だけで管理されているため、当方がそれを特定する方法はありません。</p>
+
+<h2>削除されるもの、保持されるもの、保持期間</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>データ</th><th>取り扱い</th></tr></thead>
+<tbody>
+<tr><td>ウォレット：コイン、ジェム、所持中と装備中のコスメティック、スターターパックの購入状況、1 日のコイン合計と月間支出合計、作成日時と最終更新日時</td><td>削除</td></tr>
+<tr><td>ウォレットに付与されたマッチと購入の記録</td><td>削除。すでに付与された購入を別のアカウントに再度付与することはできません。</td></tr>
+<tr><td>購入記録上のプレイヤー ID、および Google Play が各注文について報告したアカウントタグ</td><td>除去</td></tr>
+<tr><td>当方のサーバーとのセッション</td><td>終了</td></tr>
+<tr><td>購入と注文の記録（商品、注文番号、購入日時、ステータス、払い戻しの詳細）</td><td>税務、払い戻し、不正防止のため、プレイヤー ID を除いた形で<strong>購入から 7 年間保持</strong>。その後、毎日のクリーンアップ処理が払い戻しやキャンセルの通知とともに自動削除</td></tr>
+<tr><td>サーバーログ（日時、リクエストの種類と結果、IP アドレス、デバイスのユーザーエージェント、一部の行ではプレイヤー ID の最初の 12 文字、商品、注文番号、購入したアイテム、付与されたコイン）</td><td>約 30 日後（標準設定）に Google Cloud が自動削除</td></tr>
+</tbody>
+</table>
+</div>
+<p>削除したコイン、ジェム、コスメティック（ジェムで購入したものを含む）は復元できません。再びプレイする場合は、空のウォレットから始まります。Google Play は、各注文のアカウントタグ（プレイヤー ID の一方向ハッシュ）を含む支払いの独自の記録を保持しており、当方はそれを削除できません。</p>
+
+<h2>Epic が保持するデータ</h2>
+<p>サインインとオンラインマッチを提供する Epic Games は、あなたのプレイヤー ID について、匿名のデバイス ID、生成されたプレイヤー名（例：Player4821）、スマホのメーカー名と機種名、Google でログインした場合は Google アカウントとの紐づけを記録しています。ゲーム内で削除すると、Google との紐づけとデバイス ID も Epic から削除されるため、そのプレイヤー ID には誰も再びサインインできなくなります。記録のその他の部分は、Epic が <a href="https://www.epicgames.com/site/privacypolicy">Epic Games プライバシーポリシー</a>に従って保持します。メールでデータを削除しても、Epic の記録は変わりません。</p>
+
+<h2>スマホ内のデータ</h2>
+<p>ゲーム内で削除すると、スマホからショップのファイル（ウォレットのコピー、送信待ちの購入、年齢確認への回答、今月の支出合計）、Google ログインの記録、Epic のデバイス ID も削除されます。設定とレベルはスマホに残ります。これらが当方のサーバーに送信されることはありません。</p>
+<p>ゲームがスマホに保存しているものをすべて削除するには、Android の設定でアプリのストレージを消去する（設定 &gt; アプリ &gt; Battle Arena Worlds &gt; ストレージ &gt; ストレージを消去）か、アプリをアンインストールしてください。これだけでは、当方のサーバー上のウォレットは削除されません。スマホがアプリのデータを Google アカウントにバックアップしている場合や、以前のスマホからデータをコピーした場合は、スマホのバックアップ設定で管理できます。</p>
+
+<p><a href="/battle-arena-worlds/privacy/">Battle Arena Worlds プライバシーポリシー</a>の全文をご覧ください。</p>
+</main>
+<footer>このページは Battle Arena Worlds の開発者 ST Projects が提供しています。</footer>
+</body>
+</html>
