@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exclusão de dados do Petalwick</title>
+<meta name="description" content="Como excluir o seu salvamento na nuvem do Petalwick e outros dados.">
+<link rel="stylesheet" href="/style.css">
+<script src="/petalwick/lang.js"></script>
+</head>
+<body>
+<main>
+<h1>Exclua seus dados do Petalwick</h1>
+<p class="note translation-note">Esta é uma tradução. Se ela divergir da <a href="/petalwick/delete-data/?lang=en">versão em inglês</a>, prevalece a versão em inglês.</p>
+<p class="date">Petalwick da ST Projects &middot; pacote <code>com.stprojects.petalpop</code></p>
+
+<p>O Petalwick não tem contas próprias: o único vínculo de conta é o seu login no Google Play Games, e esta página explica como excluir esse vínculo e os dados dele. Os dados que mantemos no nosso servidor vinculados a você são o seu <strong>salvamento na nuvem</strong> e a marcação nas compras que você fez, que só existem se você jogou conectado ao Google Play Games. Você mesmo pode excluí-los no jogo ou nos pedir por e-mail que os excluamos.</p>
+
+<h2>Opção 1: no jogo (imediato)</h2>
+<ol>
+<li>Abra o Petalwick e abra a <strong>loja</strong>.</li>
+<li>Vá até a aba <strong>Conta</strong>.</li>
+<li>Toque em <strong>Excluir dados na nuvem</strong> e confirme.</li>
+</ol>
+<p>O botão aparece enquanto você está conectado ao salvamento na nuvem. Se você vir "sem login", toque primeiro em <strong>Entrar</strong>. É necessária uma conexão com a internet.</p>
+
+<h2>Opção 2: por e-mail</h2>
+<p>Envie um e-mail para <a href="mailto:battlearenaunlimited@gmail.com?subject=Petalwick%20data%20deletion">battlearenaunlimited@gmail.com</a> com o assunto "Petalwick data deletion". Inclua o <strong>Código do jogador</strong> exibido na aba Conta enquanto você está conectado (ele tem a forma <code>3FA9-0C21-7B4E</code>), para que possamos encontrar os seus dados. Se você não conseguir abrir o jogo, envie, em vez disso, o número do pedido (começa com GPA.) de um recibo do Google Play. Responderemos em até 30 dias e confirmaremos quando os seus dados tiverem sido excluídos.</p>
+
+<h2>O que é excluído, o que é mantido e por quanto tempo</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Dados</th><th>O que acontece</th></tr></thead>
+<tbody>
+<tr><td>Seu salvamento na nuvem e o resumo dele (nível, gemas, estrelas, última partida, identificação do dispositivo)</td><td>Excluídos imediatamente</td></tr>
+<tr><td>Os backups do seu jogo salvo (as últimas 5 versões anteriores)</td><td>Excluídos imediatamente</td></tr>
+<tr><td>O registro que vincula o seu ID de jogador do Play Games aos seus dados (com a data do seu primeiro e último login)</td><td>Excluído imediatamente</td></tr>
+<tr><td>Seu ID da conta do jogador nos seus registros de compras (o proprietário da compra, o ID que o jogo enviou com a verificação da compra e a marcação de pedido que recebemos do Google Play)</td><td>Removido imediatamente</td></tr>
+<tr><td>Registros de compras e pedidos (produto, ID do pedido, horário da compra, status)</td><td><strong>Mantidos por 7 anos após a compra</strong> para fins fiscais, de reembolsos e de prevenção de fraudes; depois, excluídos automaticamente por uma rotina de limpeza diária. Depois que você exclui os seus dados na nuvem, eles não contêm mais nada que identifique você, exceto que uma compra que o jogo verifica novamente recebe de volta a marcação de pedido do Google (veja abaixo).</td></tr>
+<tr><td>Registros do servidor (horário, tipo de solicitação e resultado, endereço IP, user agent do dispositivo, o ID do produto e do pedido nas verificações de compras, o ID do pedido nas notificações de reembolso e, nas solicitações de salvamento na nuvem, os primeiros 12 caracteres do seu ID da conta do jogador (o seu Código do jogador))</td><td>Excluídos automaticamente pelo Google Cloud após 30 dias (o padrão)</td></tr>
+</tbody>
+</table>
+</div>
+<p>Depois que você exclui os seus dados na nuvem, o salvamento na nuvem fica desativado nesse celular até que você toque em <strong>Entrar</strong> novamente.</p>
+
+<h2>Suas compras</h2>
+<p><strong>Remover anúncios</strong> continua vinculado à sua conta do Google Play, então você ainda pode recuperá-lo com <strong>Restaurar compras</strong> na aba Conta. Os dias restantes de um <strong>Cartão mensal</strong> não podem mais ser restaurados em outro celular a partir dos nossos registros de compras. Eles ficam no jogo salvo do celular que você está usando (e, se você entrar de novo mais tarde, esse jogo salvo é enviado para um novo salvamento na nuvem). Tudo o mais que você comprou foi adicionado ao seu jogo no momento da compra.</p>
+<p>Depois que você exclui seus dados na nuvem, suas compras deixam de estar vinculadas a você e continuam assim, a menos que você entre no Play Games de novo. O Google Play mantém sua própria cópia da marcação em cada pedido, e nós não podemos removê-la. Quando o jogo verifica uma compra com o nosso servidor novamente, o servidor grava a marcação do Google (o seu ID da conta do jogador) de volta nesse registro de compra, mas não vincula o registro a você nem o restaura para você. Normalmente, o jogo verifica <strong>Remover anúncios</strong> dessa forma sempre que é iniciado. Se você entrar no Play Games de novo com a mesma conta, as compras que o Google ainda marca com a sua conta e que voltaram a ter a marcação no nosso registro podem ser vinculadas a você novamente. Na prática, isso é o Remover anúncios: os cartões e as outras compras são consumidos quando são entregues, então o jogo não os verifica de novo, e os dias restantes de um cartão não são vinculados a você novamente. Excluir seus dados na nuvem nunca impede que o Remover anúncios volte pelo Google Play.</p>
+
+<h2>Dados no seu celular</h2>
+<p>Excluir os dados na nuvem não afeta o progresso salvo no seu celular. Isso remove do celular o seu ID de jogador do Play Games, o seu nome de exibição e o seu token de sessão, e o salvamento na nuvem fica desativado até que você entre novamente. Para remover o seu progresso e as suas informações de compras, toque em <strong>Redefinir progresso</strong> na aba Conta (se você estiver conectado, isso também substitui o seu salvamento na nuvem por um novo começo). Para remover tudo o que o jogo mantém no seu celular, incluindo as configurações, limpe o armazenamento do app nas configurações do Android ou desinstale o app. Se o seu celular faz backup dos dados dos apps na sua Conta do Google, ou os copiou de um celular antigo durante a transferência de dispositivo, você pode gerenciar isso nas configurações de backup do celular.</p>
+
+<h2>Dados de anúncios</h2>
+<p>As informações coletadas pelo Google AdMob para exibir anúncios são mantidas pelo Google, não por nós. Você pode redefinir ou excluir o seu ID de publicidade nas configurações do seu celular e saber mais em <a href="https://policies.google.com/technologies/partner-sites">Como o Google usa as informações de apps que utilizam nossos serviços</a>.</p>
+
+<p>Veja a <a href="/petalwick/privacy/">política de privacidade do Petalwick</a> completa.</p>
+</main>
+<footer>Esta página é fornecida pelo desenvolvedor do Petalwick, ST Projects.</footer>
+</body>
+</html>
