@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fil">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patakaran sa Privacy ng The Bad Guys</title>
+<meta name="description" content="Anong impormasyon ang kinokolekta ng The Bad Guys Android app, bakit, at ano ang nangyayari dito.">
+<link rel="stylesheet" href="/style.css">
+<script src="/thebadguys/lang.js"></script>
+</head>
+<body>
+<main>
+<h1>Patakaran sa Privacy ng The Bad Guys</h1>
+<p class="note translation-note">Isa itong salin. Kung may pagkakaiba ito sa <a href="/thebadguys/privacy/?lang=en">bersyong Ingles</a>, ang bersyong Ingles ang masusunod.</p>
+<p class="date">Epektibo mula Oktubre 18, 2026</p>
+
+<p>Ang The Bad Guys ay isang 3D action game para sa Android kung saan gumaganap ka bilang isang kontrabida, na inilathala ng ST Projects ("kami", "namin"), isang independiyenteng developer na nakabase sa United States. Ipinapaliwanag ng patakarang ito kung anong impormasyon ang kinokolekta ng laro, bakit, at ano ang nangyayari dito. Nalalapat ito sa Android app na inilathala sa ilalim ng package name na <code>com.stprojects.thebadguys</code>.</p>
+
+<p class="note">Sa madaling salita: hindi ka gumagawa ng account sa amin. Naka-save ang iyong progreso sa iyong telepono. Walang ipinapakitang ad ang laro, at dumadaan sa Google Play ang mga pagbili. Kung naka-sign in ka sa Google Play Games, sine-save din sa aming server ang iyong progreso at ang mga napili mong hitsura para maibalik mo ang mga ito sa bagong telepono. Puwede mong burahin ang cloud data na iyon mula sa laro anumang oras. Mabubuksan mo ang patakarang ito mula sa laro gamit ang button na <strong>Patakaran sa privacy</strong> sa screen ng Account.</p>
+
+<h2>Impormasyong naka-store sa iyong device</h2>
+<p>Sine-save ng laro ang mga sumusunod sa sariling storage ng app sa iyong telepono:</p>
+<ul>
+<li>Progreso sa laro: ang kasalukuyan mong run (kontrabida, difficulty, mga natapos na job, mga upgrade, crew) at ang mga hitsura ng kontrabida na na-unlock at pinili mo.</li>
+<li>Mga setting, gaya ng napili mong wika at ang pagtanggap mo sa Mga Tuntunin ng Serbisyo at sa patakarang ito.</li>
+<li>Impormasyon sa pagbili: kung ano ang binili mo at kailan (ang kasaysayan ng pagbili na ipinapakita sa screen ng Account), ang kabuuan ng iyong buwanang paggastos, ang mga order ID ng mga naibigay na pagbili (para hindi kailanman maibigay nang dalawang beses ang isang pagbili), at ang sagot mo sa tanong na "18 o pataas" na itinatanong bago ang unang pagbili.</li>
+<li>Kung gumagamit ka ng cloud save: ang iyong Google Play Games player ID at display name (ipinapakita bilang "naka-sign in bilang"), at isang session token na nagpapanatili ng koneksyon mo sa aming server.</li>
+</ul>
+<p>Nananatili sa iyong telepono ang data na ito maliban kung gumagamit ka ng cloud save (sa ibaba). Pinapayagan ng app ang <strong>Auto Backup</strong> ng Android, kaya maaaring isama ito ng Android sa backup ng iyong device sa iyong Google account, o kopyahin ito sa bagong telepono habang naglilipat ng device, depende sa mga setting ng iyong telepono. Ang Google ang humahawak sa backup na iyon, at hindi namin ito nakikita.</p>
+<p>Hindi kailanman humihingi ang laro ng pahintulot at hindi nito maa-access ang iyong lokasyon, mga contact, larawan, camera, mikropono o mga file. Gumagamit ito ng internet at network-state access, Google Play Billing at Google Play Games. Kasama rin sa mga library ng Google ang mga pahintulot na wake-lock at foreground-service para sa mga gawain sa background. Walang mga ad ang laro, walang advertising SDK, at walang sarili naming analytics o crash-reporting library, at hindi nito ginagamit ang advertising ID ng iyong device.</p>
+
+<h2>Mga pagbili (Google Play Billing)</h2>
+<p>Ang mga in-app na pagbili ay hinahawakan ng <strong>Google Play Billing</strong>. Sa Google ka nagbabayad, at ang mga tuntunin sa pagbabayad at patakaran sa privacy ng Google ang nalalapat sa bayad. Hindi namin kailanman nakikita o sine-save ang numero ng iyong card, mga detalye ng bangko, billing address o email ng iyong Google account.</p>
+<p>Nagbebenta ang laro ng tatlong "Pakainin ang Gutom na Dev" na pack ng hitsura. Ang bawat isa ay nag-a-unlock ng bagong hitsura para sa isang kontrabida, mabibili nang isang beses bawat Google account, at hindi kailanman nag-e-expire.</p>
+<p>Kapag may binili ka, ipinapadala ng app ang mga detalye ng pagbili mula sa Google Play (ang product ID, ang purchase token at ang order ID) sa aming verification server. Sinusuri ng server sa Google Play na totoo ang pagbili, hindi pa ito nagamit dati at hindi pa ito na-refund, at saka lang ibinibigay ang item. Nagtatago kami ng record ng bawat pagbili (produkto, order ID, oras ng pagbili at status, gaya ng na-refund) para makumpirma namin ang mga pagbili, maiwasan ang panloloko, mahawakan ang mga refund at matupad ang mga obligasyon sa buwis at batas. Naka-file ang record sa ilalim ng one-way hash ng purchase token. Hindi itinatago ang mismong token: itatago lang namin ito para sa mga subscription, at walang ibinebentang subscription ang laro. Sinasabihan din ng Google ang aming server kapag na-refund o nakansela ang isang pagbili.</p>
+<p>Kung naka-sign in ka sa Google Play Games kapag bumibili ka, tina-tag ng laro ang pagbili gamit ang iyong <strong>player account ID</strong>: isang one-way hash ng package name ng app at ng iyong Play Games player ID, hindi ang mismong ID. Ipinapadala ang tag sa Google Play kasama ng order (bilang "obfuscated account ID" ng Google) at sa aming server kasama ng pagsusuri ng pagbili. Nakatali rin ang mga pack ng hitsura sa iyong Google Play account, kaya maibabalik mo ang mga ito nang hindi nagsa-sign in sa Play Games: i-tap ang <strong>Ibalik ang mga pagbili</strong> sa screen ng Account. Kung hilingin sa iyo ng laro na pumili sa pagitan ng progreso sa iyong telepono at ng iyong cloud save, maibabalik ang iyong mga pack ng hitsura alinman ang piliin mo.</p>
+<p>Ang mga pagbili gamit ang totoong pera ay para sa mga manlalarong 18 o pataas. Nagtatanong ang laro bago ang una mong pagbili at pinapatay nito ang mga pagbili para sa mga manlalarong nagsasabing mas bata sila. Nililimitahan din ng laro ang mga pagbili gamit ang totoong pera sa US$100 bawat buwan ng kalendaryo. Itinatago nito ang tumatakbong kabuuan sa iyong telepono, bilang bahagi ng save ng iyong laro, at nire-reset ang limitasyon tuwing ika-1 ng bawat buwan (UTC).</p>
+
+<h2>Cloud save (opsyonal, sa pamamagitan ng Google Play Games)</h2>
+<p>Hindi mo kailangang mag-sign in para maglaro. Kung naka-sign in ang iyong telepono sa <strong>Google Play Games</strong>, awtomatikong kumokonekta dito ang laro at sine-save ang iyong progreso sa aming server, para maibalik mo ito pagkatapos mag-reinstall o sa bagong telepono. Kung hindi ka naka-sign in, walang ipinapadalang alinman sa impormasyon sa seksyong ito.</p>
+<p>Kapag naka-on ang cloud save, sine-save ng aming server ang:</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Impormasyon</th><th>Bakit</th></tr></thead>
+<tbody>
+<tr><td>Ang iyong Google Play Games player ID</td><td>Para malaman kung aling save ang sa iyo. Naka-file ang iyong mga record sa ilalim ng iyong player account ID, isang one-way hash ng package name ng app at ng iyong player ID.</td></tr>
+<tr><td>Ang save ng iyong laro</td><td>Lahat ng nakalista sa ilalim ng "Impormasyong naka-store sa iyong device" tungkol sa iyong progreso, mga hitsura at mga pagbili, naka-compress, para maibalik ito.</td></tr>
+<tr><td>Isang maikling buod ng save</td><td>Ang iyong kontrabida, ang mga natapos na job sa kasalukuyan mong run, kung ilang hitsura ang mayroon ka, at kung kailan ka huling naglaro, na ipinapakita kung magkaiba ang progreso sa iyong telepono at sa cloud at kailangan mong pumili ng isa.</td></tr>
+<tr><td>Isang label ng device</td><td>Ang modelo ng iyong telepono at bersyon ng Android (halimbawa "Pixel 8 (Android 15)"), na ipinapakita sa parehong screen ng pagpili.</td></tr>
+<tr><td>Ang huling 5 naunang bersyon ng iyong save</td><td>Mga backup, para maibalik ang progreso kung may magkaproblema. Awtomatikong binubura ang mas lumang mga bersyon tuwing may bagong naise-save.</td></tr>
+<tr><td>Kung kailan ka unang at huling nag-sign in</td><td>Para pamahalaan ang ugnayan mo at ng iyong save.</td></tr>
+<tr><td>Ang iyong player account ID sa iyong mga record ng pagbili</td><td>Dala ito ng mga pagbiling ginagawa mo habang naka-sign in (tingnan ang "Mga pagbili" sa itaas), para maibalik ang iyong mga pack ng hitsura sa ibang telepono.</td></tr>
+</tbody>
+</table>
+</div>
+<p>Hindi sine-save ng aming server ang iyong Play Games display name, email address, o mga Google sign-in token. Walang hinihinging dagdag na pahintulot ang laro sa Google bukod sa pag-sign in sa Play Games. Ang paghawak ng Google sa iyong Play Games account ay saklaw ng <a href="https://policies.google.com/privacy">Patakaran sa Privacy ng Google</a>.</p>
+<p>Habang naka-sign in ka, ipinapakita ng screen ng Account ang iyong <strong>Code ng manlalaro</strong>, halimbawa <code>3FA9-0C21-7B4E</code>. Ito ang unang 12 character ng iyong player account ID. Banggitin ito kung mag-email ka sa amin tungkol sa iyong data, para mahanap namin ito nang hindi ka hinihingan ng iba pa.</p>
+<p>Para ihinto ang cloud save, gamitin ang <strong>Burahin ang cloud data</strong> (tingnan sa ibaba). Pagkatapos noon, mananatiling naka-off ang cloud save sa teleponong iyon hanggang i-tap mo ang <strong>Mag-sign in</strong> sa screen ng Account.</p>
+
+<h2>Impormasyong ibinabahagi sa mga third party</h2>
+<p>Hinahawakan ng <strong>Google Play</strong> ang mga pagbabayad at pag-sign in sa Play Games, at natatanggap nito ang tag na player account ID sa mga order na ginagawa mo habang naka-sign in. Kumokontak ang aming server sa Google Play para i-verify ang mga pagbili at ang iyong pag-sign in.</p>
+<p>Ang <strong>Google Cloud</strong> ang nagho-host ng aming server (Cloud Run) at database (Firestore). Pinoproseso ng Google ang data na ito para sa amin.</p>
+<p>Hindi namin ibinebenta ang iyong impormasyon, at hindi namin ito ibinabahagi sa iba pa, maliban kung hinihingi ito ng batas.</p>
+
+<h2>Kung saan naka-store ang iyong impormasyon</h2>
+<p>Tumatakbo ang aming server at database sa Google Cloud sa <strong>rehiyong us-central1, sa United States</strong>. Inaalok ang laro sa pamamagitan ng Google Play sa maraming bansa. Saan ka man gumagamit nito, ang impormasyong inilarawan sa ilalim ng "Mga pagbili" at "Cloud save" ay ipinapadala at pinoproseso sa United States, kung saan maaaring iba ang mga batas sa proteksyon ng data kaysa sa lugar kung nasaan ka. Saan ka man nakatira, nalalapat sa iyo ang patakarang ito, at ipinapaliwanag ng seksyong "Ang iyong mga karapatan" ang mga dagdag na karapatang mayroon ang mga tao sa ilang lugar sa ilalim ng lokal na batas.</p>
+
+<h2>Paano pinoprotektahan ang iyong impormasyon</h2>
+<p>Naka-encrypt habang ipinapadala (HTTPS) ang lahat ng komunikasyon sa pagitan ng app at ng aming server. Nakatali sa app na ito at sa iyong player ID ang session mo sa aming server, at nag-e-expire ito pagkalipas ng 30 araw. Nililimitahan ng server kung ilang kahilingan ang tinatanggap nito, para maiwasan ang pang-aabuso.</p>
+<p>Itinatala ng mga log ng aming server ang oras, ang uri ng kahilingan at ang resulta nito, kung gaano ito katagal, at ang IP address na pinagmulan nito. Itinatala rin ng mga request log ng Google Cloud ang user agent ng iyong device (modelo ng iyong telepono, bersyon ng Android at bersyon ng browser engine). Para sa mga pagsusuri ng pagbili, kasama sa mga log ang product ID at ang order ID, at itinatala ng mga abiso ng refund mula sa Google ang order ID. Para matulungan kaming matunton ang mga problema, kasama sa ilang linya ng log ang unang 12 character ng iyong player account ID (pareho sa iyong Code ng manlalaro) o ng hash ng purchase token. Hindi kailanman naglalaman ang mga log ng iyong save, ng buo mong player ID o player account ID, o ng anumang token. Ginagamit namin ang mga ito para sa seguridad, para limitahan ang pang-aabuso at para ayusin ang mga problema. Itinatago ng Google Cloud ang mga ito nang 30 araw bilang default.</p>
+
+<h2>Gaano katagal namin ito itinatago</h2>
+<ul>
+<li><strong>Sa iyong device:</strong> ang progreso sa laro at impormasyon sa pagbili hanggang i-tap mo ang I-reset ang progreso (na papalitan din ang iyong cloud save ng bagong simula kung naka-sign in ka). Ang iyong Play Games player ID, display name at session token hanggang i-tap mo ang Burahin ang cloud data, i-clear ang data ng app o i-uninstall ang app. Ang mga setting hanggang i-clear mo ang data ng app o i-uninstall ang app.</li>
+<li><strong>Cloud save at mga backup:</strong> hanggang burahin mo ang mga ito. Pinapalitan ng bawat bagong save ang nauna, at ang huling 5 naunang bersyon lang ang itinatago. Sa ngayon ay walang awtomatikong pagbura ng mga hindi aktibong save. Kung magpapatupad kami nito, sasabihin namin dito.</li>
+<li><strong>Mga record ng pagbili at order:</strong> itinatago nang 7 taon pagkatapos ng pagbili, para sa buwis, mga refund at pag-iwas sa panloloko. Pagkatapos noon, binubura ng isang pang-araw-araw na clean-up job ang bawat record, kasama ang claim nito sa order at ang mga event nito ng refund o pagkansela. Kung buburahin mo ang iyong cloud data, aalisin kaagad ang iyong player account ID mula sa mga ito (tingnan ang "Pagbura ng iyong data" para sa kung kailan muling isinusulat ang order tag ng Google), at ang natitirang bahagi ng bawat record ay itinatago hanggang sa parehong 7-taong punto.</li>
+<li><strong>Mga log ng server:</strong> 30 araw bilang default, pagkatapos ay awtomatikong binubura ng Google Cloud.</li>
+</ul>
+
+<h2>Pagbura ng iyong data</h2>
+<p><strong>Sa laro:</strong> buksan ang screen ng <strong>Account</strong> at i-tap ang <strong>Burahin ang cloud data</strong>. Agad nitong binubura ang iyong cloud save, lahat ng backup nito at ang record na nag-uugnay sa iyong Play Games player ID sa iyong data, at inaalis ang iyong player account ID mula sa iyong mga record ng pagbili. Ang mismong mga record ng pagbili ay itinatago hanggang 7 taon pagkatapos ng bawat pagbili, gaya ng inilarawan sa itaas, nang wala ang iyong player account ID (na may isang eksepsiyon, na ipinapaliwanag sa ibaba). Pinapanatili ang progreso sa iyong telepono.</p>
+<p><strong>Ano ang ibig sabihin nito para sa mga pagbili:</strong> nananatiling nakatali sa iyong Google Play account ang iyong mga pack ng hitsura, kaya maibabalik mo pa rin ang mga ito gamit ang <strong>Ibalik ang mga pagbili</strong>.</p>
+<p>Pagkatapos mong burahin ang iyong cloud data, hindi na naka-link sa iyo ang iyong mga pagbili, at mananatili itong ganoon maliban kung mag-sign in ka ulit sa Play Games. May sariling kopya ang Google Play ng tag sa bawat order, at hindi namin ito maaalis. Kapag muling sinuri ng laro ang isang pagbili sa aming server, isinusulat muli ng server ang tag ng Google (ang iyong player account ID) sa record ng pagbiling iyon, pero hindi nito ini-link ang record sa iyo o ibinabalik ito sa iyo. Karaniwang sinusuri ng laro ang iyong mga pack ng hitsura sa ganitong paraan tuwing magsisimula ito. Kung mag-sign in ka ulit sa Play Games gamit ang parehong account, ang mga pagbiling naka-tag pa rin ng Google sa iyong account at muling may dalang tag sa aming record ay maaaring ma-link ulit sa iyo. Hindi kailanman pinipigilan ng pagbura ng iyong cloud data ang pagbabalik ng iyong mga pack ng hitsura mula sa Google Play.</p>
+<p><strong>Sa pamamagitan ng email:</strong> puwede mo ring hilingin sa amin na burahin ang iyong data sa pamamagitan ng pag-email sa <a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a>. Pakisabi na tungkol ito sa The Bad Guys at isama ang iyong <strong>Code ng manlalaro</strong> mula sa screen ng Account. Kung hindi mo mabuksan ang laro, ipadala na lang ang order number (nagsisimula ito sa GPA.) mula sa isang resibo sa Google Play. Sasagot kami sa loob ng 30 araw, at kukumpirmahin namin kapag nabura na ang iyong data.</p>
+<p>Para alisin ang iyong progreso at impormasyon sa pagbili mula sa iyong telepono, i-tap ang <strong>I-reset ang progreso</strong> sa screen ng Account (kung naka-sign in ka, papalitan din nito ang iyong cloud save ng bagong simula). Para alisin ang lahat ng itinatago ng laro sa iyong telepono, kabilang ang iyong Play Games player ID, display name, session token at mga setting, i-clear ang data ng app sa mga setting ng Android o i-uninstall ang app. Nasa <a href="/thebadguys/delete-data/">page ng pagbura ng data</a> ang buong mga hakbang.</p>
+
+<h2>Ang iyong mga karapatan</h2>
+<p><strong>Kung nasa EEA, UK o Switzerland ka</strong>, binibigyan ka ng batas sa proteksyon ng data (GDPR o UK GDPR) ng karapatang i-access ang personal na data na hawak namin tungkol sa iyo, itama ito, ipabura ito, limitahan o tutulan ang paggamit namin dito, at makatanggap ng kopya nito. Puwede ka ring magreklamo sa iyong lokal na awtoridad sa proteksyon ng data. Ginagamit namin ang iyong impormasyon para ibigay ang laro at ang cloud save na hiniling mo, para sa aming lehitimong interes na maiwasan ang panloloko at panatilihing ligtas ang serbisyo, at para matupad ang mga legal na obligasyon gaya ng pagtatago ng mga record sa buwis.</p>
+<p><strong>Kung nasa California ka o sa ibang estado ng US na may batas sa privacy</strong>, may karapatan kang malaman kung anong personal na impormasyon ang kinokolekta namin, ipabura o ipatama ito, at mag-opt out sa pagbebenta o pagbabahagi nito. Hindi kami nagbebenta ng personal na impormasyon, at hindi namin ito ibinabahagi para sa cross-context behavioural advertising. Hindi ka namin tatratuhin nang iba dahil sa paggamit ng mga karapatang ito.</p>
+<p>Para gamitin ang alinman sa mga karapatang ito, mag-email sa amin sa address sa ibaba at isama ang <strong>Code ng manlalaro</strong> na ipinapakita sa screen ng Account, para mahanap namin ang iyong data. Sasagot kami sa loob ng 30 araw.</p>
+
+<h2>Mga bata</h2>
+<p>Ang The Bad Guys ay hindi nakadirekta sa mga batang wala pang 13 taong gulang, at hindi kami sadyang nangongolekta ng personal na impormasyon mula sa kanila. Kung naniniwala kang gumamit ng cloud save ang isang batang wala pang 13, makipag-ugnayan sa amin sa address sa ibaba at buburahin namin ang data.</p>
+
+<h2>Mga pagbabago sa patakarang ito</h2>
+<p>Kung magbabago ang patakarang ito, ilalathala ang na-update na bersyon sa address na ito na may bagong petsa ng pagkaepektibo. Kung malaki ang pagbabago, babanggitin din namin ito sa app o sa store listing nito.</p>
+
+<h2>Makipag-ugnayan</h2>
+<p><a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a></p>
+
+<h2>Buod ng kaligtasan ng data</h2>
+<p>Ibinubuod ng talahanayang ito ang data na hinahawakan ng app, gamit ang mga terminong ginagamit sa seksyong Kaligtasan ng data ng Google Play.</p>
+<div class="table-wrap">
+<table class="wide">
+<thead><tr><th>Uri ng data</th><th>Kinokolekta / ibinabahagi</th><th>Kinakailangan o opsyonal</th><th>Mga layunin</th></tr></thead>
+<tbody>
+<tr><td>Mga User ID (Play Games player ID, at ang player account ID na ginawa mula rito)</td><td>Kinokolekta namin. Hindi ibinabahagi.</td><td>Opsyonal: kapag naka-sign in lang sa Play Games</td><td>Paggana ng app, Pag-iwas sa panloloko, Pamamahala ng account</td></tr>
+<tr><td>Aktibidad sa app: iba pang mga aksyon (ang save ng iyong laro, ang buod nito at ang label ng device)</td><td>Kinokolekta namin. Hindi ibinabahagi.</td><td>Opsyonal: kapag naka-sign in lang sa Play Games</td><td>Paggana ng app</td></tr>
+<tr><td>Kasaysayan ng pagbili (produkto, order ID, oras, status)</td><td>Kinokolekta namin. Hindi ibinabahagi.</td><td>Opsyonal: kung bibili ka lang</td><td>Paggana ng app, Pag-iwas sa panloloko</td></tr>
+</tbody>
+</table>
+</div>
+<p>Naka-encrypt habang ipinapadala ang lahat ng data na ito. Puwede mong hilinging burahin ang iyong data sa laro (<strong>Burahin ang cloud data</strong> sa screen ng Account) o sa pamamagitan ng email, gaya ng inilarawan sa ilalim ng "Pagbura ng iyong data". Pagkatapos noon, itinatago ang mga record ng pagbili hanggang 7 taon pagkatapos ng bawat pagbili, nang wala ang iyong player account ID maliban sa inilarawan doon.</p>
+</main>
+<footer>Ang patakarang ito ay ibinibigay ng developer ng The Bad Guys, ang ST Projects.</footer>
+</body>
+</html>
