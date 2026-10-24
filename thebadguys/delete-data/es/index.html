@@ -32,11 +32,12 @@
 <table>
 <thead><tr><th>Datos</th><th>Qué ocurre</th></tr></thead>
 <tbody>
-<tr><td>Su guardado en la nube y su resumen (villano, trabajos realizados, número de aspectos, última vez que jugó, etiqueta del dispositivo)</td><td>Se eliminan de inmediato</td></tr>
-<tr><td>Las copias de seguridad de su partida guardada (las últimas 5 versiones anteriores)</td><td>Se eliminan de inmediato</td></tr>
-<tr><td>El registro que vincula su ID de jugador de Play Games con sus datos (con cuándo inició sesión por primera y por última vez)</td><td>Se elimina de inmediato</td></tr>
-<tr><td>Su ID de cuenta de jugador en sus registros de compras (el propietario de la compra, el ID que el juego envió con la comprobación de la compra y la etiqueta de pedido que recibimos de Google Play)</td><td>Se quita de inmediato</td></tr>
+<tr><td>Su guardado en la nube y su resumen (villano, trabajos realizados, número de aspectos, última vez que jugó, etiqueta del dispositivo)</td><td>Se eliminan de nuestra base de datos activa de inmediato</td></tr>
+<tr><td>Las versiones anteriores de su partida guardada (hasta 2)</td><td>Se eliminan de nuestra base de datos activa de inmediato</td></tr>
+<tr><td>El registro que vincula su ID de jugador de Play Games con sus datos (con cuándo inició sesión por primera y por última vez)</td><td>Se elimina de nuestra base de datos activa de inmediato</td></tr>
+<tr><td>Su ID de cuenta de jugador en sus registros de compras (el propietario de la compra, el ID que el juego envió con la comprobación de la compra y la etiqueta de pedido que recibimos de Google Play)</td><td>Se quita de nuestra base de datos activa de inmediato</td></tr>
 <tr><td>Registros de compras y pedidos (producto, ID del pedido, hora de la compra, estado)</td><td><strong>Se conservan durante 7 años después de la compra</strong> por motivos fiscales, de reembolsos y de prevención del fraude, y después los elimina automáticamente un proceso de limpieza diario. Después de borrar sus datos en la nube, ya no contienen nada que lo identifique, salvo que una compra que el juego vuelve a comprobar recupera la etiqueta de pedido de Google (ver más abajo).</td></tr>
+<tr><td>Copias de los datos indicados arriba en nuestras copias de seguridad cifradas de la base de datos (un historial de recuperación a un momento determinado de los últimos 7 días, copias de seguridad diarias que se conservan durante 7 días, copias de seguridad semanales que se conservan durante 14 semanas)</td><td>Las copias de seguridad no se pueden modificar, por lo que los datos borrados permanecen en ellas hasta que caducan: <strong>hasta 14 semanas</strong>. Solo las usamos para recuperarnos de una pérdida de datos o para restaurar el progreso de un jugador a petición suya.</td></tr>
 <tr><td>Registros del servidor (hora, tipo de solicitud y resultado, dirección IP, agente de usuario del dispositivo, el producto y el ID del pedido en las comprobaciones de compras, el ID del pedido en las notificaciones de reembolso y, en las solicitudes de guardado en la nube, los primeros 12 caracteres de su ID de cuenta de jugador (su Código de jugador))</td><td>Google Cloud los elimina automáticamente después de 30 días (el valor predeterminado)</td></tr>
 </tbody>
 </table>

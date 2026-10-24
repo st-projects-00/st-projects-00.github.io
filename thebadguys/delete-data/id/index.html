@@ -32,11 +32,12 @@
 <table>
 <thead><tr><th>Data</th><th>Yang terjadi</th></tr></thead>
 <tbody>
-<tr><td>Simpanan cloud Anda dan ringkasannya (penjahat, pekerjaan yang diselesaikan, jumlah tampilan, terakhir bermain, label perangkat)</td><td>Segera dihapus</td></tr>
-<tr><td>Cadangan simpanan Anda (5 versi sebelumnya yang terakhir)</td><td>Segera dihapus</td></tr>
-<tr><td>Catatan yang menautkan ID pemain Play Games Anda ke data Anda (beserta kapan Anda pertama dan terakhir kali masuk)</td><td>Segera dihapus</td></tr>
-<tr><td>ID akun pemain Anda pada catatan pembelian Anda (pemilik pembelian, ID yang dikirim game bersama pemeriksaan pembelian, dan tanda pesanan yang kami terima dari Google Play)</td><td>Segera dihilangkan</td></tr>
+<tr><td>Simpanan cloud Anda dan ringkasannya (penjahat, pekerjaan yang diselesaikan, jumlah tampilan, terakhir bermain, label perangkat)</td><td>Segera dihapus dari basis data aktif kami</td></tr>
+<tr><td>Versi sebelumnya dari simpanan Anda (hingga 2)</td><td>Segera dihapus dari basis data aktif kami</td></tr>
+<tr><td>Catatan yang menautkan ID pemain Play Games Anda ke data Anda (beserta kapan Anda pertama dan terakhir kali masuk)</td><td>Segera dihapus dari basis data aktif kami</td></tr>
+<tr><td>ID akun pemain Anda pada catatan pembelian Anda (pemilik pembelian, ID yang dikirim game bersama pemeriksaan pembelian, dan tanda pesanan yang kami terima dari Google Play)</td><td>Segera dihilangkan dari basis data aktif kami</td></tr>
 <tr><td>Catatan pembelian dan pesanan (produk, ID pesanan, waktu pembelian, status)</td><td><strong>Disimpan selama 7 tahun setelah pembelian</strong> untuk keperluan pajak, pengembalian dana, dan pencegahan penipuan, kemudian dihapus secara otomatis oleh tugas pembersihan harian. Setelah Anda menghapus data cloud Anda, catatan ini tidak lagi berisi apa pun yang mengidentifikasi Anda, kecuali bahwa pembelian yang diperiksa game lagi akan mendapatkan kembali tanda pesanan Google (lihat di bawah).</td></tr>
+<tr><td>Salinan data di atas dalam cadangan basis data terenkripsi kami (riwayat pemulihan ke titik waktu tertentu selama 7 hari terakhir, cadangan harian yang disimpan selama 7 hari, cadangan mingguan yang disimpan selama 14 minggu)</td><td>Cadangan tidak dapat diedit, sehingga data yang dihapus tetap ada di dalamnya hingga cadangan tersebut kedaluwarsa: <strong>hingga 14 minggu</strong>. Kami menggunakannya hanya untuk pemulihan dari kehilangan data atau untuk memulihkan progres pemain atas permintaan pemain tersebut.</td></tr>
 <tr><td>Log server (waktu, jenis dan hasil permintaan, alamat IP, user agent perangkat, produk dan ID pesanan untuk pemeriksaan pembelian, ID pesanan untuk notifikasi pengembalian dana, dan, pada permintaan penyimpanan cloud, 12 karakter pertama dari ID akun pemain Anda (Kode pemain Anda))</td><td>Dihapus secara otomatis oleh Google Cloud setelah 30 hari (default)</td></tr>
 </tbody>
 </table>
