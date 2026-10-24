@@ -32,11 +32,12 @@
 <table>
 <thead><tr><th>Dữ liệu</th><th>Điều gì xảy ra</th></tr></thead>
 <tbody>
-<tr><td>Bản lưu đám mây và bản tóm tắt của nó (kẻ phản diện, các phi vụ đã hoàn thành, số diện mạo, lần chơi gần nhất, nhãn thiết bị)</td><td>Bị xóa ngay lập tức</td></tr>
-<tr><td>Các bản sao lưu của bản lưu (5 phiên bản trước gần nhất)</td><td>Bị xóa ngay lập tức</td></tr>
-<tr><td>Bản ghi liên kết ID người chơi Play Games với dữ liệu của bạn (cùng thời điểm bạn đăng nhập lần đầu và lần gần nhất)</td><td>Bị xóa ngay lập tức</td></tr>
-<tr><td>ID tài khoản người chơi trên bản ghi giao dịch mua của bạn (chủ sở hữu giao dịch, ID mà trò chơi gửi kèm yêu cầu kiểm tra giao dịch, và thẻ đơn hàng chúng tôi nhận từ Google Play)</td><td>Bị gỡ ngay lập tức</td></tr>
+<tr><td>Bản lưu đám mây và bản tóm tắt của nó (kẻ phản diện, các phi vụ đã hoàn thành, số diện mạo, lần chơi gần nhất, nhãn thiết bị)</td><td>Bị xóa khỏi cơ sở dữ liệu đang hoạt động của chúng tôi ngay lập tức</td></tr>
+<tr><td>Các phiên bản trước của bản lưu (tối đa 2)</td><td>Bị xóa khỏi cơ sở dữ liệu đang hoạt động của chúng tôi ngay lập tức</td></tr>
+<tr><td>Bản ghi liên kết ID người chơi Play Games với dữ liệu của bạn (cùng thời điểm bạn đăng nhập lần đầu và lần gần nhất)</td><td>Bị xóa khỏi cơ sở dữ liệu đang hoạt động của chúng tôi ngay lập tức</td></tr>
+<tr><td>ID tài khoản người chơi trên bản ghi giao dịch mua của bạn (chủ sở hữu giao dịch, ID mà trò chơi gửi kèm yêu cầu kiểm tra giao dịch, và thẻ đơn hàng chúng tôi nhận từ Google Play)</td><td>Bị gỡ khỏi cơ sở dữ liệu đang hoạt động của chúng tôi ngay lập tức</td></tr>
 <tr><td>Bản ghi giao dịch mua và đơn đặt hàng (sản phẩm, mã đơn đặt hàng, thời gian mua, trạng thái)</td><td><strong>Được giữ trong 7 năm sau khi mua</strong> cho mục đích thuế, hoàn tiền và ngăn chặn gian lận, sau đó được một tác vụ dọn dẹp hằng ngày tự động xóa. Sau khi bạn xóa dữ liệu đám mây, các bản ghi này không còn chứa bất cứ thứ gì nhận dạng bạn, ngoại trừ việc giao dịch mà trò chơi kiểm tra lại sẽ được gắn lại thẻ đơn hàng của Google (xem bên dưới).</td></tr>
+<tr><td>Bản sao của dữ liệu nêu trên trong các bản sao lưu cơ sở dữ liệu được mã hóa của chúng tôi (lịch sử khôi phục theo thời điểm của 7 ngày gần nhất, bản sao lưu hằng ngày được giữ trong 7 ngày, bản sao lưu hằng tuần được giữ trong 14 tuần)</td><td>Các bản sao lưu không thể chỉnh sửa, vì vậy dữ liệu đã xóa vẫn nằm trong đó cho đến khi chúng hết hạn: <strong>tối đa 14 tuần</strong>. Chúng tôi chỉ sử dụng chúng để khôi phục khi mất dữ liệu hoặc để khôi phục tiến trình của người chơi theo yêu cầu của họ.</td></tr>
 <tr><td>Nhật ký máy chủ (thời gian, loại yêu cầu và kết quả, địa chỉ IP, tác nhân người dùng của thiết bị, mã sản phẩm và mã đơn đặt hàng khi kiểm tra giao dịch, mã đơn đặt hàng trong thông báo hoàn tiền, và, với các yêu cầu lưu đám mây, 12 ký tự đầu tiên của ID tài khoản người chơi (Mã người chơi của bạn))</td><td>Được Google Cloud tự động xóa sau 30 ngày (mặc định)</td></tr>
 </tbody>
 </table>

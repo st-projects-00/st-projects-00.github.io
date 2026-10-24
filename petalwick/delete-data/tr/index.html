@@ -32,11 +32,12 @@
 <table>
 <thead><tr><th>Veri</th><th>Ne olur</th></tr></thead>
 <tbody>
-<tr><td>Bulut kaydınız ve özeti (seviye, mücevherler, yıldızlar, son oynama, cihaz etiketi)</td><td>Hemen silinir</td></tr>
-<tr><td>Kaydınızın yedekleri (son 5 önceki sürüm)</td><td>Hemen silinir</td></tr>
-<tr><td>Play Games oyuncu kimliğinizi verilerinize bağlayan kayıt (ilk ve son oturum açtığınız zamanla birlikte)</td><td>Hemen silinir</td></tr>
-<tr><td>Satın alma kayıtlarınızdaki oyuncu hesabı kimliğiniz (satın alımın sahibi, oyunun satın alma kontrolüyle gönderdiği kimlik ve Google Play'den aldığımız sipariş etiketi)</td><td>Hemen kaldırılır</td></tr>
+<tr><td>Bulut kaydınız ve özeti (seviye, mücevherler, yıldızlar, son oynama, cihaz etiketi)</td><td>Canlı veritabanımızdan hemen silinir</td></tr>
+<tr><td>Kaydınızın önceki sürümleri (en fazla 2)</td><td>Canlı veritabanımızdan hemen silinir</td></tr>
+<tr><td>Play Games oyuncu kimliğinizi verilerinize bağlayan kayıt (ilk ve son oturum açtığınız zamanla birlikte)</td><td>Canlı veritabanımızdan hemen silinir</td></tr>
+<tr><td>Satın alma kayıtlarınızdaki oyuncu hesabı kimliğiniz (satın alımın sahibi, oyunun satın alma kontrolüyle gönderdiği kimlik ve Google Play'den aldığımız sipariş etiketi)</td><td>Canlı veritabanımızdan hemen kaldırılır</td></tr>
 <tr><td>Satın alma ve sipariş kayıtları (ürün, sipariş kimliği, satın alma zamanı, durum)</td><td>Vergi, iadeler ve sahtekârlığın önlenmesi için <strong>satın alımdan sonra 7 yıl saklanır</strong>, ardından günlük bir temizlik işiyle otomatik olarak silinir. Bulut verilerinizi sildikten sonra bu kayıtlar artık sizi tanımlayan hiçbir şey taşımaz; ancak oyunun yeniden kontrol ettiği bir satın alım, Google'ın sipariş etiketini geri alır (aşağıya bakın).</td></tr>
+<tr><td>Yukarıdaki verilerin şifrelenmiş veritabanı yedeklerimizdeki kopyaları (son 7 güne ait belirli bir zamana kurtarma geçmişi, 7 gün saklanan günlük yedekler, 14 hafta saklanan haftalık yedekler)</td><td>Yedekler düzenlenemez; bu nedenle silinen veriler süreleri dolana kadar yedeklerde kalır: <strong>en fazla 14 hafta</strong>. Bunları yalnızca veri kaybı durumunda kurtarma yapmak veya bir oyuncunun talebi üzerine ilerlemesini geri yüklemek için kullanırız.</td></tr>
 <tr><td>Sunucu günlükleri (zaman, istek türü ve sonucu, IP adresi, cihaz kullanıcı aracısı, satın alma kontrolleri için ürün ve sipariş kimliği, iade bildirimleri için sipariş kimliği ve bulut kaydı isteklerinde oyuncu hesabı kimliğinizin ilk 12 karakteri (Oyuncu kodunuz))</td><td>30 gün sonra Google Cloud tarafından otomatik olarak silinir (varsayılan)</td></tr>
 </tbody>
 </table>
