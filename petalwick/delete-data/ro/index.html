@@ -32,11 +32,12 @@
 <table>
 <thead><tr><th>Date</th><th>Ce se întâmplă</th></tr></thead>
 <tbody>
-<tr><td>Salvarea în cloud și rezumatul ei (nivel, nestemate, stele, ultima sesiune de joc, eticheta dispozitivului)</td><td>Șterse imediat</td></tr>
-<tr><td>Copiile de rezervă ale salvării (ultimele 5 versiuni anterioare)</td><td>Șterse imediat</td></tr>
-<tr><td>Înregistrarea care leagă ID-ul de jucător Play Games de datele dumneavoastră (cu momentul primei și ultimei conectări)</td><td>Ștearsă imediat</td></tr>
-<tr><td>ID-ul contului de jucător din înregistrările cumpărăturilor (proprietarul cumpărăturii, ID-ul trimis de joc odată cu verificarea cumpărăturii și marcajul de comandă primit de la Google Play)</td><td>Eliminat imediat</td></tr>
+<tr><td>Salvarea în cloud și rezumatul ei (nivel, nestemate, stele, ultima sesiune de joc, eticheta dispozitivului)</td><td>Șterse imediat din baza noastră de date activă</td></tr>
+<tr><td>Versiunile anterioare ale salvării (până la 2)</td><td>Șterse imediat din baza noastră de date activă</td></tr>
+<tr><td>Înregistrarea care leagă ID-ul de jucător Play Games de datele dumneavoastră (cu momentul primei și ultimei conectări)</td><td>Ștearsă imediat din baza noastră de date activă</td></tr>
+<tr><td>ID-ul contului de jucător din înregistrările cumpărăturilor (proprietarul cumpărăturii, ID-ul trimis de joc odată cu verificarea cumpărăturii și marcajul de comandă primit de la Google Play)</td><td>Eliminat imediat din baza noastră de date activă</td></tr>
 <tr><td>Înregistrările cumpărăturilor și comenzilor (produs, ID comandă, ora cumpărării, stare)</td><td><strong>Păstrate 7 ani după cumpărare</strong> în scopuri fiscale, pentru rambursări și pentru prevenirea fraudei, apoi șterse automat de o sarcină zilnică de curățare. După ce ștergeți datele din cloud, ele nu mai conțin nimic care să vă identifice, cu excepția faptului că o cumpărătură pe care jocul o verifică din nou primește înapoi marcajul de comandă al Google (vezi mai jos).</td></tr>
+<tr><td>Copiile datelor de mai sus din copiile noastre de rezervă criptate ale bazei de date (un istoric de recuperare la un moment dat pentru ultimele 7 zile, copii de rezervă zilnice păstrate 7 zile, copii de rezervă săptămânale păstrate 14 săptămâni)</td><td>Copiile de rezervă nu pot fi modificate, așa că datele șterse rămân în ele până când acestea expiră: <strong>până la 14 săptămâni</strong>. Le folosim doar pentru a remedia o pierdere de date sau pentru a restaura progresul unui jucător la cererea acestuia.</td></tr>
 <tr><td>Jurnalele serverului (ora, tipul cererii și rezultatul, adresa IP, agentul utilizator al dispozitivului, ID-ul produsului și al comenzii pentru verificările cumpărăturilor, ID-ul comenzii pentru notificările de rambursare și, la cererile de salvare în cloud, primele 12 caractere ale ID-ului contului de jucător (Codul de jucător))</td><td>Șterse automat de Google Cloud după 30 de zile (valoarea implicită)</td></tr>
 </tbody>
 </table>

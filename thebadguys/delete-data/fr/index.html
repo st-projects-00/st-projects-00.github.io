@@ -32,11 +32,12 @@
 <table>
 <thead><tr><th>Données</th><th>Ce qui se passe</th></tr></thead>
 <tbody>
-<tr><td>Votre sauvegarde cloud et son résumé (méchant, coups réalisés, nombre d'apparences, dernière partie, libellé d'appareil)</td><td>Supprimés immédiatement</td></tr>
-<tr><td>Les copies de secours de votre sauvegarde (les 5 dernières versions antérieures)</td><td>Supprimées immédiatement</td></tr>
-<tr><td>L'enregistrement qui relie votre identifiant de joueur Play Games à vos données (avec la date de votre première et de votre dernière connexion)</td><td>Supprimé immédiatement</td></tr>
-<tr><td>Votre identifiant de compte joueur dans vos enregistrements d'achat (le propriétaire de l'achat, l'identifiant envoyé par le jeu avec la vérification de l'achat, et le marqueur de commande reçu de Google Play)</td><td>Retiré immédiatement</td></tr>
+<tr><td>Votre sauvegarde cloud et son résumé (méchant, coups réalisés, nombre d'apparences, dernière partie, libellé d'appareil)</td><td>Supprimés immédiatement de notre base de données active</td></tr>
+<tr><td>Les versions antérieures de votre sauvegarde (jusqu'à 2)</td><td>Supprimées immédiatement de notre base de données active</td></tr>
+<tr><td>L'enregistrement qui relie votre identifiant de joueur Play Games à vos données (avec la date de votre première et de votre dernière connexion)</td><td>Supprimé immédiatement de notre base de données active</td></tr>
+<tr><td>Votre identifiant de compte joueur dans vos enregistrements d'achat (le propriétaire de l'achat, l'identifiant envoyé par le jeu avec la vérification de l'achat, et le marqueur de commande reçu de Google Play)</td><td>Retiré immédiatement de notre base de données active</td></tr>
 <tr><td>Enregistrements d'achats et de commandes (produit, identifiant de commande, heure de l'achat, statut)</td><td><strong>Conservés 7 ans après l'achat</strong> à des fins fiscales, de remboursement et de prévention de la fraude, puis supprimés automatiquement par une tâche de nettoyage quotidienne. Après la suppression de vos données cloud, ils ne contiennent plus rien qui vous identifie, sauf qu'un achat que le jeu vérifie à nouveau récupère le marqueur de commande de Google (voir ci-dessous).</td></tr>
+<tr><td>Copies des données ci-dessus dans nos copies de secours chiffrées de la base de données (un historique de restauration à un instant donné couvrant les 7 derniers jours, des copies de secours quotidiennes conservées pendant 7 jours, des copies de secours hebdomadaires conservées pendant 14 semaines)</td><td>Les copies de secours ne pouvant pas être modifiées, les données supprimées y restent jusqu'à leur expiration : <strong>jusqu'à 14 semaines</strong>. Nous les utilisons uniquement pour remédier à une perte de données ou pour restaurer la progression d'un joueur à sa demande.</td></tr>
 <tr><td>Journaux du serveur (heure, type de requête et résultat, adresse IP, agent utilisateur de l'appareil, le produit et l'identifiant de commande pour les vérifications d'achat, l'identifiant de commande pour les notifications de remboursement et, pour les requêtes de sauvegarde cloud, les 12 premiers caractères de votre identifiant de compte joueur (votre Code joueur))</td><td>Supprimés automatiquement par Google Cloud au bout de 30 jours (valeur par défaut)</td></tr>
 </tbody>
 </table>

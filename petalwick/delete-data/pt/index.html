@@ -32,11 +32,12 @@
 <table>
 <thead><tr><th>Dados</th><th>O que acontece</th></tr></thead>
 <tbody>
-<tr><td>Seu salvamento na nuvem e o resumo dele (nível, gemas, estrelas, última partida, identificação do dispositivo)</td><td>Excluídos imediatamente</td></tr>
-<tr><td>Os backups do seu jogo salvo (as últimas 5 versões anteriores)</td><td>Excluídos imediatamente</td></tr>
-<tr><td>O registro que vincula o seu ID de jogador do Play Games aos seus dados (com a data do seu primeiro e último login)</td><td>Excluído imediatamente</td></tr>
-<tr><td>Seu ID da conta do jogador nos seus registros de compras (o proprietário da compra, o ID que o jogo enviou com a verificação da compra e a marcação de pedido que recebemos do Google Play)</td><td>Removido imediatamente</td></tr>
+<tr><td>Seu salvamento na nuvem e o resumo dele (nível, gemas, estrelas, última partida, identificação do dispositivo)</td><td>Excluídos do nosso banco de dados ativo imediatamente</td></tr>
+<tr><td>As versões anteriores do seu jogo salvo (até 2)</td><td>Excluídas do nosso banco de dados ativo imediatamente</td></tr>
+<tr><td>O registro que vincula o seu ID de jogador do Play Games aos seus dados (com a data do seu primeiro e último login)</td><td>Excluído do nosso banco de dados ativo imediatamente</td></tr>
+<tr><td>Seu ID da conta do jogador nos seus registros de compras (o proprietário da compra, o ID que o jogo enviou com a verificação da compra e a marcação de pedido que recebemos do Google Play)</td><td>Removido do nosso banco de dados ativo imediatamente</td></tr>
 <tr><td>Registros de compras e pedidos (produto, ID do pedido, horário da compra, status)</td><td><strong>Mantidos por 7 anos após a compra</strong> para fins fiscais, de reembolsos e de prevenção de fraudes; depois, excluídos automaticamente por uma rotina de limpeza diária. Depois que você exclui os seus dados na nuvem, eles não contêm mais nada que identifique você, exceto que uma compra que o jogo verifica novamente recebe de volta a marcação de pedido do Google (veja abaixo).</td></tr>
+<tr><td>Cópias dos dados acima nos nossos backups criptografados do banco de dados (um histórico de recuperação pontual dos últimos 7 dias, backups diários mantidos por 7 dias, backups semanais mantidos por 14 semanas)</td><td>Os backups não podem ser editados, então os dados excluídos permanecem neles até expirarem: <strong>até 14 semanas</strong>. Nós os usamos apenas para nos recuperarmos de uma perda de dados ou para restaurar o progresso de um jogador a pedido dele.</td></tr>
 <tr><td>Registros do servidor (horário, tipo de solicitação e resultado, endereço IP, user agent do dispositivo, o ID do produto e do pedido nas verificações de compras, o ID do pedido nas notificações de reembolso e, nas solicitações de salvamento na nuvem, os primeiros 12 caracteres do seu ID da conta do jogador (o seu Código do jogador))</td><td>Excluídos automaticamente pelo Google Cloud após 30 dias (o padrão)</td></tr>
 </tbody>
 </table>

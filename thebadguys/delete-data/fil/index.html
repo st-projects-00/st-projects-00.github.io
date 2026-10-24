@@ -32,11 +32,12 @@
 <table>
 <thead><tr><th>Data</th><th>Ano ang nangyayari</th></tr></thead>
 <tbody>
-<tr><td>Ang iyong cloud save at ang buod nito (kontrabida, mga natapos na job, bilang ng mga hitsura, huling paglalaro, label ng device)</td><td>Binubura kaagad</td></tr>
-<tr><td>Ang mga backup ng iyong save (ang huling 5 naunang bersyon)</td><td>Binubura kaagad</td></tr>
-<tr><td>Ang record na nag-uugnay sa iyong Play Games player ID sa iyong data (kasama kung kailan ka unang at huling nag-sign in)</td><td>Binubura kaagad</td></tr>
-<tr><td>Ang iyong player account ID sa iyong mga record ng pagbili (ang may-ari ng pagbili, ang ID na ipinadala ng laro kasama ng pagsusuri ng pagbili, at ang order tag na natanggap namin mula sa Google Play)</td><td>Inaalis kaagad</td></tr>
+<tr><td>Ang iyong cloud save at ang buod nito (kontrabida, mga natapos na job, bilang ng mga hitsura, huling paglalaro, label ng device)</td><td>Binubura kaagad mula sa aming live database</td></tr>
+<tr><td>Ang mga naunang bersyon ng iyong save (hanggang 2)</td><td>Binubura kaagad mula sa aming live database</td></tr>
+<tr><td>Ang record na nag-uugnay sa iyong Play Games player ID sa iyong data (kasama kung kailan ka unang at huling nag-sign in)</td><td>Binubura kaagad mula sa aming live database</td></tr>
+<tr><td>Ang iyong player account ID sa iyong mga record ng pagbili (ang may-ari ng pagbili, ang ID na ipinadala ng laro kasama ng pagsusuri ng pagbili, at ang order tag na natanggap namin mula sa Google Play)</td><td>Inaalis kaagad mula sa aming live database</td></tr>
 <tr><td>Mga record ng pagbili at order (produkto, order ID, oras ng pagbili, status)</td><td><strong>Itinatago nang 7 taon pagkatapos ng pagbili</strong> para sa buwis, mga refund at pag-iwas sa panloloko, pagkatapos ay awtomatikong binubura ng isang pang-araw-araw na clean-up job. Pagkatapos mong burahin ang iyong cloud data, wala na silang dalang anumang nagpapakilala sa iyo, maliban na ang isang pagbiling muling sinuri ng laro ay magkakaroon ulit ng order tag ng Google (tingnan sa ibaba).</td></tr>
+<tr><td>Mga kopya ng data sa itaas sa aming mga naka-encrypt na backup ng database (isang kasaysayan ng point-in-time recovery ng huling 7 araw, mga pang-araw-araw na backup na itinatago nang 7 araw, mga lingguhang backup na itinatago nang 14 na linggo)</td><td>Hindi mae-edit ang mga backup, kaya nananatili sa mga ito ang binurang data hanggang mag-expire ang mga ito: <strong>hanggang 14 na linggo</strong>. Ginagamit lamang namin ang mga ito para makabawi mula sa pagkawala ng data o para maibalik ang progreso ng isang manlalaro kapag hiniling niya.</td></tr>
 <tr><td>Mga log ng server (oras, uri at resulta ng kahilingan, IP address, user agent ng device, ang product at order ID para sa mga pagsusuri ng pagbili, ang order ID para sa mga abiso ng refund, at, sa mga kahilingan sa cloud save, ang unang 12 character ng iyong player account ID (ang iyong Code ng manlalaro))</td><td>Awtomatikong binubura ng Google Cloud pagkalipas ng 30 araw (ang default)</td></tr>
 </tbody>
 </table>

@@ -30,11 +30,12 @@
 <table>
 <thead><tr><th>Data</th><th>What happens</th></tr></thead>
 <tbody>
-<tr><td>Your cloud save and its summary (level, coins, gems, stars, last played, device label)</td><td>Deleted immediately</td></tr>
-<tr><td>The backups of your save (the last 5 earlier versions)</td><td>Deleted immediately</td></tr>
-<tr><td>The record linking your Play Games player ID to your data (with when you first and last signed in)</td><td>Deleted immediately</td></tr>
-<tr><td>Your player account ID on your purchase records (the purchase owner, the ID the game sent with the purchase check, and the order tag we received from Google Play)</td><td>Removed immediately</td></tr>
+<tr><td>Your cloud save and its summary (level, coins, gems, stars, last played, device label)</td><td>Deleted from our live database immediately</td></tr>
+<tr><td>The earlier versions of your save (up to 2)</td><td>Deleted from our live database immediately</td></tr>
+<tr><td>The record linking your Play Games player ID to your data (with when you first and last signed in)</td><td>Deleted from our live database immediately</td></tr>
+<tr><td>Your player account ID on your purchase records (the purchase owner, the ID the game sent with the purchase check, and the order tag we received from Google Play)</td><td>Removed from our live database immediately</td></tr>
 <tr><td>Purchase and order records (product, order ID, purchase time, status)</td><td><strong>Kept for 7 years after the purchase</strong> for tax, refunds and fraud prevention, then deleted automatically by a daily clean-up job. After you delete your cloud data, they no longer carry anything that identifies you, except that a purchase the game checks again gets Google's order tag back (see below).</td></tr>
+<tr><td>Copies of the data above in our encrypted database backups (a point-in-time recovery history of the last 7 days, daily backups kept for 7 days, weekly backups kept for 14 weeks)</td><td>Backups can't be edited, so deleted data stays in them until they expire: <strong>up to 14 weeks</strong>. We use them only to recover from data loss or to restore a player's progress at their request.</td></tr>
 <tr><td>Server logs (time, request type and result, IP address, device user agent, the product and order ID for purchase checks, the order ID for refund notifications, and, on cloud-save requests, the first 12 characters of your player account ID (your Player code))</td><td>Deleted automatically by Google Cloud after 30 days (the default)</td></tr>
 </tbody>
 </table>

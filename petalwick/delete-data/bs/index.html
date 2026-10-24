@@ -32,11 +32,12 @@
 <table>
 <thead><tr><th>Podaci</th><th>Šta se dešava</th></tr></thead>
 <tbody>
-<tr><td>Vaš napredak u oblaku i njegov sažetak (nivo, dragulji, zvjezdice, posljednje igranje, oznaka uređaja)</td><td>Briše se odmah</td></tr>
-<tr><td>Rezervne kopije vašeg sačuvanog napretka (posljednjih 5 ranijih verzija)</td><td>Brišu se odmah</td></tr>
-<tr><td>Zapis koji povezuje vaš ID igrača na Play Games s vašim podacima (s vremenom vaše prve i posljednje prijave)</td><td>Briše se odmah</td></tr>
-<tr><td>Vaš ID računa igrača na vašim zapisima o kupovinama (vlasnik kupovine, ID koji je igra poslala uz provjeru kupovine i oznaka narudžbe koju smo primili od Google Play)</td><td>Uklanja se odmah</td></tr>
+<tr><td>Vaš napredak u oblaku i njegov sažetak (nivo, dragulji, zvjezdice, posljednje igranje, oznaka uređaja)</td><td>Odmah se briše iz naše radne baze podataka</td></tr>
+<tr><td>Ranije verzije vašeg sačuvanog napretka (do 2)</td><td>Odmah se brišu iz naše radne baze podataka</td></tr>
+<tr><td>Zapis koji povezuje vaš ID igrača na Play Games s vašim podacima (s vremenom vaše prve i posljednje prijave)</td><td>Odmah se briše iz naše radne baze podataka</td></tr>
+<tr><td>Vaš ID računa igrača na vašim zapisima o kupovinama (vlasnik kupovine, ID koji je igra poslala uz provjeru kupovine i oznaka narudžbe koju smo primili od Google Play)</td><td>Odmah se uklanja iz naše radne baze podataka</td></tr>
 <tr><td>Zapisi o kupovinama i narudžbama (proizvod, ID narudžbe, vrijeme kupovine, status)</td><td><strong>Čuvaju se 7 godina nakon kupovine</strong> radi poreza, povrata novca i sprečavanja prevara, a zatim ih automatski briše dnevni posao čišćenja. Nakon što obrišete svoje podatke u oblaku, oni više ne sadrže ništa što vas identificira, osim što kupovina koju igra ponovo provjeri ponovo dobija Googleovu oznaku narudžbe (vidi u nastavku).</td></tr>
+<tr><td>Kopije gore navedenih podataka u našim šifriranim rezervnim kopijama baze podataka (historija za vraćanje na bilo koji trenutak u posljednjih 7 dana, dnevne rezervne kopije koje se čuvaju 7 dana, sedmične rezervne kopije koje se čuvaju 14 sedmica)</td><td>Rezervne kopije se ne mogu mijenjati, pa obrisani podaci ostaju u njima dok ne isteknu: <strong>do 14 sedmica</strong>. Koristimo ih samo za oporavak od gubitka podataka ili za vraćanje napretka igrača na njegov zahtjev.</td></tr>
 <tr><td>Logovi servera (vrijeme, vrsta zahtjeva i rezultat, IP adresa, korisnički agent uređaja, ID proizvoda i narudžbe za provjere kupovina, ID narudžbe za obavještenja o povratu novca i, kod zahtjeva za spremanje u oblak, prvih 12 znakova vašeg ID-a računa igrača (vaš Kod igrača))</td><td>Google Cloud ih automatski briše nakon 30 dana (zadana postavka)</td></tr>
 </tbody>
 </table>
