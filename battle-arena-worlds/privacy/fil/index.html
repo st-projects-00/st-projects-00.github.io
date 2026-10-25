@@ -12,7 +12,7 @@
 <main>
 <h1>Patakaran sa Privacy ng Battle Arena Worlds</h1>
 <p class="note translation-note">Isa itong salin. Kung may pagkakaiba ito sa <a href="/battle-arena-worlds/privacy/?lang=en">bersyong Ingles</a>, ang bersyong Ingles ang masusunod.</p>
-<p class="date">Epektibo mula 9 Oktubre 2026</p>
+<p class="date">Epektibo mula 25 Oktubre 2026</p>
 
 <p>Ang Battle Arena Worlds ay isang multiplayer na battle royale game para sa Android, na inilalathala ng ST Projects ("kami", "namin"), isang independiyenteng developer na nakabase sa United States. Ipinapaliwanag ng patakarang ito kung anong impormasyon ang kinokolekta ng laro, bakit, at ano ang nangyayari dito. Saklaw nito ang Android app na inilathala sa ilalim ng package name na <code>com.stprojects.battlearenaworlds</code>.</p>
 
@@ -61,6 +61,7 @@
 <tr><td>Ang coins na kinita ngayong araw at ang araw ng iyong huling first-win bonus</td><td>Para ipatupad ang pang-araw-araw na limitasyon sa coins at ang bonus na isang beses bawat araw.</td></tr>
 <tr><td>Totoong perang ginastos ngayong buwan ng kalendaryo</td><td>Para ipatupad ang buwanang limitasyon sa paggastos (tingnan ang "Mga pagbili").</td></tr>
 <tr><td>Mga tala ng mga laban at pagbiling naibigay na sa iyo (ang match ID kasama ang iyong player ID, o isang one-way hash ng purchase token)</td><td>Para hindi kailanman maibigay nang dalawang beses ang parehong laban o pagbili.</td></tr>
+<tr><td>Hanggang 2 naunang bersyon ng iyong wallet</td><td>Mga backup, para mabawi ang iyong wallet kung may magkamali. Nagtatago ng bago nang hindi hihigit sa isang beses kada oras, at awtomatikong binubura ang mga mas luma.</td></tr>
 </tbody>
 </table>
 </div>
@@ -89,7 +90,7 @@
 <li>Habang nasa isang online na laban ka, isang maikling tala ng room at laban (para makabalik ang laro kung magsara ito). Binubura ito kapag natapos ang laban.</li>
 <li>Isang maliit na performance file bawat session (ang frame rate at graphics settings ng laro), iniingatan sa iyong phone at hindi kailanman ina-upload.</li>
 </ul>
-<p>Pinapayagan ng app ang <strong>Auto Backup</strong> ng Android, kaya maaaring isama ng Android ang data na ito sa backup ng iyong device sa iyong Google account, o kopyahin ito sa bagong phone, depende sa settings ng iyong phone. Ang Google ang humahawak sa backup na iyon, at hindi namin ito nakikita.</p>
+<p>Pinapatay ng app ang backup at device transfer ng Android, kaya hindi kinokopya ng Android ang data na ito sa backup ng iyong Google account o sa bagong phone. Nasa server namin ang iyong wallet: para mapanatili ito kapag lumipat ka sa bagong phone, mag-sign in muna gamit ang Google.</p>
 
 <h2>Mga pahintulot</h2>
 <p>Hindi kailanman humihingi ng pahintulot sa iyo ang laro. Ang Android manifest nito ay nagdedeklara lang ng mga pahintulot na ibinibigay ng Android nang hindi nagtatanong:</p>
@@ -122,9 +123,10 @@
 <h2>Gaano katagal namin ito iniingatan</h2>
 <ul>
 <li><strong>Sa iyong phone:</strong> hanggang burahin mo ang data ng app o i-uninstall ang app. Binubura ang tala para sa pagbalik sa laban kapag natapos ang bawat laban.</li>
-<li><strong>Ang iyong wallet, at ang mga tala ng mga laban at pagbiling naibigay na sa iyo:</strong> habang umiiral ang iyong account, hanggang burahin mo ang mga ito sa laro o hilingin sa amin sa email. Sa kasalukuyan, walang awtomatikong pagbura ng mga hindi aktibong wallet. Kung magpapatupad kami nito, sasabihin namin dito.</li>
+<li><strong>Ang iyong wallet, at ang mga tala ng mga laban at pagbiling naibigay na sa iyo:</strong> habang umiiral ang iyong account, hanggang burahin mo ang mga ito sa laro o hilingin sa amin sa email. Sa kasalukuyan, walang awtomatikong pagbura ng mga hindi aktibong wallet. Kung magpapatupad kami nito, sasabihin namin dito. Hindi hihigit sa 2 naunang bersyon ng iyong wallet ang itinatago, na may pagitang hindi bababa sa isang oras.</li>
 <li><strong>Mga tala ng pagbili at order:</strong> iniingatan nang 7 taon pagkatapos ng pagbili, para sa buwis, refund at pag-iwas sa pandaraya. Pagkatapos ay binubura ng isang pang-araw-araw na clean-up job ang bawat tala, kasama ang tala ng order nito at ang mga abiso nito sa refund o pagkansela.</li>
 <li><strong>Mga log ng server:</strong> mga 30 araw bilang default, pagkatapos ay awtomatikong binubura ng Google Cloud.</li>
+<li><strong>Mga backup ng database:</strong> nagtatago rin kami ng mga naka-encrypt na kopya ng buong database namin sa Google Cloud: isang point-in-time recovery history ng huling 7 araw, mga pang-araw-araw na backup na itinatago nang 7 araw, at mga lingguhang backup na itinatago nang 14 na linggo. Ginagamit lang namin ang mga ito para makabawi mula sa pagkawala ng data o para ibalik ang wallet ng isang player kapag hiniling niya. Hindi mae-edit ang mga backup, kaya ang data na binura mo (kasama ang iyong player ID na inalis sa mga tala ng pagbili) ay nananatili sa mga ito hanggang mag-expire ang mga ito: hanggang 14 na linggo matapos mo itong burahin.</li>
 <li><strong>Epic Online Services:</strong> iniingatan ng Epic sa ilalim ng privacy policy nito. Iniingatan ang Google link hanggang burahin mo ang iyong data sa laro.</li>
 </ul>
 
@@ -135,6 +137,7 @@
 <li>sa Epic: ang link sa iyong Google account, kung gumawa ka nito, at ang device ID, para wala nang makakapag-sign in sa player ID na iyon;</li>
 <li>sa iyong phone: ang mga file ng shop (ang kopya ng iyong wallet, mga pagbiling naghihintay na maipadala, ang iyong sagot sa tanong tungkol sa edad at ang kabuuang ginastos ngayong buwan), ang tala ng iyong Google sign-in at ang tala para sa pagbalik sa laban.</li>
 </ul>
+<p>Kasamang binubura ang mga naunang bersyon ng iyong wallet. Agad na inaalis ang binurang data sa aming live na database, pero maaari itong manatili sa aming mga naka-encrypt na backup ng database hanggang mag-expire ang mga ito: hanggang 14 na linggo. Hindi namin kailanman ginagamit ang mga ito para ibalik ang isang binurang wallet.</p>
 <p>Pagkatapos ay magsisimula ang laro ng bago at walang lamang player account. Kung maglalaro ka ulit, magsisimula ka sa walang lamang wallet. Hindi na maibabalik ang mga nabura na coins, gems at cosmetics. Kung na-uninstall mo ang laro pero naka-sign in ka sa Google, maaari mo itong i-reinstall, mag-sign in gamit ang parehong Google account at magbura mula roon.</p>
 <p><strong>Sa email:</strong> kung hindi mo magamit ang laro, mag-email sa <a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a>, sabihing tungkol ito sa Battle Arena Worlds, at isama ang iyong player code (Settings &gt; Account) o ang order number (nagsisimula ito sa GPA.) mula sa resibo ng Google Play ng anumang pagbili ng gems o starter pack. Sasagot kami sa loob ng 30 araw, at kukumpirmahin namin kapag nabura na ang iyong data. Kapag binura namin ito sa email, hawak pa rin ng iyong phone ang parehong player ID, kaya magbubukas ang laro ng bago at walang lamang wallet sa ilalim nito sa susunod na pagbukas nito. Para mapigilan iyon, burahin ang data ng laro o i-uninstall ito. Kung wala ka pang nabibili at wala ka nang laro, walang pangalan, email o contact details ang iyong wallet at wala kaming paraan para matukoy ito.</p>
 <p>Nag-iingat ang Google Play ng sarili nitong kopya ng hashed na account tag sa bawat order, at hindi namin ito maaalis. Ang natitirang bahagi ng talang hawak ng Epic para sa iyong player ID (ang player name at ang model ng phone) ay iniingatan ng Epic sa ilalim ng sarili nitong privacy policy. Nasa <a href="/battle-arena-worlds/delete-data/">pahina ng pagbura ng data</a> ang kumpletong mga hakbang.</p>

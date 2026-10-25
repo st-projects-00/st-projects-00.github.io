@@ -38,11 +38,13 @@
 <table>
 <thead><tr><th>Podaci</th><th>Šta se dešava</th></tr></thead>
 <tbody>
-<tr><td>Vaš novčanik: novčići, dragulji, posjedovani i opremljeni kozmetički predmeti, status početnog paketa, dnevni zbir novčića i mjesečni zbir potrošnje, kada je kreiran i kada je posljednji put promijenjen</td><td>Briše se</td></tr>
-<tr><td>Evidencija mečeva i kupovina pripisanih vašem novčaniku</td><td>Briše se. Kupovina koja je već pripisana ne može se ponovo pripisati drugom računu.</td></tr>
-<tr><td>Vaš ID igrača u evidenciji kupovina i oznaka računa koju je Google Play prijavio za svaku narudžbu</td><td>Uklanja se</td></tr>
+<tr><td>Vaš novčanik: novčići, dragulji, posjedovani i opremljeni kozmetički predmeti, status početnog paketa, dnevni zbir novčića i mjesečni zbir potrošnje, kada je kreiran i kada je posljednji put promijenjen</td><td>Odmah se briše iz naše aktivne baze podataka</td></tr>
+<tr><td>Ranije verzije vašeg novčanika (do 2)</td><td>Odmah se briše iz naše aktivne baze podataka</td></tr>
+<tr><td>Evidencija mečeva i kupovina pripisanih vašem novčaniku</td><td>Odmah se briše iz naše aktivne baze podataka. Kupovina koja je već pripisana ne može se ponovo pripisati drugom računu.</td></tr>
+<tr><td>Vaš ID igrača u evidenciji kupovina i oznaka računa koju je Google Play prijavio za svaku narudžbu</td><td>Odmah se uklanja iz naše aktivne baze podataka</td></tr>
 <tr><td>Vaša sesija s našim serverom</td><td>Završava se</td></tr>
 <tr><td>Evidencija kupovina i narudžbi (proizvod, broj narudžbe, vrijeme kupovine, status, podaci o refundaciji)</td><td><strong>Čuva se 7 godina nakon kupovine</strong> za poreze, refundacije i sprječavanje prevara, bez vašeg ID-a igrača, a zatim je automatski briše dnevni zadatak čišćenja, zajedno s obavještenjima o refundaciji i otkazivanju</td></tr>
+<tr><td>Kopije gore navedenih podataka u našim šifriranim rezervnim kopijama baze podataka (historija za vraćanje na bilo koji trenutak u posljednjih 7 dana, dnevne rezervne kopije koje se čuvaju 7 dana, sedmične rezervne kopije koje se čuvaju 14 sedmica)</td><td>Sigurnosne kopije se ne mogu mijenjati, pa izbrisani podaci ostaju u njima dok ne isteknu: <strong>do 14 sedmica</strong>. Koristimo ih samo za oporavak od gubitka podataka ili za vraćanje novčanika igrača na njegov zahtjev, nikada da vratimo izbrisani novčanik.</td></tr>
 <tr><td>Zapisnici servera (vrijeme, vrsta zahtjeva i rezultat, IP adresa, user agent uređaja, a u nekim redovima prvih 12 znakova vašeg ID-a igrača, proizvod, broj narudžbe, kupljeni predmeti ili pripisani novčići)</td><td>Google Cloud ih automatski briše nakon oko 30 dana (zadana postavka)</td></tr>
 </tbody>
 </table>
@@ -54,7 +56,7 @@
 
 <h2>Podaci na vašem telefonu</h2>
 <p>Brisanje u igri također uklanja s vašeg telefona datoteke trgovine (kopiju vašeg novčanika, kupovine koje čekaju slanje, vaš odgovor na pitanje o dobi i ukupnu potrošnju u ovom mjesecu), zapis o vašoj prijavi putem Googlea i Epic ID uređaja. Vaše postavke i nivo ostaju na telefonu. Nikada se ne šalju na naš server.</p>
-<p>Da biste uklonili sve što igra čuva na vašem telefonu, obrišite memoriju aplikacije u Android postavkama (Postavke &gt; Aplikacije &gt; Battle Arena Worlds &gt; Memorija &gt; Obriši memoriju) ili deinstalirajte aplikaciju. Samo po sebi, to ne briše novčanik na našem serveru. Ako vaš telefon pravi sigurnosnu kopiju podataka aplikacija na vašem Google računu ili ih je kopirao sa starog telefona, time možete upravljati u postavkama sigurnosne kopije na telefonu.</p>
+<p>Da biste uklonili sve što igra čuva na vašem telefonu, obrišite memoriju aplikacije u Android postavkama (Postavke &gt; Aplikacije &gt; Battle Arena Worlds &gt; Memorija &gt; Obriši memoriju) ili deinstalirajte aplikaciju. Samo po sebi, to ne briše novčanik na našem serveru. Aplikacija isključuje Androidovu sigurnosnu kopiju i prijenos na drugi uređaj, pa Android ne čuva kopiju ovih podataka u sigurnosnoj kopiji vašeg Google računa i ne prenosi ih na novi telefon.</p>
 
 <p>Pogledajte cijelu <a href="/battle-arena-worlds/privacy/">politiku privatnosti igre Battle Arena Worlds</a>.</p>
 </main>

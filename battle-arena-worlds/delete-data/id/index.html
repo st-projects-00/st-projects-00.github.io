@@ -38,11 +38,13 @@
 <table>
 <thead><tr><th>Data</th><th>Yang terjadi</th></tr></thead>
 <tbody>
-<tr><td>Dompet Anda: koin, permata, kosmetik yang dimiliki dan dipakai, status paket pemula, total koin harian dan total belanja bulanan, kapan dompet dibuat dan terakhir berubah</td><td>Dihapus</td></tr>
-<tr><td>Catatan pertandingan dan pembelian yang dikreditkan ke dompet Anda</td><td>Dihapus. Pembelian yang sudah dikreditkan tidak dapat dikreditkan lagi ke akun lain.</td></tr>
-<tr><td>ID pemain Anda pada catatan pembelian Anda, dan tag akun yang dilaporkan Google Play untuk setiap pesanan</td><td>Dihilangkan</td></tr>
+<tr><td>Dompet Anda: koin, permata, kosmetik yang dimiliki dan dipakai, status paket pemula, total koin harian dan total belanja bulanan, kapan dompet dibuat dan terakhir berubah</td><td>Langsung dihapus dari database aktif kami</td></tr>
+<tr><td>Versi sebelumnya dari dompet Anda (hingga 2)</td><td>Langsung dihapus dari database aktif kami</td></tr>
+<tr><td>Catatan pertandingan dan pembelian yang dikreditkan ke dompet Anda</td><td>Langsung dihapus dari database aktif kami. Pembelian yang sudah dikreditkan tidak dapat dikreditkan lagi ke akun lain.</td></tr>
+<tr><td>ID pemain Anda pada catatan pembelian Anda, dan tag akun yang dilaporkan Google Play untuk setiap pesanan</td><td>Langsung dihilangkan dari database aktif kami</td></tr>
 <tr><td>Sesi Anda dengan server kami</td><td>Diakhiri</td></tr>
 <tr><td>Catatan pembelian dan pesanan (produk, nomor pesanan, waktu pembelian, status, detail pengembalian dana)</td><td><strong>Disimpan selama 7 tahun setelah pembelian</strong> untuk pajak, pengembalian dana, dan pencegahan penipuan, tanpa ID pemain Anda, lalu dihapus otomatis oleh tugas pembersihan harian, beserta pemberitahuan pengembalian dana dan pembatalannya</td></tr>
+<tr><td>Salinan data di atas dalam cadangan basis data terenkripsi kami (riwayat pemulihan ke titik waktu tertentu selama 7 hari terakhir, cadangan harian yang disimpan selama 7 hari, cadangan mingguan yang disimpan selama 14 minggu)</td><td>Cadangan tidak dapat diedit, sehingga data yang dihapus tetap ada di dalamnya sampai cadangan tersebut kedaluwarsa: <strong>hingga 14 minggu</strong>. Kami menggunakannya hanya untuk pulih dari kehilangan data atau untuk memulihkan dompet pemain atas permintaannya, tidak pernah untuk mengembalikan dompet yang telah dihapus.</td></tr>
 <tr><td>Log server (waktu, jenis permintaan dan hasilnya, alamat IP, user agent perangkat, dan pada beberapa baris 12 karakter pertama ID pemain Anda, produk, nomor pesanan, item yang dibeli, atau koin yang dikreditkan)</td><td>Dihapus otomatis oleh Google Cloud setelah sekitar 30 hari (default)</td></tr>
 </tbody>
 </table>
@@ -54,7 +56,7 @@
 
 <h2>Data di ponsel Anda</h2>
 <p>Menghapus di dalam game juga menghapus file toko dari ponsel Anda (salinan dompet Anda, pembelian yang menunggu dikirim, jawaban Anda atas pertanyaan usia, dan total belanja bulan ini), catatan proses masuk Google Anda, dan ID perangkat Epic. Pengaturan dan level Anda tetap ada di ponsel. Keduanya tidak pernah dikirim ke server kami.</p>
-<p>Untuk menghapus semua yang disimpan game di ponsel Anda, hapus penyimpanan aplikasi di pengaturan Android (Setelan &gt; Aplikasi &gt; Battle Arena Worlds &gt; Penyimpanan &gt; Hapus penyimpanan) atau copot pemasangan aplikasi. Tindakan ini saja tidak menghapus dompet di server kami. Jika ponsel Anda mencadangkan data aplikasi ke akun Google Anda, atau menyalinnya dari ponsel lama, Anda dapat mengelolanya di pengaturan cadangan ponsel Anda.</p>
+<p>Untuk menghapus semua yang disimpan game di ponsel Anda, hapus penyimpanan aplikasi di pengaturan Android (Setelan &gt; Aplikasi &gt; Battle Arena Worlds &gt; Penyimpanan &gt; Hapus penyimpanan) atau copot pemasangan aplikasi. Tindakan ini saja tidak menghapus dompet di server kami. Aplikasi ini menonaktifkan pencadangan dan transfer antarperangkat Android, sehingga Android tidak menyimpan salinan data ini di cadangan akun Google Anda dan tidak memindahkannya ke ponsel baru.</p>
 
 <p>Lihat <a href="/battle-arena-worlds/privacy/">kebijakan privasi Battle Arena Worlds</a> selengkapnya.</p>
 </main>

@@ -12,7 +12,7 @@
 <main>
 <h1>Política de privacidad de Battle Arena Worlds</h1>
 <p class="note translation-note">Esta es una traducción. Si difiere de la <a href="/battle-arena-worlds/privacy/?lang=en">versión en inglés</a>, se aplica la versión en inglés.</p>
-<p class="date">Vigente desde el 9 de octubre de 2026</p>
+<p class="date">Vigente desde el 25 de octubre de 2026</p>
 
 <p>Battle Arena Worlds es un juego battle royale multijugador para Android, publicado por ST Projects ("nosotros"), un desarrollador independiente con sede en los Estados Unidos. Esta política explica qué información recopila el juego, por qué y qué pasa con ella. Se aplica a la app para Android publicada con el nombre de paquete <code>com.stprojects.battlearenaworlds</code>.</p>
 
@@ -61,6 +61,7 @@
 <tr><td>Las monedas ganadas hoy y el día de tu último bono por primera victoria</td><td>Para aplicar el límite diario de monedas y el bono de una vez al día.</td></tr>
 <tr><td>El dinero real gastado en este mes calendario</td><td>Para aplicar el límite de gasto mensual (ver "Compras").</td></tr>
 <tr><td>Registros de las partidas y compras ya acreditadas a ti (el ID de partida con tu ID de jugador, o un hash unidireccional del token de compra)</td><td>Para que la misma partida o compra nunca se acredite dos veces.</td></tr>
+<tr><td>Hasta 2 versiones anteriores de tu billetera</td><td>Copias de seguridad, para poder recuperar tu billetera si algo sale mal. Se guarda una nueva como máximo una vez por hora, y las más antiguas se eliminan automáticamente.</td></tr>
 </tbody>
 </table>
 </div>
@@ -89,7 +90,7 @@
 <li>Mientras estás en una partida en línea, una breve nota de la sala y la partida (para que el juego pueda volver a unirse si se cierra). Se elimina cuando termina la partida.</li>
 <li>Un pequeño archivo de rendimiento por sesión (la tasa de fotogramas del juego y los ajustes gráficos), guardado en tu teléfono y que nunca se sube.</li>
 </ul>
-<p>La app permite la <strong>copia de seguridad automática</strong> (Auto Backup) de Android, por lo que Android puede incluir estos datos en la copia de seguridad del dispositivo en tu cuenta de Google, o copiarlos a un teléfono nuevo, según los ajustes de tu teléfono. Esa copia de seguridad la gestiona Google, y nosotros no podemos verla.</p>
+<p>La app desactiva la copia de seguridad y la transferencia entre dispositivos de Android, así que Android no copia estos datos en la copia de seguridad de tu cuenta de Google ni a un teléfono nuevo. Tu billetera se guarda en nuestro servidor: para conservarla cuando cambies de teléfono, inicia sesión con Google antes.</p>
 
 <h2>Permisos</h2>
 <p>El juego nunca te pide un permiso. Su manifiesto de Android declara solo permisos que Android concede sin preguntar:</p>
@@ -122,9 +123,10 @@
 <h2>Cuánto tiempo los conservamos</h2>
 <ul>
 <li><strong>En tu teléfono:</strong> hasta que borres los datos de la app o la desinstales. La nota para volver a unirse se elimina al terminar cada partida.</li>
-<li><strong>Tu billetera y los registros de partidas y compras ya acreditadas a ti:</strong> mientras exista tu cuenta, hasta que los borres en el juego o nos pidas por correo electrónico que lo hagamos. Actualmente no hay eliminación automática de billeteras inactivas. Si la introducimos, lo indicaremos aquí.</li>
+<li><strong>Tu billetera y los registros de partidas y compras ya acreditadas a ti:</strong> mientras exista tu cuenta, hasta que los borres en el juego o nos pidas por correo electrónico que lo hagamos. Actualmente no hay eliminación automática de billeteras inactivas. Si la introducimos, lo indicaremos aquí. Se guardan como máximo 2 versiones anteriores de tu billetera, con al menos una hora de diferencia.</li>
 <li><strong>Registros de compras y pedidos:</strong> se conservan durante 7 años después de la compra, por motivos fiscales, de reembolsos y de prevención de fraudes. Después, una tarea de limpieza diaria elimina cada registro, junto con su registro de pedido y sus avisos de reembolso o cancelación.</li>
 <li><strong>Registros del servidor:</strong> unos 30 días de forma predeterminada; después Google Cloud los elimina automáticamente.</li>
+<li><strong>Copias de seguridad de la base de datos:</strong> también guardamos copias cifradas de toda nuestra base de datos en Google Cloud: un historial de recuperación a un momento dado de los últimos 7 días, copias de seguridad diarias que se conservan 7 días y copias de seguridad semanales que se conservan 14 semanas. Solo las usamos para recuperarnos de una pérdida de datos o para restaurar la billetera de un jugador cuando nos lo pide. Las copias de seguridad no se pueden editar, así que los datos que eliminas (incluido tu ID de jugador quitado de los registros de compra) permanecen en ellas hasta que caducan: hasta 14 semanas después de eliminarlos.</li>
 <li><strong>Epic Online Services:</strong> los conserva Epic según su política de privacidad. El vínculo con Google se conserva hasta que borres tus datos en el juego.</li>
 </ul>
 
@@ -135,6 +137,7 @@
 <li>en Epic: el vínculo con tu cuenta de Google, si lo creaste, y el ID de dispositivo, para que nadie pueda volver a iniciar sesión con ese ID de jugador;</li>
 <li>en tu teléfono: los archivos de la tienda (la copia de tu billetera, las compras pendientes de enviar, tu respuesta a la pregunta de edad y el total gastado este mes), el registro de tu inicio de sesión con Google y la nota para volver a unirse.</li>
 </ul>
+<p>Las versiones anteriores de tu billetera se eliminan con ella. Los datos eliminados se quitan de nuestra base de datos activa de inmediato, pero pueden permanecer en nuestras copias de seguridad cifradas de la base de datos hasta que caduquen: hasta 14 semanas. Nunca las usamos para recuperar una billetera eliminada.</p>
 <p>Después, el juego crea una cuenta de jugador nueva y vacía. Si vuelves a jugar, empiezas con una billetera vacía. Las monedas, gemas y cosméticos eliminados no se pueden recuperar. Si desinstalaste el juego pero habías iniciado sesión con Google, puedes reinstalarlo, iniciar sesión con la misma cuenta de Google y borrar desde ahí.</p>
 <p><strong>Por correo electrónico:</strong> si no puedes usar el juego, escribe a <a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a>, indica que es sobre Battle Arena Worlds e incluye tu código de jugador (Ajustes &gt; Cuenta) o el número de pedido (empieza por GPA.) del recibo de Google Play de cualquier compra de gemas o del paquete inicial. Responderemos en un plazo de 30 días y te confirmaremos cuando tus datos se hayan eliminado. Cuando los eliminamos por correo electrónico, tu teléfono sigue teniendo el mismo ID de jugador, así que el juego abrirá una billetera nueva y vacía con ese ID la próxima vez que se inicie. Para evitarlo, borra los datos del juego o desinstálalo. Si nunca compraste nada y ya no tienes el juego, tu billetera no contiene nombre, correo electrónico ni datos de contacto, y no tenemos forma de identificarla.</p>
 <p>Google Play conserva su propia copia de la etiqueta de cuenta con hash de cada pedido, y no podemos eliminarla. El resto del registro que Epic tiene de tu ID de jugador (el nombre de jugador y el modelo del teléfono) lo conserva Epic según su propia política de privacidad. Los pasos completos están en la <a href="/battle-arena-worlds/delete-data/">página de eliminación de datos</a>.</p>
