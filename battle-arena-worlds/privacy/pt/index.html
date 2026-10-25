@@ -12,7 +12,7 @@
 <main>
 <h1>Política de privacidade do Battle Arena Worlds</h1>
 <p class="note translation-note">Esta é uma tradução. Se ela divergir da <a href="/battle-arena-worlds/privacy/?lang=en">versão em inglês</a>, prevalece a versão em inglês.</p>
-<p class="date">Em vigor desde 9 de outubro de 2026</p>
+<p class="date">Em vigor desde 25 de outubro de 2026</p>
 
 <p>Battle Arena Worlds é um jogo multijogador de battle royale para Android, publicado pela ST Projects ("nós"), uma desenvolvedora independente sediada nos Estados Unidos. Esta política explica quais informações o jogo coleta, por quê e o que acontece com elas. Ela se aplica ao app Android publicado com o nome de pacote <code>com.stprojects.battlearenaworlds</code>.</p>
 
@@ -61,6 +61,7 @@
 <tr><td>Moedas ganhas hoje e o dia do seu último bônus de primeira vitória</td><td>Para aplicar o limite diário de moedas e o bônus uma vez por dia.</td></tr>
 <tr><td>Dinheiro real gasto neste mês civil</td><td>Para aplicar o limite mensal de gastos (veja "Compras").</td></tr>
 <tr><td>Registros das partidas e compras já creditadas a você (o ID da partida com o seu ID de jogador, ou um hash unidirecional do token de compra)</td><td>Para que a mesma partida ou compra nunca seja creditada duas vezes.</td></tr>
+<tr><td>Até 2 versões anteriores da sua carteira</td><td>Backups, para que sua carteira possa ser recuperada se algo der errado. Um novo é guardado no máximo uma vez por hora, e os mais antigos são excluídos automaticamente.</td></tr>
 </tbody>
 </table>
 </div>
@@ -89,7 +90,7 @@
 <li>Enquanto você está em uma partida online, uma breve anotação da sala e da partida (para que o jogo possa voltar a ela se for fechado). Ela é excluída quando a partida termina.</li>
 <li>Um pequeno arquivo de desempenho por sessão (a taxa de quadros e as configurações gráficas do jogo), mantido no seu celular e nunca enviado.</li>
 </ul>
-<p>O app permite o <strong>Backup automático</strong> do Android, então o Android pode incluir esses dados no backup do seu dispositivo na sua conta Google, ou copiá-los para um celular novo, dependendo das configurações do seu celular. Esse backup é gerenciado pelo Google, e nós não podemos vê-lo.</p>
+<p>O app desativa o backup e a transferência entre dispositivos do Android, então o Android não copia esses dados para o backup da sua conta Google nem para um celular novo. Sua carteira fica no nosso servidor: para mantê-la ao trocar de celular, faça login com o Google antes.</p>
 
 <h2>Permissões</h2>
 <p>O jogo nunca pede uma permissão a você. Seu manifesto Android declara apenas permissões que o Android concede sem perguntar:</p>
@@ -122,9 +123,10 @@
 <h2>Por quanto tempo guardamos</h2>
 <ul>
 <li><strong>No seu celular:</strong> até você apagar os dados do app ou desinstalá-lo. A anotação para voltar à partida é excluída ao final de cada partida.</li>
-<li><strong>Sua carteira e os registros de partidas e compras já creditadas a você:</strong> enquanto sua conta existir, até que você os exclua no jogo ou nos peça por e-mail. Atualmente não há exclusão automática de carteiras inativas. Se introduzirmos uma, informaremos aqui.</li>
+<li><strong>Sua carteira e os registros de partidas e compras já creditadas a você:</strong> enquanto sua conta existir, até que você os exclua no jogo ou nos peça por e-mail. Atualmente não há exclusão automática de carteiras inativas. Se introduzirmos uma, informaremos aqui. São guardadas no máximo 2 versões anteriores da sua carteira, com pelo menos uma hora de intervalo.</li>
 <li><strong>Registros de compras e pedidos:</strong> mantidos por 7 anos após a compra, para fins fiscais, reembolsos e prevenção de fraudes. Depois, uma rotina diária de limpeza exclui cada registro, com o registro do pedido e seus avisos de reembolso ou cancelamento.</li>
 <li><strong>Logs do servidor:</strong> cerca de 30 dias por padrão, depois excluídos automaticamente pelo Google Cloud.</li>
+<li><strong>Backups do banco de dados:</strong> também guardamos cópias criptografadas de todo o nosso banco de dados no Google Cloud: um histórico de recuperação para qualquer momento dos últimos 7 dias, backups diários mantidos por 7 dias e backups semanais mantidos por 14 semanas. Só os usamos para nos recuperar de uma perda de dados ou para restaurar a carteira de um jogador a pedido dele. Os backups não podem ser editados, então os dados que você exclui (incluindo o seu ID de jogador removido dos registros de compra) permanecem neles até que expirem: até 14 semanas depois da exclusão.</li>
 <li><strong>Epic Online Services:</strong> mantidos pela Epic de acordo com a política de privacidade dela. O vínculo com o Google é mantido até você excluir seus dados no jogo.</li>
 </ul>
 
@@ -135,6 +137,7 @@
 <li>na Epic: o vínculo com sua conta Google, se você tiver criado um, e o ID de dispositivo, para que ninguém possa entrar novamente nesse ID de jogador;</li>
 <li>no seu celular: os arquivos da loja (a cópia da sua carteira, as compras aguardando envio, sua resposta à pergunta sobre idade e o total de gastos deste mês), o registro do seu login com o Google e a anotação para voltar à partida.</li>
 </ul>
+<p>As versões anteriores da sua carteira são excluídas junto com ela. Os dados excluídos são removidos do nosso banco de dados ativo imediatamente, mas podem permanecer nos nossos backups criptografados do banco de dados até que expirem: até 14 semanas. Nunca os usamos para trazer de volta uma carteira excluída.</p>
 <p>Em seguida, o jogo inicia uma nova conta de jogador vazia. Se você jogar novamente, começará com uma carteira vazia. Moedas, gemas e cosméticos excluídos não podem ser restaurados. Se você desinstalou o jogo, mas tinha entrado com o Google, pode reinstalá-lo, entrar com a mesma conta Google e excluir a partir dali.</p>
 <p><strong>Por e-mail:</strong> se você não puder usar o jogo, envie um e-mail para <a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a>, informe que se trata do Battle Arena Worlds e inclua seu código do jogador (Ajustes &gt; Conta) ou o número do pedido (começa com GPA.) do recibo do Google Play de qualquer compra de gemas ou do pacote inicial. Responderemos em até 30 dias e confirmaremos quando seus dados tiverem sido excluídos. Quando os excluímos por e-mail, seu celular ainda guarda o mesmo ID de jogador, então o jogo abrirá uma nova carteira vazia sob ele na próxima vez que for iniciado. Para evitar isso, apague os dados do jogo ou desinstale-o. Se você nunca comprou nada e não tem mais o jogo, sua carteira não contém nome, e-mail nem dados de contato, e não temos como identificá-la.</p>
 <p>O Google Play mantém sua própria cópia do identificador de conta em hash em cada pedido, e não podemos removê-la. O restante do registro que a Epic mantém para o seu ID de jogador (o nome do jogador e o modelo do celular) é mantido pela Epic de acordo com a própria política de privacidade dela. As etapas completas estão na <a href="/battle-arena-worlds/delete-data/">página de exclusão de dados</a>.</p>

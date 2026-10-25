@@ -12,7 +12,7 @@
 <main>
 <h1>Battle Arena Worlds Məxfilik Siyasəti</h1>
 <p class="note translation-note">Bu, tərcümədir. Əgər o, <a href="/battle-arena-worlds/privacy/?lang=en">ingilis dilindəki versiyadan</a> fərqlənərsə, ingilis dilindəki versiya qüvvədədir.</p>
-<p class="date">Qüvvəyə minmə tarixi: 9 oktyabr 2026</p>
+<p class="date">Qüvvəyə minmə tarixi: 25 oktyabr 2026</p>
 
 <p>Battle Arena Worlds Android üçün çoxoyunçulu battle royale oyunudur və Amerika Birləşmiş Ştatlarında yerləşən müstəqil tərtibatçı ST Projects ("biz", "bizi") tərəfindən dərc olunur. Bu siyasət oyunun hansı məlumatları topladığını, nə üçün topladığını və onlarla nə baş verdiyini izah edir. O, <code>com.stprojects.battlearenaworlds</code> paket adı ilə dərc olunmuş Android tətbiqinə şamil edilir.</p>
 
@@ -61,6 +61,7 @@
 <tr><td>Bu gün qazanılan sikkələr və sonuncu ilk qələbə bonusunuzun günü</td><td>Gündəlik sikkə limitini və gündə bir dəfəlik bonusu tətbiq etmək üçün.</td></tr>
 <tr><td>Bu təqvim ayında xərclənən real pul</td><td>Aylıq xərc limitini tətbiq etmək üçün ("Alışlar" bölməsinə baxın).</td></tr>
 <tr><td>Artıq hesabınıza köçürülmüş matç və alışların qeydləri (oyunçu ID-niz ilə matç ID-si və ya alış tokeninin birtərəfli heşi)</td><td>Eyni matç və ya alış heç vaxt iki dəfə hesablanmasın deyə.</td></tr>
+<tr><td>Pul kisənizin 2-yə qədər əvvəlki versiyası</td><td>Ehtiyat nüsxələri, nəsə səhv getsə pul kisənizi bərpa etmək mümkün olsun deyə. Yeni nüsxə ən çoxu saatda bir dəfə saxlanılır, köhnələri isə avtomatik silinir.</td></tr>
 </tbody>
 </table>
 </div>
@@ -89,7 +90,7 @@
 <li>Onlayn matçda olduğunuz müddətdə otaq və matç haqqında qısa qeyd (oyun bağlansa yenidən qoşula bilməsi üçün). Matç bitəndə silinir.</li>
 <li>Hər sessiya üçün bir kiçik performans faylı (oyunun kadr sürəti və qrafika parametrləri); telefonunuzda saxlanılır və heç vaxt yüklənmir.</li>
 </ul>
-<p>Tətbiq Android-in <strong>Auto Backup</strong> funksiyasına icazə verir, buna görə Android telefonunuzun parametrlərindən asılı olaraq bu məlumatları Google hesabınıza cihaz ehtiyat nüsxəsinə daxil edə və ya yeni telefona köçürə bilər. Bu ehtiyat nüsxəni Google idarə edir və biz onu görə bilmirik.</p>
+<p>Tətbiq Android-in ehtiyat nüsxəsini və cihazdan cihaza köçürməni söndürür, buna görə Android bu məlumatları Google hesabınızın ehtiyat nüsxəsinə və ya yeni telefona köçürmür. Pul kisəniz serverimizdə saxlanılır: yeni telefona keçəndə onu saxlamaq üçün əvvəlcə Google ilə daxil olun.</p>
 
 <h2>İcazələr</h2>
 <p>Oyun sizdən heç vaxt icazə istəmir. Onun Android manifesti yalnız Android-in soruşmadan verdiyi icazələri bəyan edir:</p>
@@ -122,9 +123,10 @@
 <h2>Nə qədər saxlayırıq</h2>
 <ul>
 <li><strong>Telefonunuzda:</strong> tətbiqin məlumatlarını təmizləyənə və ya tətbiqi silənə qədər. Yenidən qoşulma qeydi hər matç bitəndə silinir.</li>
-<li><strong>Pul kisəniz və artıq hesabınıza köçürülmüş matç və alışların qeydləri:</strong> hesabınız mövcud olduğu müddətdə, siz onları oyunda silənə və ya e-poçtla bizdən silməyi xahiş edənə qədər. Hazırda qeyri-aktiv pul kisələrinin avtomatik silinməsi yoxdur. Əgər bunu tətbiq etsək, burada bildirəcəyik.</li>
+<li><strong>Pul kisəniz və artıq hesabınıza köçürülmüş matç və alışların qeydləri:</strong> hesabınız mövcud olduğu müddətdə, siz onları oyunda silənə və ya e-poçtla bizdən silməyi xahiş edənə qədər. Hazırda qeyri-aktiv pul kisələrinin avtomatik silinməsi yoxdur. Əgər bunu tətbiq etsək, burada bildirəcəyik. Pul kisənizin ən çoxu 2 əvvəlki versiyası saxlanılır, aralarında ən azı bir saat fərq olmaqla.</li>
 <li><strong>Alış və sifariş qeydləri:</strong> vergi, geri qaytarmalar və fırıldaqçılığın qarşısının alınması üçün alışdan sonra 7 il saxlanılır. Sonra gündəlik təmizləmə tapşırığı hər qeydi, onun sifariş qeydi və geri qaytarma və ya ləğv bildirişləri ilə birlikdə silir.</li>
 <li><strong>Server jurnalları:</strong> standart olaraq təxminən 30 gün, sonra Google Cloud tərəfindən avtomatik silinir.</li>
+<li><strong>Verilənlər bazasının ehtiyat nüsxələri:</strong> biz həmçinin bütün verilənlər bazamızın şifrələnmiş nüsxələrini Google Cloud-da saxlayırıq: son 7 günün istənilən anına bərpa tarixçəsi, 7 gün saxlanılan gündəlik ehtiyat nüsxələri və 14 həftə saxlanılan həftəlik ehtiyat nüsxələri. Onlardan yalnız məlumat itkisindən sonra bərpa üçün və ya oyunçunun istəyi ilə onun pul kisəsini bərpa etmək üçün istifadə edirik. Ehtiyat nüsxələri dəyişdirilə bilməz, buna görə sildiyiniz məlumatlar (alış qeydlərindən silinmiş oyunçu ID-niz daxil olmaqla) onların müddəti bitənə qədər orada qalır: sildikdən sonra 14 həftəyə qədər.</li>
 <li><strong>Epic Online Services:</strong> Epic tərəfindən öz məxfilik siyasəti əsasında saxlanılır. Google əlaqəsi siz məlumatlarınızı oyunda silənə qədər saxlanılır.</li>
 </ul>
 
@@ -135,6 +137,7 @@
 <li>Epic-də: Google hesabınızla əlaqə (əgər yaratmısınızsa) və cihaz ID-si, belə ki, heç kim həmin oyunçu ID-sinə yenidən daxil ola bilməz;</li>
 <li>telefonunuzda: mağaza faylları (pul kisənizin surəti, göndərilməyi gözləyən alışlar, yaş sualına cavabınız və bu ayın xərc cəmi), Google ilə daxil olmanızın qeydi və yenidən qoşulma qeydi.</li>
 </ul>
+<p>Pul kisənizin əvvəlki versiyaları da onunla birlikdə silinir. Silinmiş məlumatlar canlı verilənlər bazamızdan dərhal silinir, lakin şifrələnmiş verilənlər bazası ehtiyat nüsxələrimizdə onların müddəti bitənə qədər qala bilər: 14 həftəyə qədər. Silinmiş pul kisəsini geri qaytarmaq üçün onlardan heç vaxt istifadə etmirik.</p>
 <p>Sonra oyun yeni, boş oyunçu hesabı başladır. Yenidən oynasanız, boş pul kisəsi ilə başlayırsınız. Silinmiş sikkələr, daş-qaşlar və kosmetika bərpa edilə bilməz. Əgər oyunu silmisinizsə, lakin Google ilə daxil olmusunuzsa, onu yenidən quraşdıra, eyni Google hesabı ilə daxil ola və oradan silə bilərsiniz.</p>
 <p><strong>E-poçtla:</strong> oyundan istifadə edə bilmirsinizsə, <a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a> ünvanına yazın, məsələnin Battle Arena Worlds ilə bağlı olduğunu qeyd edin və oyunçu kodunuzu (Parametrlər &gt; Hesab) və ya istənilən daş-qaş və ya başlanğıc paketi alışının Google Play qəbzindəki sifariş nömrəsini (GPA. ilə başlayır) əlavə edin. 30 gün ərzində cavab verəcəyik və məlumatlarınız silindikdə bunu təsdiqləyəcəyik. Biz onları e-poçt sorğusu ilə sildikdə telefonunuzda hələ də eyni oyunçu ID-si qalır, buna görə oyun növbəti dəfə başlayanda onun altında yeni, boş pul kisəsi açacaq. Bunun qarşısını almaq üçün oyunun məlumatlarını təmizləyin və ya onu silin. Əgər heç vaxt heç nə almamısınızsa və oyun artıq sizdə yoxdursa, pul kisənizdə ad, e-poçt və ya əlaqə məlumatı yoxdur və onu müəyyən etməyə imkanımız yoxdur.</p>
 <p>Google Play hər sifarişdəki heşlənmiş hesab etiketinin öz surətini saxlayır və biz onu silə bilmirik. Epic-in oyunçu ID-niz üçün saxladığı qeydin qalan hissəsi (oyunçu adı və telefon modeli) Epic tərəfindən öz məxfilik siyasəti əsasında saxlanılır. Bütün addımlar <a href="/battle-arena-worlds/delete-data/">məlumatların silinməsi səhifəsində</a> verilib.</p>

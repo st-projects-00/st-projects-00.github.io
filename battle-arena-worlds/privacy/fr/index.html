@@ -12,7 +12,7 @@
 <main>
 <h1>Politique de confidentialité de Battle Arena Worlds</h1>
 <p class="note translation-note">Ceci est une traduction. En cas de différence avec la <a href="/battle-arena-worlds/privacy/?lang=en">version anglaise</a>, la version anglaise prévaut.</p>
-<p class="date">En vigueur à compter du 9 octobre 2026</p>
+<p class="date">En vigueur à compter du 25 octobre 2026</p>
 
 <p>Battle Arena Worlds est un jeu battle royale multijoueur pour Android, publié par ST Projects (« nous »), un développeur indépendant établi aux États-Unis. Cette politique explique quelles informations le jeu collecte, pourquoi, et ce qu'il en advient. Elle s'applique à l'application Android publiée sous le nom de package <code>com.stprojects.battlearenaworlds</code>.</p>
 
@@ -61,6 +61,7 @@
 <tr><td>Les pièces gagnées aujourd'hui et le jour de votre dernier bonus de première victoire</td><td>Pour appliquer la limite quotidienne de pièces et le bonus d'une fois par jour.</td></tr>
 <tr><td>L'argent réel dépensé ce mois civil</td><td>Pour appliquer le plafond de dépenses mensuel (voir « Achats »).</td></tr>
 <tr><td>Les enregistrements des parties et des achats déjà crédités (l'identifiant de la partie avec votre identifiant joueur, ou un hachage à sens unique du jeton d'achat)</td><td>Pour qu'une même partie ou un même achat ne soit jamais crédité deux fois.</td></tr>
+<tr><td>Jusqu'à 2 versions antérieures de votre portefeuille</td><td>Des copies de secours, pour pouvoir récupérer votre portefeuille en cas de problème. Une nouvelle copie est conservée au plus une fois par heure, et les plus anciennes sont supprimées automatiquement.</td></tr>
 </tbody>
 </table>
 </div>
@@ -89,7 +90,7 @@
 <li>Pendant une partie en ligne, une courte note sur la salle et la partie (pour que le jeu puisse rejoindre la partie s'il se ferme). Elle est supprimée à la fin de la partie.</li>
 <li>Un petit fichier de performances par session (fréquence d'images et paramètres graphiques du jeu), conservé sur votre téléphone et jamais envoyé.</li>
 </ul>
-<p>L'application autorise la <strong>sauvegarde automatique</strong> (Auto Backup) d'Android : selon les réglages de votre téléphone, Android peut inclure ces données dans la sauvegarde de votre appareil sur votre compte Google, ou les copier sur un nouveau téléphone. Cette sauvegarde est gérée par Google, et nous ne pouvons pas la voir.</p>
+<p>L'application désactive la sauvegarde et le transfert entre appareils d'Android : Android ne copie donc pas ces données dans la sauvegarde de votre compte Google ni sur un nouveau téléphone. Votre portefeuille est conservé sur notre serveur : pour le garder lorsque vous changez de téléphone, connectez-vous d'abord avec Google.</p>
 
 <h2>Autorisations</h2>
 <p>Le jeu ne vous demande jamais d'autorisation. Son manifeste Android ne déclare que des autorisations qu'Android accorde sans demander :</p>
@@ -122,9 +123,10 @@
 <h2>Durée de conservation</h2>
 <ul>
 <li><strong>Sur votre téléphone :</strong> jusqu'à ce que vous effaciez les données de l'application ou que vous la désinstalliez. La note de reconnexion est supprimée à la fin de chaque partie.</li>
-<li><strong>Votre portefeuille, et les enregistrements des parties et des achats déjà crédités :</strong> tant que votre compte existe, jusqu'à ce que vous les supprimiez dans le jeu ou que vous nous le demandiez par e-mail. Il n'existe actuellement aucune suppression automatique des portefeuilles inactifs. Si nous en introduisons une, nous l'indiquerons ici.</li>
+<li><strong>Votre portefeuille, et les enregistrements des parties et des achats déjà crédités :</strong> tant que votre compte existe, jusqu'à ce que vous les supprimiez dans le jeu ou que vous nous le demandiez par e-mail. Il n'existe actuellement aucune suppression automatique des portefeuilles inactifs. Si nous en introduisons une, nous l'indiquerons ici. Au plus 2 versions antérieures de votre portefeuille sont conservées, à au moins une heure d'intervalle.</li>
 <li><strong>Enregistrements d'achats et de commandes :</strong> conservés 7 ans après l'achat, pour la fiscalité, les remboursements et la prévention de la fraude. Une tâche de nettoyage quotidienne supprime ensuite chaque enregistrement, avec son enregistrement de commande et ses notifications de remboursement ou d'annulation.</li>
 <li><strong>Journaux du serveur :</strong> environ 30 jours par défaut, puis supprimés automatiquement par Google Cloud.</li>
+<li><strong>Copies de secours de la base de données :</strong> nous conservons également des copies chiffrées de l'ensemble de notre base de données sur Google Cloud : un historique de restauration à un instant donné couvrant les 7 derniers jours, des copies de secours quotidiennes conservées pendant 7 jours et des copies de secours hebdomadaires conservées pendant 14 semaines. Nous les utilisons uniquement pour remédier à une perte de données ou pour restaurer le portefeuille d'un joueur à sa demande. Les copies de secours ne pouvant pas être modifiées, les données que vous supprimez (y compris votre identifiant joueur retiré des enregistrements d'achat) y restent jusqu'à leur expiration : jusqu'à 14 semaines après leur suppression.</li>
 <li><strong>Epic Online Services :</strong> conservées par Epic selon sa politique de confidentialité. Le lien Google est conservé jusqu'à ce que vous supprimiez vos données dans le jeu.</li>
 </ul>
 
@@ -135,6 +137,7 @@
 <li>chez Epic : le lien avec votre compte Google, si vous en avez créé un, et l'identifiant d'appareil, afin que personne ne puisse plus se connecter à cet identifiant joueur ;</li>
 <li>sur votre téléphone : les fichiers de la boutique (la copie de votre portefeuille, les achats en attente d'envoi, votre réponse à la question sur l'âge et le total des dépenses du mois), l'enregistrement de votre connexion Google et la note de reconnexion.</li>
 </ul>
+<p>Les versions antérieures de votre portefeuille sont supprimées avec lui. Les données supprimées sont retirées immédiatement de notre base de données active, mais elles peuvent subsister dans nos copies de secours chiffrées de la base de données jusqu'à leur expiration : jusqu'à 14 semaines. Nous ne les utilisons jamais pour faire revenir un portefeuille supprimé.</p>
 <p>Le jeu crée ensuite un nouveau compte joueur vide. Si vous rejouez, vous repartez avec un portefeuille vide. Les pièces, gemmes et cosmétiques supprimés ne peuvent pas être restaurés. Si vous avez désinstallé le jeu mais vous étiez connecté avec Google, vous pouvez le réinstaller, vous connecter avec le même compte Google et supprimer vos données depuis le jeu.</p>
 <p><strong>Par e-mail :</strong> si vous ne pouvez pas utiliser le jeu, écrivez à <a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a>, précisez qu'il s'agit de Battle Arena Worlds, et indiquez votre code joueur (Paramètres &gt; Compte) ou le numéro de commande (il commence par GPA.) figurant sur le reçu Google Play de tout achat de gemmes ou de pack de départ. Nous vous répondrons sous 30 jours et vous confirmerons la suppression de vos données. Lorsque nous les supprimons à la suite d'un e-mail, votre téléphone conserve le même identifiant joueur ; le jeu ouvrira donc un nouveau portefeuille vide sous cet identifiant au prochain démarrage. Pour l'éviter, effacez les données du jeu ou désinstallez-le. Si vous n'avez jamais rien acheté et n'avez plus le jeu, votre portefeuille ne contient ni nom, ni adresse e-mail, ni coordonnées, et nous n'avons aucun moyen de l'identifier.</p>
 <p>Google Play conserve sa propre copie de l'étiquette de compte hachée de chaque commande, et nous ne pouvons pas la supprimer. Le reste de l'enregistrement qu'Epic détient pour votre identifiant joueur (le nom de joueur et le modèle du téléphone) est conservé par Epic selon sa propre politique de confidentialité. Toutes les étapes figurent sur la <a href="/battle-arena-worlds/delete-data/">page de suppression des données</a>.</p>

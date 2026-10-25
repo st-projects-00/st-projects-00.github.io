@@ -12,7 +12,7 @@
 <main>
 <h1>Kebijakan Privasi Battle Arena Worlds</h1>
 <p class="note translation-note">Ini adalah terjemahan. Jika berbeda dengan <a href="/battle-arena-worlds/privacy/?lang=en">versi bahasa Inggris</a>, versi bahasa Inggris yang berlaku.</p>
-<p class="date">Berlaku sejak 9 Oktober 2026</p>
+<p class="date">Berlaku sejak 25 Oktober 2026</p>
 
 <p>Battle Arena Worlds adalah game battle royale multipemain untuk Android yang diterbitkan oleh ST Projects ("kami"), pengembang independen yang berbasis di Amerika Serikat. Kebijakan ini menjelaskan informasi apa yang dikumpulkan game, alasannya, dan apa yang terjadi pada informasi tersebut. Kebijakan ini berlaku untuk aplikasi Android yang diterbitkan dengan nama paket <code>com.stprojects.battlearenaworlds</code>.</p>
 
@@ -61,6 +61,7 @@
 <tr><td>Koin yang didapat hari ini dan hari bonus kemenangan pertama terakhir Anda</td><td>Untuk menerapkan batas koin harian dan bonus sekali sehari.</td></tr>
 <tr><td>Uang sungguhan yang dibelanjakan pada bulan kalender ini</td><td>Untuk menerapkan batas belanja bulanan (lihat "Pembelian").</td></tr>
 <tr><td>Catatan pertandingan dan pembelian yang sudah dikreditkan kepada Anda (ID pertandingan dengan ID pemain Anda, atau hash satu arah dari token pembelian)</td><td>Agar pertandingan atau pembelian yang sama tidak pernah dikreditkan dua kali.</td></tr>
+<tr><td>Hingga 2 versi sebelumnya dari dompet Anda</td><td>Cadangan, agar dompet Anda bisa dipulihkan jika terjadi masalah. Cadangan baru disimpan paling sering sekali dalam satu jam, dan yang lebih lama dihapus secara otomatis.</td></tr>
 </tbody>
 </table>
 </div>
@@ -89,7 +90,7 @@
 <li>Selama Anda berada dalam pertandingan online, catatan singkat tentang room dan pertandingan (agar game dapat bergabung kembali jika tertutup). Catatan ini dihapus saat pertandingan berakhir.</li>
 <li>Satu file performa kecil per sesi (frame rate dan pengaturan grafis game), disimpan di ponsel Anda dan tidak pernah diunggah.</li>
 </ul>
-<p>Aplikasi ini mengizinkan <strong>Auto Backup</strong> Android, sehingga Android dapat menyertakan data ini dalam cadangan perangkat Anda ke akun Google Anda, atau menyalinnya ke ponsel baru, tergantung pengaturan ponsel Anda. Cadangan tersebut ditangani oleh Google, dan kami tidak dapat melihatnya.</p>
+<p>Aplikasi ini menonaktifkan pencadangan dan transfer antarperangkat Android, sehingga Android tidak menyalin data ini ke cadangan akun Google Anda atau ke ponsel baru. Dompet Anda disimpan di server kami: agar tetap Anda miliki saat pindah ke ponsel baru, login dengan Google terlebih dahulu.</p>
 
 <h2>Izin</h2>
 <p>Game tidak pernah meminta izin apa pun kepada Anda. Manifes Android-nya hanya mendeklarasikan izin yang diberikan Android tanpa bertanya:</p>
@@ -122,9 +123,10 @@
 <h2>Berapa lama kami menyimpannya</h2>
 <ul>
 <li><strong>Di ponsel Anda:</strong> sampai Anda menghapus data aplikasi atau mencopot pemasangan aplikasi. Catatan bergabung kembali dihapus setiap kali pertandingan berakhir.</li>
-<li><strong>Dompet Anda, serta catatan pertandingan dan pembelian yang sudah dikreditkan kepada Anda:</strong> selama akun Anda ada, sampai Anda menghapusnya di dalam game atau meminta kami menghapusnya melalui email. Saat ini tidak ada penghapusan otomatis untuk dompet yang tidak aktif. Jika kami memberlakukannya, kami akan menyebutkannya di sini.</li>
+<li><strong>Dompet Anda, serta catatan pertandingan dan pembelian yang sudah dikreditkan kepada Anda:</strong> selama akun Anda ada, sampai Anda menghapusnya di dalam game atau meminta kami menghapusnya melalui email. Saat ini tidak ada penghapusan otomatis untuk dompet yang tidak aktif. Jika kami memberlakukannya, kami akan menyebutkannya di sini. Paling banyak 2 versi sebelumnya dari dompet Anda disimpan, dengan selisih minimal satu jam.</li>
 <li><strong>Catatan pembelian dan pesanan:</strong> disimpan selama 7 tahun setelah pembelian, untuk pajak, pengembalian dana, dan pencegahan penipuan. Setelah itu, tugas pembersihan harian menghapus setiap catatan, beserta catatan pesanannya dan pemberitahuan pengembalian dana atau pembatalannya.</li>
 <li><strong>Log server:</strong> sekitar 30 hari secara default, lalu dihapus otomatis oleh Google Cloud.</li>
+<li><strong>Cadangan basis data:</strong> kami juga menyimpan salinan terenkripsi dari seluruh database kami di Google Cloud: riwayat pemulihan ke titik waktu mana pun dalam 7 hari terakhir, cadangan harian yang disimpan selama 7 hari, dan cadangan mingguan yang disimpan selama 14 minggu. Kami menggunakannya hanya untuk pulih dari kehilangan data atau untuk memulihkan dompet pemain atas permintaannya. Cadangan tidak dapat diedit, sehingga data yang Anda hapus (termasuk ID pemain Anda yang dihapus dari catatan pembelian) tetap ada di dalamnya sampai cadangan tersebut kedaluwarsa: hingga 14 minggu setelah Anda menghapusnya.</li>
 <li><strong>Epic Online Services:</strong> disimpan oleh Epic sesuai dengan kebijakan privasinya. Tautan Google disimpan sampai Anda menghapus data Anda di dalam game.</li>
 </ul>
 
@@ -135,6 +137,7 @@
 <li>di Epic: tautan ke akun Google Anda, jika Anda membuatnya, dan ID perangkat, sehingga tidak ada seorang pun yang dapat masuk ke ID pemain tersebut lagi;</li>
 <li>di ponsel Anda: file toko (salinan dompet Anda, pembelian yang menunggu dikirim, jawaban Anda atas pertanyaan usia, dan total belanja bulan ini), catatan proses masuk Google Anda, dan catatan bergabung kembali.</li>
 </ul>
+<p>Versi sebelumnya dari dompet Anda ikut dihapus. Data yang dihapus langsung dihilangkan dari database aktif kami, tetapi dapat tetap ada di cadangan database terenkripsi kami sampai cadangan tersebut kedaluwarsa: hingga 14 minggu. Kami tidak pernah menggunakannya untuk mengembalikan dompet yang telah dihapus.</p>
 <p>Game kemudian memulai akun pemain baru yang kosong. Jika Anda bermain lagi, Anda mulai dengan dompet kosong. Koin, permata, dan kosmetik yang dihapus tidak dapat dipulihkan. Jika Anda telah mencopot pemasangan game tetapi pernah masuk dengan Google, Anda dapat menginstalnya ulang, masuk dengan akun Google yang sama, dan menghapus dari sana.</p>
 <p><strong>Melalui email:</strong> jika Anda tidak dapat menggunakan game, kirim email ke <a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a>, sebutkan bahwa email tersebut tentang Battle Arena Worlds, dan sertakan kode pemain Anda (Pengaturan &gt; Akun) atau nomor pesanan (diawali dengan GPA.) dari tanda terima Google Play untuk pembelian permata atau paket pemula mana pun. Kami akan membalas dalam 30 hari, dan kami akan mengonfirmasi saat data Anda telah dihapus. Jika kami menghapusnya berdasarkan permintaan email, ponsel Anda masih menyimpan ID pemain yang sama, sehingga game akan membuka dompet baru yang kosong dengan ID tersebut saat berikutnya dimulai. Untuk mencegahnya, hapus data game atau copot pemasangannya. Jika Anda belum pernah membeli apa pun dan tidak lagi memiliki game ini, dompet Anda tidak memuat nama, email, atau detail kontak, dan kami tidak memiliki cara untuk mengidentifikasinya.</p>
 <p>Google Play menyimpan salinannya sendiri atas tag akun yang di-hash pada setiap pesanan, dan kami tidak dapat menghapusnya. Sisa catatan yang disimpan Epic untuk ID pemain Anda (nama pemain dan model ponsel) disimpan oleh Epic sesuai dengan kebijakan privasinya sendiri. Langkah lengkapnya ada di <a href="/battle-arena-worlds/delete-data/">halaman penghapusan data</a>.</p>

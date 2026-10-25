@@ -11,7 +11,7 @@
 <body>
 <main>
 <h1>Battle Arena Worlds Privacy Policy</h1>
-<p class="date">Effective 9 October 2026</p>
+<p class="date">Effective 25 October 2026</p>
 
 <p>Battle Arena Worlds is a multiplayer battle royale game for Android, published by ST Projects ("we", "us"), an independent developer based in the United States. This policy explains what information the game collects, why, and what happens to it. It applies to the Android app published under the package name <code>com.stprojects.battlearenaworlds</code>.</p>
 
@@ -60,6 +60,7 @@
 <tr><td>Coins earned today and the day of your last first-win bonus</td><td>To apply the daily coin limit and the once-a-day bonus.</td></tr>
 <tr><td>Real money spent this calendar month</td><td>To apply the monthly spending limit (see "Purchases").</td></tr>
 <tr><td>Records of the matches and purchases already credited to you (the match ID with your player ID, or a one-way hash of the purchase token)</td><td>So the same match or purchase is never credited twice.</td></tr>
+<tr><td>Up to 2 earlier versions of your wallet</td><td>Backups, so your wallet can be recovered if something goes wrong. A new one is kept at most once an hour, and older ones are deleted automatically.</td></tr>
 </tbody>
 </table>
 </div>
@@ -88,7 +89,7 @@
 <li>While you are in an online match, a short note of the room and match (so the game can rejoin if it closes). It is deleted when the match ends.</li>
 <li>One small performance file per session (the game's frame rate and graphics settings), kept on your phone and never uploaded.</li>
 </ul>
-<p>The app allows Android's <strong>Auto Backup</strong>, so Android may include this data in your device backup to your Google account, or copy it to a new phone, depending on your phone's settings. That backup is handled by Google, and we cannot see it.</p>
+<p>The app turns off Android's backup and device transfer, so Android does not copy this data to your Google account's backup or to a new phone. Your wallet is kept on our server: to keep it when you move to a new phone, sign in with Google first.</p>
 
 <h2>Permissions</h2>
 <p>The game never asks you for a permission. Its Android manifest declares only permissions that Android grants without asking:</p>
@@ -121,9 +122,10 @@
 <h2>How long we keep it</h2>
 <ul>
 <li><strong>On your phone:</strong> until you clear the app's data or uninstall the app. The rejoin note is deleted when each match ends.</li>
-<li><strong>Your wallet, and the records of matches and purchases already credited to you:</strong> as long as your account exists, until you delete them in the game or ask us to by email. There is currently no automatic deletion of inactive wallets. If we introduce one, we will say so here.</li>
+<li><strong>Your wallet, and the records of matches and purchases already credited to you:</strong> as long as your account exists, until you delete them in the game or ask us to by email. There is currently no automatic deletion of inactive wallets. If we introduce one, we will say so here. At most 2 earlier versions of your wallet are kept, at least an hour apart.</li>
 <li><strong>Purchase and order records:</strong> kept for 7 years after the purchase, for tax, refunds and fraud prevention. A daily clean-up job then deletes each record, with its order record and its refund or cancellation notices.</li>
 <li><strong>Server logs:</strong> about 30 days by default, then deleted automatically by Google Cloud.</li>
+<li><strong>Database backups:</strong> we also keep encrypted copies of our whole database on Google Cloud: a point-in-time recovery history of the last 7 days, daily backups kept for 7 days and weekly backups kept for 14 weeks. We use them only to recover from data loss or to restore a player's wallet at their request. Backups can't be edited, so data you delete (including your player ID removed from purchase records) stays in them until they expire: up to 14 weeks after you delete it.</li>
 <li><strong>Epic Online Services:</strong> kept by Epic under its privacy policy. The Google link is kept until you delete your data in the game.</li>
 </ul>
 
@@ -134,6 +136,7 @@
 <li>at Epic: the link to your Google account, if you made one, and the device ID, so nobody can sign in to that player ID again;</li>
 <li>on your phone: the shop files (the copy of your wallet, purchases waiting to be sent, your answer to the age question and this month's spending total), the record of your Google sign-in and the rejoin note.</li>
 </ul>
+<p>The earlier versions of your wallet are deleted with it. Deleted data is removed from our live database straight away, but it can remain in our encrypted database backups until they expire: up to 14 weeks. We never use them to bring back a deleted wallet.</p>
 <p>The game then starts a new, empty player account. If you play again, you start with an empty wallet. Deleted coins, gems and cosmetics cannot be restored. If you uninstalled the game but had signed in with Google, you can reinstall it, sign in with the same Google account and delete from there.</p>
 <p><strong>By email:</strong> if you can't use the game, email <a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a>, say it is about Battle Arena Worlds, and include your player code (Settings &gt; Account) or the order number (it starts with GPA.) from the Google Play receipt of any gem or starter pack purchase. We will reply within 30 days, and we will confirm when your data has been deleted. When we delete it by email, your phone still holds the same player ID, so the game will open a new, empty wallet under it the next time it starts. To stop that, clear the game's data or uninstall it. If you have never bought anything and no longer have the game, your wallet holds no name, email or contact details and we have no way to identify it.</p>
 <p>Google Play keeps its own copy of the hashed account tag on each order, and we cannot remove it. The rest of the record Epic holds for your player ID (the player name and the phone model) is kept by Epic under its own privacy policy. The full steps are on the <a href="/battle-arena-worlds/delete-data/">data deletion page</a>.</p>

@@ -38,11 +38,13 @@
 <table>
 <thead><tr><th>Data</th><th>Ano ang nangyayari</th></tr></thead>
 <tbody>
-<tr><td>Ang iyong wallet: coins, gems, mga cosmetics na pag-aari at naka-equip, status ng starter pack, pang-araw-araw na kabuuan ng coins at buwanang kabuuan ng ginastos, kailan ito ginawa at huling nagbago</td><td>Binubura</td></tr>
-<tr><td>Ang mga tala ng mga laban at pagbiling naibigay sa iyong wallet</td><td>Binubura. Hindi na maibibigay muli sa ibang account ang isang pagbiling naibigay na.</td></tr>
-<tr><td>Ang iyong player ID sa iyong mga tala ng pagbili, at ang account tag na iniulat ng Google Play para sa bawat order</td><td>Inaalis</td></tr>
+<tr><td>Ang iyong wallet: coins, gems, mga cosmetics na pag-aari at naka-equip, status ng starter pack, pang-araw-araw na kabuuan ng coins at buwanang kabuuan ng ginastos, kailan ito ginawa at huling nagbago</td><td>Agad na binubura sa aming live na database</td></tr>
+<tr><td>Ang mga naunang bersyon ng iyong wallet (hanggang 2)</td><td>Agad na binubura sa aming live na database</td></tr>
+<tr><td>Ang mga tala ng mga laban at pagbiling naibigay sa iyong wallet</td><td>Agad na binubura sa aming live na database. Hindi na maibibigay muli sa ibang account ang isang pagbiling naibigay na.</td></tr>
+<tr><td>Ang iyong player ID sa iyong mga tala ng pagbili, at ang account tag na iniulat ng Google Play para sa bawat order</td><td>Agad na inaalis sa aming live na database</td></tr>
 <tr><td>Ang iyong session sa aming server</td><td>Tinatapos</td></tr>
 <tr><td>Mga tala ng pagbili at order (produkto, order number, oras ng pagbili, status, detalye ng refund)</td><td><strong>Iniingatan nang 7 taon pagkatapos ng pagbili</strong> para sa buwis, refund at pag-iwas sa pandaraya, nang wala ang iyong player ID, pagkatapos ay awtomatikong binubura ng isang pang-araw-araw na clean-up job, kasama ang kanilang mga abiso sa refund at pagkansela</td></tr>
+<tr><td>Mga kopya ng data sa itaas sa aming mga naka-encrypt na backup ng database (isang kasaysayan ng point-in-time recovery ng huling 7 araw, mga pang-araw-araw na backup na itinatago nang 7 araw, mga lingguhang backup na itinatago nang 14 na linggo)</td><td>Hindi mae-edit ang mga backup, kaya nananatili sa mga ito ang binurang data hanggang mag-expire ang mga ito: <strong>hanggang 14 na linggo</strong>. Ginagamit lang namin ang mga ito para makabawi mula sa pagkawala ng data o para ibalik ang wallet ng isang player kapag hiniling niya, hindi kailanman para ibalik ang isang binurang wallet.</td></tr>
 <tr><td>Mga log ng server (oras, uri at resulta ng request, IP address, user agent ng device, at sa ilang linya ang unang 12 character ng iyong player ID, ang produkto, ang order number, mga item na binili o coins na naibigay)</td><td>Awtomatikong binubura ng Google Cloud pagkalipas ng mga 30 araw (ang default)</td></tr>
 </tbody>
 </table>
@@ -54,7 +56,7 @@
 
 <h2>Data sa iyong phone</h2>
 <p>Ang pagbura sa laro ay nag-aalis din sa iyong phone ng mga file ng shop (ang kopya ng iyong wallet, mga pagbiling naghihintay na maipadala, ang iyong sagot sa tanong tungkol sa edad at ang kabuuang ginastos ngayong buwan), ang tala ng iyong Google sign-in at ang Epic device ID. Nananatili sa phone ang iyong settings at level. Hindi kailanman ipinapadala ang mga ito sa aming server.</p>
-<p>Para alisin ang lahat ng iniingatan ng laro sa iyong phone, burahin ang storage ng app sa settings ng Android (Settings &gt; Apps &gt; Battle Arena Worlds &gt; Storage &gt; Clear storage) o i-uninstall ang app. Kung ito lang, hindi nito binubura ang wallet sa aming server. Kung nagba-back up ang iyong phone ng data ng app sa iyong Google account, o kinopya ito mula sa lumang phone, maaari mong pamahalaan iyon sa backup settings ng iyong phone.</p>
+<p>Para alisin ang lahat ng iniingatan ng laro sa iyong phone, burahin ang storage ng app sa settings ng Android (Settings &gt; Apps &gt; Battle Arena Worlds &gt; Storage &gt; Clear storage) o i-uninstall ang app. Kung ito lang, hindi nito binubura ang wallet sa aming server. Pinapatay ng app ang backup at device transfer ng Android, kaya walang kopya ng data na ito na itinatago ng Android sa backup ng iyong Google account at hindi nito ito inililipat sa bagong phone.</p>
 
 <p>Tingnan ang kumpletong <a href="/battle-arena-worlds/privacy/">patakaran sa privacy ng Battle Arena Worlds</a>.</p>
 </main>

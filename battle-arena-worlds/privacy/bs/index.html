@@ -12,7 +12,7 @@
 <main>
 <h1>Politika privatnosti igre Battle Arena Worlds</h1>
 <p class="note translation-note">Ovo je prijevod. Ako se razlikuje od <a href="/battle-arena-worlds/privacy/?lang=en">engleske verzije</a>, primjenjuje se engleska verzija.</p>
-<p class="date">Na snazi od 9. oktobra 2026.</p>
+<p class="date">Na snazi od 25. oktobra 2026.</p>
 
 <p>Battle Arena Worlds je battle royale igra za više igrača za Android, koju objavljuje ST Projects ("mi"), nezavisni programer sa sjedištem u Sjedinjenim Američkim Državama. Ova politika objašnjava koje informacije igra prikuplja, zašto i šta se s njima dešava. Odnosi se na Android aplikaciju objavljenu pod nazivom paketa <code>com.stprojects.battlearenaworlds</code>.</p>
 
@@ -61,6 +61,7 @@
 <tr><td>Novčići zarađeni danas i dan vašeg posljednjeg bonusa za prvu pobjedu</td><td>Za primjenu dnevnog limita novčića i bonusa jednom dnevno.</td></tr>
 <tr><td>Pravi novac potrošen u ovom kalendarskom mjesecu</td><td>Za primjenu mjesečnog limita potrošnje (pogledajte "Kupovine").</td></tr>
 <tr><td>Evidencija mečeva i kupovina koji su vam već pripisani (ID meča s vašim ID-om igrača ili jednosmjerni heš tokena kupovine)</td><td>Da se isti meč ili kupovina nikada ne pripišu dvaput.</td></tr>
+<tr><td>Do 2 ranije verzije vašeg novčanika</td><td>Sigurnosne kopije, kako bi se vaš novčanik mogao vratiti ako nešto pođe po zlu. Nova se čuva najviše jednom na sat, a starije se brišu automatski.</td></tr>
 </tbody>
 </table>
 </div>
@@ -89,7 +90,7 @@
 <li>Dok ste u online meču, kratku bilješku o sobi i meču (kako bi se igra mogla ponovo pridružiti ako se zatvori). Briše se kada meč završi.</li>
 <li>Jednu malu datoteku o performansama po sesiji (broj sličica u sekundi i grafičke postavke igre), koja se čuva na vašem telefonu i nikada se ne otprema.</li>
 </ul>
-<p>Aplikacija dozvoljava Androidov <strong>Auto Backup</strong>, pa Android može uključiti ove podatke u sigurnosnu kopiju uređaja na vašem Google računu ili ih kopirati na novi telefon, zavisno od postavki vašeg telefona. Tom sigurnosnom kopijom upravlja Google i mi je ne možemo vidjeti.</p>
+<p>Aplikacija isključuje Androidovu sigurnosnu kopiju i prijenos na drugi uređaj, pa Android ne kopira ove podatke u sigurnosnu kopiju vašeg Google računa niti na novi telefon. Vaš novčanik se čuva na našem serveru: da biste ga zadržali kad pređete na novi telefon, prvo se prijavite putem Googlea.</p>
 
 <h2>Dozvole</h2>
 <p>Igra vas nikada ne traži dozvolu. Njen Android manifest navodi samo dozvole koje Android daje bez pitanja:</p>
@@ -122,9 +123,10 @@
 <h2>Koliko dugo ih čuvamo</h2>
 <ul>
 <li><strong>Na vašem telefonu:</strong> dok ne obrišete podatke aplikacije ili ne deinstalirate aplikaciju. Bilješka za ponovno pridruživanje briše se na kraju svakog meča.</li>
-<li><strong>Vaš novčanik i evidencija mečeva i kupovina koji su vam već pripisani:</strong> dok god vaš račun postoji, dok ih ne izbrišete u igri ili nas ne zatražite e-mailom. Trenutno ne postoji automatsko brisanje neaktivnih novčanika. Ako ga uvedemo, navest ćemo to ovdje.</li>
+<li><strong>Vaš novčanik i evidencija mečeva i kupovina koji su vam već pripisani:</strong> dok god vaš račun postoji, dok ih ne izbrišete u igri ili nas ne zatražite e-mailom. Trenutno ne postoji automatsko brisanje neaktivnih novčanika. Ako ga uvedemo, navest ćemo to ovdje. Čuvaju se najviše 2 ranije verzije vašeg novčanika, s razmakom od najmanje sat vremena.</li>
 <li><strong>Evidencija kupovina i narudžbi:</strong> čuva se 7 godina nakon kupovine, za poreze, refundacije i sprječavanje prevara. Dnevni zadatak čišćenja zatim briše svaki zapis, zajedno s pripadajućim zapisom narudžbe i obavještenjima o refundaciji ili otkazivanju.</li>
 <li><strong>Zapisnici servera:</strong> oko 30 dana po zadanim postavkama, nakon čega ih Google Cloud automatski briše.</li>
+<li><strong>Rezervne kopije baze podataka:</strong> također čuvamo šifrirane kopije cijele naše baze podataka na Google Cloudu: historiju za vraćanje na bilo koji trenutak u posljednjih 7 dana, dnevne sigurnosne kopije koje se čuvaju 7 dana i sedmične sigurnosne kopije koje se čuvaju 14 sedmica. Koristimo ih samo za oporavak od gubitka podataka ili za vraćanje novčanika igrača na njegov zahtjev. Sigurnosne kopije se ne mogu mijenjati, pa podaci koje izbrišete (uključujući vaš ID igrača uklonjen iz evidencije kupovina) ostaju u njima dok ne isteknu: do 14 sedmica nakon što ih izbrišete.</li>
 <li><strong>Epic Online Services:</strong> čuva ih Epic u skladu sa svojom politikom privatnosti. Veza s Googleom čuva se dok ne izbrišete svoje podatke u igri.</li>
 </ul>
 
@@ -135,6 +137,7 @@
 <li>kod Epica: veza s vašim Google računom, ako ste je napravili, i ID uređaja, tako da se niko više ne može prijaviti na taj ID igrača;</li>
 <li>na vašem telefonu: datoteke trgovine (kopija vašeg novčanika, kupovine koje čekaju slanje, vaš odgovor na pitanje o dobi i ukupna potrošnja u ovom mjesecu), zapis o vašoj prijavi putem Googlea i bilješka za ponovno pridruživanje.</li>
 </ul>
+<p>Ranije verzije vašeg novčanika brišu se zajedno s njim. Izbrisani podaci odmah se uklanjaju iz naše aktivne baze podataka, ali mogu ostati u našim šifriranim sigurnosnim kopijama baze podataka dok ne isteknu: do 14 sedmica. Nikada ih ne koristimo da vratimo izbrisani novčanik.</p>
 <p>Igra zatim pokreće novi, prazni račun igrača. Ako ponovo igrate, počinjete s praznim novčanikom. Izbrisani novčići, dragulji i kozmetički predmeti ne mogu se vratiti. Ako ste deinstalirali igru, ali ste se bili prijavili putem Googlea, možete je ponovo instalirati, prijaviti se istim Google računom i izbrisati podatke odatle.</p>
 <p><strong>E-mailom:</strong> ako ne možete koristiti igru, pošaljite e-mail na <a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a>, navedite da se radi o igri Battle Arena Worlds i priložite svoj kod igrača (Postavke &gt; Račun) ili broj narudžbe (počinje s GPA.) s Google Play računa za bilo koju kupovinu dragulja ili početnog paketa. Odgovorit ćemo u roku od 30 dana i potvrditi kada vaši podaci budu izbrisani. Kada ih izbrišemo na zahtjev poslan e-mailom, vaš telefon i dalje ima isti ID igrača, pa će igra pri sljedećem pokretanju otvoriti novi, prazni novčanik pod njim. Da biste to spriječili, obrišite podatke igre ili je deinstalirajte. Ako nikada niste ništa kupili i više nemate igru, vaš novčanik ne sadrži ime, e-mail niti kontakt podatke i nemamo načina da ga identifikujemo.</p>
 <p>Google Play čuva vlastitu kopiju heširane oznake računa na svakoj narudžbi i mi je ne možemo ukloniti. Ostatak zapisa koji Epic ima za vaš ID igrača (ime igrača i model telefona) Epic čuva u skladu sa svojom politikom privatnosti. Svi koraci nalaze se na <a href="/battle-arena-worlds/delete-data/">stranici za brisanje podataka</a>.</p>
