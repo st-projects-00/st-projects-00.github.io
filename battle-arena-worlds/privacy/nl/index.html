@@ -12,7 +12,7 @@
 <main>
 <h1>Privacybeleid van Battle Arena Worlds</h1>
 <p class="note translation-note">Dit is een vertaling. Als deze afwijkt van de <a href="/battle-arena-worlds/privacy/?lang=en">Engelse versie</a>, geldt de Engelse versie.</p>
-<p class="date">Van kracht vanaf 9 oktober 2026</p>
+<p class="date">Van kracht vanaf 25 oktober 2026</p>
 
 <p>Battle Arena Worlds is een multiplayer battle royale-game voor Android, uitgegeven door ST Projects ("wij", "ons"), een onafhankelijke ontwikkelaar gevestigd in de Verenigde Staten. Dit beleid legt uit welke informatie de game verzamelt, waarom, en wat ermee gebeurt. Het is van toepassing op de Android-app die is gepubliceerd onder de pakketnaam <code>com.stprojects.battlearenaworlds</code>.</p>
 
@@ -61,6 +61,7 @@
 <tr><td>De munten die je vandaag hebt verdiend en de dag van je laatste bonus voor de eerste overwinning</td><td>Om de dagelijkse muntenlimiet en de bonus van één keer per dag toe te passen.</td></tr>
 <tr><td>Echt geld dat deze kalendermaand is uitgegeven</td><td>Om de maandelijkse bestedingslimiet toe te passen (zie "Aankopen").</td></tr>
 <tr><td>Registraties van de matches en aankopen die al aan je zijn bijgeschreven (de match-ID met je speler-ID, of een eenrichtingshash van het aankooptoken)</td><td>Zodat dezelfde match of aankoop nooit twee keer wordt bijgeschreven.</td></tr>
+<tr><td>Tot 2 eerdere versies van je portemonnee</td><td>Back-ups, zodat je portemonnee kan worden hersteld als er iets misgaat. Er wordt hoogstens één keer per uur een nieuwe bewaard, en oudere worden automatisch verwijderd.</td></tr>
 </tbody>
 </table>
 </div>
@@ -89,7 +90,7 @@
 <li>Zolang je in een online match zit, een korte notitie van de kamer en de match (zodat de game opnieuw kan deelnemen als deze wordt afgesloten). Deze wordt verwijderd wanneer de match eindigt.</li>
 <li>Eén klein prestatiebestand per sessie (de framerate en grafische instellingen van de game), dat op je telefoon wordt bewaard en nooit wordt geüpload.</li>
 </ul>
-<p>De app staat <strong>Auto Backup</strong> van Android toe, dus Android kan deze gegevens, afhankelijk van de instellingen van je telefoon, opnemen in de back-up van je apparaat naar je Google-account, of ze kopiëren naar een nieuwe telefoon. Die back-up wordt beheerd door Google en wij kunnen hem niet inzien.</p>
+<p>De app zet de back-up en de overdracht tussen apparaten van Android uit, dus Android kopieert deze gegevens niet naar de back-up van je Google-account of naar een nieuwe telefoon. Je portemonnee wordt op onze server bewaard: log eerst in met Google om hem te houden als je naar een nieuwe telefoon overstapt.</p>
 
 <h2>Machtigingen</h2>
 <p>De game vraagt je nooit om een machtiging. Het Android-manifest declareert alleen machtigingen die Android verleent zonder erom te vragen:</p>
@@ -122,9 +123,10 @@
 <h2>Hoe lang we het bewaren</h2>
 <ul>
 <li><strong>Op je telefoon:</strong> totdat je de gegevens van de app wist of de app verwijdert. De notitie voor opnieuw deelnemen wordt verwijderd wanneer elke match eindigt.</li>
-<li><strong>Je portemonnee, en de registraties van matches en aankopen die al aan je zijn bijgeschreven:</strong> zolang je account bestaat, totdat je ze in de game verwijdert of ons per e-mail vraagt dat te doen. Er is momenteel geen automatische verwijdering van inactieve portemonnees. Als we die invoeren, vermelden we dat hier.</li>
+<li><strong>Je portemonnee, en de registraties van matches en aankopen die al aan je zijn bijgeschreven:</strong> zolang je account bestaat, totdat je ze in de game verwijdert of ons per e-mail vraagt dat te doen. Er is momenteel geen automatische verwijdering van inactieve portemonnees. Als we die invoeren, vermelden we dat hier. Er worden hoogstens 2 eerdere versies van je portemonnee bewaard, minstens een uur na elkaar.</li>
 <li><strong>Aankoop- en bestelregistraties:</strong> 7 jaar na de aankoop bewaard, voor belastingen, terugbetalingen en fraudepreventie. Een dagelijkse opschoontaak verwijdert daarna elke registratie, samen met de bijbehorende bestelregistratie en de meldingen van terugbetaling of annulering.</li>
 <li><strong>Serverlogs:</strong> standaard ongeveer 30 dagen, daarna automatisch verwijderd door Google Cloud.</li>
+<li><strong>Databaseback-ups:</strong> we bewaren ook versleutelde kopieën van onze hele database op Google Cloud: een herstelgeschiedenis naar elk tijdstip van de afgelopen 7 dagen, dagelijkse back-ups die 7 dagen worden bewaard en wekelijkse back-ups die 14 weken worden bewaard. We gebruiken ze alleen om te herstellen na gegevensverlies of om de portemonnee van een speler op diens verzoek terug te zetten. Back-ups kunnen niet worden bewerkt, dus gegevens die je verwijdert (inclusief je speler-ID die van aankoopregistraties is verwijderd) blijven erin staan totdat ze verlopen: tot 14 weken nadat je ze verwijdert.</li>
 <li><strong>Epic Online Services:</strong> bewaard door Epic onder zijn privacybeleid. De koppeling met Google wordt bewaard totdat je je gegevens in de game verwijdert.</li>
 </ul>
 
@@ -135,6 +137,7 @@
 <li>bij Epic: de koppeling met je Google-account, als je die hebt gemaakt, en de apparaat-ID, zodat niemand meer kan inloggen op die speler-ID;</li>
 <li>op je telefoon: de winkelbestanden (de kopie van je portemonnee, aankopen die nog moeten worden verzonden, je antwoord op de leeftijdsvraag en het totaal dat je deze maand hebt uitgegeven), de registratie van je inlog met Google en de notitie voor opnieuw deelnemen.</li>
 </ul>
+<p>De eerdere versies van je portemonnee worden ermee verwijderd. Verwijderde gegevens worden direct uit onze live database gehaald, maar ze kunnen in onze versleutelde databaseback-ups blijven staan totdat die verlopen: tot 14 weken. We gebruiken ze nooit om een verwijderde portemonnee terug te halen.</p>
 <p>De game start daarna een nieuw, leeg spelersaccount. Als je opnieuw speelt, begin je met een lege portemonnee. Verwijderde munten, edelstenen en cosmetische items kunnen niet worden hersteld. Als je de game hebt verwijderd maar wel was ingelogd met Google, kun je de game opnieuw installeren, inloggen met hetzelfde Google-account en vanaf daar je gegevens verwijderen.</p>
 <p><strong>Per e-mail:</strong> als je de game niet kunt gebruiken, stuur dan een e-mail naar <a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a>, vermeld dat het om Battle Arena Worlds gaat, en voeg je spelerscode toe (Instellingen &gt; Account) of het bestelnummer (dat begint met GPA.) van het Google Play-ontvangstbewijs van een aankoop van edelstenen of het startpakket. We antwoorden binnen 30 dagen en bevestigen wanneer je gegevens zijn verwijderd. Als we ze per e-mail verwijderen, heeft je telefoon nog steeds dezelfde speler-ID, dus de game opent de volgende keer dat hij start een nieuwe, lege portemonnee onder die ID. Om dat te voorkomen, wis je de gegevens van de game of verwijder je de game. Als je nooit iets hebt gekocht en de game niet meer hebt, bevat je portemonnee geen naam, e-mailadres of contactgegevens en kunnen we deze op geen enkele manier identificeren.</p>
 <p>Google Play bewaart een eigen kopie van het gehashte accountlabel bij elke bestelling en wij kunnen dat niet verwijderen. De rest van de registratie die Epic voor je speler-ID bewaart (de spelersnaam en het telefoonmodel) wordt door Epic bewaard onder zijn eigen privacybeleid. De volledige stappen staan op de <a href="/battle-arena-worlds/delete-data/">pagina voor het verwijderen van gegevens</a>.</p>

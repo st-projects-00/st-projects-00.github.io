@@ -38,11 +38,13 @@
 <table>
 <thead><tr><th>Gegevens</th><th>Wat er gebeurt</th></tr></thead>
 <tbody>
-<tr><td>Je portemonnee: munten, edelstenen, cosmetische items in bezit en uitgerust, status van het startpakket, dagelijkse munttotalen en maandelijkse bestedingstotalen, wanneer de portemonnee is aangemaakt en voor het laatst gewijzigd</td><td>Verwijderd</td></tr>
-<tr><td>De registraties van matches en aankopen die in je portemonnee zijn bijgeschreven</td><td>Verwijderd. Een aankoop die al is bijgeschreven, kan niet opnieuw worden bijgeschreven op een ander account.</td></tr>
-<tr><td>Je speler-ID in je aankoopregistraties, en het accountlabel dat Google Play voor elke bestelling heeft gemeld</td><td>Verwijderd</td></tr>
+<tr><td>Je portemonnee: munten, edelstenen, cosmetische items in bezit en uitgerust, status van het startpakket, dagelijkse munttotalen en maandelijkse bestedingstotalen, wanneer de portemonnee is aangemaakt en voor het laatst gewijzigd</td><td>Direct verwijderd uit onze live database</td></tr>
+<tr><td>De eerdere versies van je portemonnee (tot 2)</td><td>Direct verwijderd uit onze live database</td></tr>
+<tr><td>De registraties van matches en aankopen die in je portemonnee zijn bijgeschreven</td><td>Direct verwijderd uit onze live database. Een aankoop die al is bijgeschreven, kan niet opnieuw worden bijgeschreven op een ander account.</td></tr>
+<tr><td>Je speler-ID in je aankoopregistraties, en het accountlabel dat Google Play voor elke bestelling heeft gemeld</td><td>Direct verwijderd uit onze live database</td></tr>
 <tr><td>Je sessie met onze server</td><td>Beëindigd</td></tr>
 <tr><td>Aankoop- en bestelregistraties (product, bestelnummer, tijdstip van aankoop, status, gegevens over terugbetaling)</td><td><strong>7 jaar na de aankoop bewaard</strong> voor belastingen, terugbetalingen en fraudepreventie, zonder je speler-ID, en daarna automatisch verwijderd door een dagelijkse opschoontaak, samen met de bijbehorende meldingen van terugbetaling en annulering</td></tr>
+<tr><td>Kopieën van de bovenstaande gegevens in onze versleutelde databaseback-ups (een geschiedenis voor herstel naar een bepaald tijdstip over de afgelopen 7 dagen, dagelijkse back-ups die 7 dagen worden bewaard, wekelijkse back-ups die 14 weken worden bewaard)</td><td>Back-ups kunnen niet worden bewerkt, dus verwijderde gegevens blijven erin staan totdat ze verlopen: <strong>tot 14 weken</strong>. We gebruiken ze alleen om te herstellen na gegevensverlies of om de portemonnee van een speler op diens verzoek terug te zetten, nooit om een verwijderde portemonnee terug te halen.</td></tr>
 <tr><td>Serverlogs (tijdstip, type verzoek en resultaat, IP-adres, user agent van het apparaat, en op sommige regels de eerste 12 tekens van je speler-ID, het product, het bestelnummer, gekochte items of bijgeschreven munten)</td><td>Na ongeveer 30 dagen automatisch verwijderd door Google Cloud (de standaardinstelling)</td></tr>
 </tbody>
 </table>
@@ -54,7 +56,7 @@
 
 <h2>Gegevens op je telefoon</h2>
 <p>Verwijderen in de game verwijdert ook de winkelbestanden van je telefoon (de kopie van je portemonnee, aankopen die nog moeten worden verzonden, je antwoord op de leeftijdsvraag en het totaal dat je deze maand hebt uitgegeven), de registratie van je inlog met Google en de Epic-apparaat-ID. Je instellingen en level blijven op de telefoon staan. Ze worden nooit naar onze server gestuurd.</p>
-<p>Om alles te verwijderen wat de game op je telefoon bewaart, wis je de opslag van de app in de Android-instellingen (Instellingen &gt; Apps &gt; Battle Arena Worlds &gt; Opslag &gt; Opslag wissen) of verwijder je de app. Op zichzelf verwijdert dit de portemonnee op onze server niet. Als je telefoon app-gegevens back-upt naar je Google-account, of ze heeft gekopieerd van een oude telefoon, kun je dat beheren in de back-upinstellingen van je telefoon.</p>
+<p>Om alles te verwijderen wat de game op je telefoon bewaart, wis je de opslag van de app in de Android-instellingen (Instellingen &gt; Apps &gt; Battle Arena Worlds &gt; Opslag &gt; Opslag wissen) of verwijder je de app. Op zichzelf verwijdert dit de portemonnee op onze server niet. De app zet de back-up en de overdracht tussen apparaten van Android uit, dus Android bewaart geen kopie van deze gegevens in de back-up van je Google-account en zet ze niet over naar een nieuwe telefoon.</p>
 
 <p>Bekijk het volledige <a href="/battle-arena-worlds/privacy/">privacybeleid van Battle Arena Worlds</a>.</p>
 </main>

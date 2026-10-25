@@ -12,7 +12,7 @@
 <main>
 <h1>Politica de confidențialitate Battle Arena Worlds</h1>
 <p class="note translation-note">Aceasta este o traducere. Dacă diferă de <a href="/battle-arena-worlds/privacy/?lang=en">versiunea în limba engleză</a>, se aplică versiunea în limba engleză.</p>
-<p class="date">În vigoare de la 9 octombrie 2026</p>
+<p class="date">În vigoare de la 25 octombrie 2026</p>
 
 <p>Battle Arena Worlds este un joc battle royale multiplayer pentru Android, publicat de ST Projects („noi”), un dezvoltator independent cu sediul în Statele Unite. Această politică explică ce informații colectează jocul, de ce și ce se întâmplă cu ele. Se aplică aplicației Android publicate sub numele de pachet <code>com.stprojects.battlearenaworlds</code>.</p>
 
@@ -61,6 +61,7 @@
 <tr><td>Monedele câștigate astăzi și ziua ultimului tău bonus pentru prima victorie</td><td>Pentru a aplica limita zilnică de monede și bonusul o dată pe zi.</td></tr>
 <tr><td>Banii reali cheltuiți în această lună calendaristică</td><td>Pentru a aplica limita lunară de cheltuieli (vezi „Achiziții”).</td></tr>
 <tr><td>Evidențe ale meciurilor și achizițiilor deja creditate în contul tău (ID-ul meciului împreună cu ID-ul tău de jucător sau un hash unidirecțional al tokenului de achiziție)</td><td>Pentru ca același meci sau aceeași achiziție să nu fie niciodată creditate de două ori.</td></tr>
+<tr><td>Până la 2 versiuni anterioare ale portofelului tău</td><td>Copii de rezervă, ca portofelul tău să poată fi recuperat dacă ceva nu merge bine. O copie nouă se păstrează cel mult o dată pe oră, iar cele mai vechi se șterg automat.</td></tr>
 </tbody>
 </table>
 </div>
@@ -89,7 +90,7 @@
 <li>Cât timp ești într-un meci online, o notă scurtă despre cameră și meci (ca jocul să poată reintra dacă se închide). Este ștearsă când se termină meciul.</li>
 <li>Un mic fișier de performanță pentru fiecare sesiune (frecvența cadrelor și setările grafice ale jocului), păstrat pe telefonul tău și niciodată încărcat.</li>
 </ul>
-<p>Aplicația permite <strong>Auto Backup</strong> din Android, așa că Android poate include aceste date în copia de rezervă a dispozitivului în contul tău Google sau le poate copia pe un telefon nou, în funcție de setările telefonului tău. Această copie de rezervă este gestionată de Google, iar noi nu o putem vedea.</p>
+<p>Aplicația dezactivează backupul și transferul între dispozitive din Android, așa că Android nu copiază aceste date în backupul contului tău Google sau pe un telefon nou. Portofelul tău este păstrat pe serverul nostru: ca să-l păstrezi când treci pe un telefon nou, conectează-te mai întâi cu Google.</p>
 
 <h2>Permisiuni</h2>
 <p>Jocul nu îți cere niciodată vreo permisiune. Manifestul său Android declară doar permisiuni pe care Android le acordă fără să întrebe:</p>
@@ -122,9 +123,10 @@
 <h2>Cât timp le păstrăm</h2>
 <ul>
 <li><strong>Pe telefonul tău:</strong> până când ștergi datele aplicației sau dezinstalezi aplicația. Nota de reintrare este ștearsă la sfârșitul fiecărui meci.</li>
-<li><strong>Portofelul tău și evidențele meciurilor și achizițiilor deja creditate în contul tău:</strong> cât timp există contul tău, până când le ștergi în joc sau ne ceri prin e-mail să o facem. În prezent nu există ștergere automată a portofelelor inactive. Dacă vom introduce una, vom menționa acest lucru aici.</li>
+<li><strong>Portofelul tău și evidențele meciurilor și achizițiilor deja creditate în contul tău:</strong> cât timp există contul tău, până când le ștergi în joc sau ne ceri prin e-mail să o facem. În prezent nu există ștergere automată a portofelelor inactive. Dacă vom introduce una, vom menționa acest lucru aici. Se păstrează cel mult 2 versiuni anterioare ale portofelului tău, la cel puțin o oră una de alta.</li>
 <li><strong>Evidențele achizițiilor și comenzilor:</strong> păstrate timp de 7 ani după achiziție, pentru scopuri fiscale, rambursări și prevenirea fraudei. O sarcină zilnică de curățare șterge apoi fiecare evidență, împreună cu evidența comenzii și notificările de rambursare sau anulare.</li>
 <li><strong>Jurnalele serverului:</strong> implicit aproximativ 30 de zile, apoi șterse automat de Google Cloud.</li>
+<li><strong>Copiile de rezervă ale bazei de date:</strong> păstrăm și copii criptate ale întregii noastre baze de date pe Google Cloud: un istoric de recuperare la orice moment din ultimele 7 zile, copii de rezervă zilnice păstrate 7 zile și copii de rezervă săptămânale păstrate 14 săptămâni. Le folosim doar pentru a ne recupera după o pierdere de date sau pentru a restaura portofelul unui jucător la cererea lui. Copiile de rezervă nu pot fi modificate, așa că datele pe care le ștergi (inclusiv ID-ul tău de jucător eliminat din evidențele achizițiilor) rămân în ele până expiră: până la 14 săptămâni după ce le ștergi.</li>
 <li><strong>Epic Online Services:</strong> păstrate de Epic conform politicii sale de confidențialitate. Legătura cu Google este păstrată până când îți ștergi datele în joc.</li>
 </ul>
 
@@ -135,6 +137,7 @@
 <li>la Epic: legătura cu contul tău Google, dacă ai creat-o, și ID-ul de dispozitiv, astfel încât nimeni să nu se mai poată conecta la acel ID de jucător;</li>
 <li>pe telefonul tău: fișierele magazinului (copia portofelului tău, achizițiile care așteaptă să fie trimise, răspunsul tău la întrebarea despre vârstă și totalul cheltuielilor din luna aceasta), evidența conectării tale cu Google și nota de reintrare.</li>
 </ul>
+<p>Versiunile anterioare ale portofelului tău se șterg odată cu el. Datele șterse sunt eliminate imediat din baza noastră de date activă, dar pot rămâne în copiile de rezervă criptate ale bazei de date până expiră: până la 14 săptămâni. Nu le folosim niciodată pentru a aduce înapoi un portofel șters.</p>
 <p>Jocul pornește apoi un cont de jucător nou și gol. Dacă joci din nou, începi cu un portofel gol. Monedele, gemurile și cosmeticele șterse nu pot fi restaurate. Dacă ai dezinstalat jocul, dar te conectaseși cu Google, îl poți reinstala, te poți conecta cu același cont Google și poți șterge de acolo.</p>
 <p><strong>Prin e-mail:</strong> dacă nu poți folosi jocul, trimite un e-mail la <a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a>, menționează că este vorba despre Battle Arena Worlds și include codul tău de jucător (Setări &gt; Cont) sau numărul comenzii (începe cu GPA.) de pe chitanța Google Play a oricărei achiziții de gemuri sau a pachetului de început. Îți vom răspunde în termen de 30 de zile și îți vom confirma când datele tale au fost șterse. Când le ștergem prin e-mail, telefonul tău păstrează în continuare același ID de jucător, așa că jocul va deschide un portofel nou și gol sub el la următoarea pornire. Pentru a preveni acest lucru, șterge datele jocului sau dezinstalează-l. Dacă nu ai cumpărat niciodată nimic și nu mai ai jocul, portofelul tău nu conține niciun nume, e-mail sau date de contact și nu avem nicio modalitate de a-l identifica.</p>
 <p>Google Play păstrează propria copie a etichetei de cont hash-uite de pe fiecare comandă, iar noi nu o putem elimina. Restul evidenței pe care Epic o deține pentru ID-ul tău de jucător (numele de jucător și modelul telefonului) este păstrat de Epic conform propriei politici de confidențialitate. Pașii completi se află pe <a href="/battle-arena-worlds/delete-data/">pagina de ștergere a datelor</a>.</p>

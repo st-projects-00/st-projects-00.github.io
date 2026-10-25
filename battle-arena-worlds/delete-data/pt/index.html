@@ -38,11 +38,13 @@
 <table>
 <thead><tr><th>Dados</th><th>O que acontece</th></tr></thead>
 <tbody>
-<tr><td>Sua carteira: moedas, gemas, cosméticos possuídos e equipados, status do pacote inicial, totais diários de moedas e mensais de gastos, quando foi criada e alterada pela última vez</td><td>Excluída</td></tr>
-<tr><td>Os registros de partidas e compras creditadas à sua carteira</td><td>Excluídos. Uma compra que já foi creditada não pode ser creditada novamente em outra conta.</td></tr>
-<tr><td>Seu ID de jogador nos seus registros de compra e o identificador de conta que o Google Play informou para cada pedido</td><td>Removidos</td></tr>
+<tr><td>Sua carteira: moedas, gemas, cosméticos possuídos e equipados, status do pacote inicial, totais diários de moedas e mensais de gastos, quando foi criada e alterada pela última vez</td><td>Excluída imediatamente do nosso banco de dados ativo</td></tr>
+<tr><td>As versões anteriores da sua carteira (até 2)</td><td>Excluídas imediatamente do nosso banco de dados ativo</td></tr>
+<tr><td>Os registros de partidas e compras creditadas à sua carteira</td><td>Excluídos do nosso banco de dados ativo imediatamente. Uma compra que já foi creditada não pode ser creditada novamente em outra conta.</td></tr>
+<tr><td>Seu ID de jogador nos seus registros de compra e o identificador de conta que o Google Play informou para cada pedido</td><td>Removidos do nosso banco de dados ativo imediatamente</td></tr>
 <tr><td>Sua sessão com o nosso servidor</td><td>Encerrada</td></tr>
 <tr><td>Registros de compras e pedidos (produto, número do pedido, horário da compra, status, detalhes de reembolso)</td><td><strong>Mantidos por 7 anos após a compra</strong> para fins fiscais, reembolsos e prevenção de fraudes, sem o seu ID de jogador, e depois excluídos automaticamente por uma rotina diária de limpeza, com seus avisos de reembolso e cancelamento</td></tr>
+<tr><td>Cópias dos dados acima nos nossos backups criptografados do banco de dados (um histórico de recuperação pontual dos últimos 7 dias, backups diários mantidos por 7 dias, backups semanais mantidos por 14 semanas)</td><td>Os backups não podem ser editados, então os dados excluídos permanecem neles até que expirem: <strong>até 14 semanas</strong>. Só os usamos para nos recuperar de uma perda de dados ou para restaurar a carteira de um jogador a pedido dele, nunca para trazer de volta uma carteira excluída.</td></tr>
 <tr><td>Logs do servidor (horário, tipo e resultado da solicitação, endereço IP, user agent do dispositivo e, em algumas linhas, os primeiros 12 caracteres do seu ID de jogador, o produto, o número do pedido, itens comprados ou moedas creditadas)</td><td>Excluídos automaticamente pelo Google Cloud após cerca de 30 dias (o padrão)</td></tr>
 </tbody>
 </table>
@@ -54,7 +56,7 @@
 
 <h2>Dados no seu celular</h2>
 <p>A exclusão no jogo também remove do seu celular os arquivos da loja (a cópia da sua carteira, as compras aguardando envio, sua resposta à pergunta sobre idade e o total de gastos deste mês), o registro do seu login com o Google e o ID de dispositivo da Epic. Suas configurações e seu nível permanecem no celular. Eles nunca são enviados ao nosso servidor.</p>
-<p>Para remover tudo o que o jogo guarda no seu celular, limpe o armazenamento do app nas configurações do Android (Configurações &gt; Apps &gt; Battle Arena Worlds &gt; Armazenamento &gt; Limpar armazenamento) ou desinstale o app. Por si só, isso não exclui a carteira no nosso servidor. Se o seu celular faz backup dos dados de apps na sua conta Google, ou os copiou de um celular antigo, você pode gerenciar isso nas configurações de backup do seu celular.</p>
+<p>Para remover tudo o que o jogo guarda no seu celular, limpe o armazenamento do app nas configurações do Android (Configurações &gt; Apps &gt; Battle Arena Worlds &gt; Armazenamento &gt; Limpar armazenamento) ou desinstale o app. Por si só, isso não exclui a carteira no nosso servidor. O app desativa o backup e a transferência entre dispositivos do Android, então o Android não guarda nenhuma cópia desses dados no backup da sua conta Google nem os leva para um celular novo.</p>
 
 <p>Veja a <a href="/battle-arena-worlds/privacy/">política de privacidade do Battle Arena Worlds</a> completa.</p>
 </main>

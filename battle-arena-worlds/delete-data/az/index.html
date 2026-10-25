@@ -38,11 +38,13 @@
 <table>
 <thead><tr><th>Məlumat</th><th>Nə baş verir</th></tr></thead>
 <tbody>
-<tr><td>Pul kisəniz: sikkələr, daş-qaşlar, sahib olduğunuz və taxdığınız kosmetika, başlanğıc paketinin statusu, gündəlik sikkə və aylıq xərc cəmləri, nə vaxt yaradıldığı və sonuncu dəfə nə vaxt dəyişdiyi</td><td>Silinir</td></tr>
-<tr><td>Pul kisənizə köçürülmüş matç və alışların qeydləri</td><td>Silinir. Artıq hesablanmış alış başqa hesaba yenidən hesablana bilməz.</td></tr>
-<tr><td>Alış qeydlərinizdəki oyunçu ID-niz və Google Play-in hər sifariş üçün bildirdiyi hesab etiketi</td><td>Çıxarılır</td></tr>
+<tr><td>Pul kisəniz: sikkələr, daş-qaşlar, sahib olduğunuz və taxdığınız kosmetika, başlanğıc paketinin statusu, gündəlik sikkə və aylıq xərc cəmləri, nə vaxt yaradıldığı və sonuncu dəfə nə vaxt dəyişdiyi</td><td>Canlı verilənlər bazamızdan dərhal silinir</td></tr>
+<tr><td>Pul kisənizin əvvəlki versiyaları (2-yə qədər)</td><td>Canlı verilənlər bazamızdan dərhal silinir</td></tr>
+<tr><td>Pul kisənizə köçürülmüş matç və alışların qeydləri</td><td>Canlı verilənlər bazamızdan dərhal silinir. Artıq hesablanmış alış başqa hesaba yenidən hesablana bilməz.</td></tr>
+<tr><td>Alış qeydlərinizdəki oyunçu ID-niz və Google Play-in hər sifariş üçün bildirdiyi hesab etiketi</td><td>Canlı verilənlər bazamızdan dərhal çıxarılır</td></tr>
 <tr><td>Serverimizlə sessiyanız</td><td>Bitirilir</td></tr>
 <tr><td>Alış və sifariş qeydləri (məhsul, sifariş nömrəsi, alış vaxtı, status, geri qaytarma məlumatları)</td><td>Vergi, geri qaytarmalar və fırıldaqçılığın qarşısının alınması üçün oyunçu ID-niz olmadan <strong>alışdan sonra 7 il saxlanılır</strong>, sonra geri qaytarma və ləğv bildirişləri ilə birlikdə gündəlik təmizləmə tapşırığı tərəfindən avtomatik silinir</td></tr>
+<tr><td>Yuxarıdakı məlumatların şifrələnmiş verilənlər bazası ehtiyat nüsxələrimizdəki nüsxələri (son 7 günün istənilən anına bərpa tarixçəsi, 7 gün saxlanılan gündəlik ehtiyat nüsxələr, 14 həftə saxlanılan həftəlik ehtiyat nüsxələr)</td><td>Ehtiyat nüsxələri dəyişdirilə bilməz, buna görə silinmiş məlumatlar onların müddəti bitənə qədər orada qalır: <strong>14 həftəyə qədər</strong>. Onlardan yalnız məlumat itkisindən sonra bərpa üçün və ya oyunçunun istəyi ilə onun pul kisəsini bərpa etmək üçün istifadə edirik, silinmiş pul kisəsini geri qaytarmaq üçün isə heç vaxt.</td></tr>
 <tr><td>Server jurnalları (vaxt, sorğunun növü və nəticəsi, IP ünvanı, cihazın istifadəçi agenti və bəzi sətirlərdə oyunçu ID-nizin ilk 12 simvolu, məhsul, sifariş nömrəsi, alınan əşyalar və ya hesablanan sikkələr)</td><td>Təxminən 30 gündən sonra Google Cloud tərəfindən avtomatik silinir (standart)</td></tr>
 </tbody>
 </table>
@@ -54,7 +56,7 @@
 
 <h2>Telefonunuzdakı məlumatlar</h2>
 <p>Oyunda silmək həmçinin telefonunuzdan mağaza fayllarını (pul kisənizin surəti, göndərilməyi gözləyən alışlar, yaş sualına cavabınız və bu ayın xərc cəmi), Google ilə daxil olmanızın qeydini və Epic cihaz ID-sini silir. Parametrləriniz və səviyyəniz telefonda qalır. Onlar heç vaxt serverimizə göndərilmir.</p>
-<p>Oyunun telefonunuzda saxladığı hər şeyi silmək üçün Android parametrlərində tətbiqin yaddaşını təmizləyin (Parametrlər &gt; Tətbiqlər &gt; Battle Arena Worlds &gt; Yaddaş &gt; Yaddaşı təmizlə) və ya tətbiqi silin. Bu, təkbaşına serverimizdəki pul kisəsini silmir. Əgər telefonunuz tətbiq məlumatlarının ehtiyat nüsxəsini Google hesabınıza çıxarırsa və ya onları köhnə telefondan köçürübsə, bunu telefonunuzun ehtiyat nüsxə parametrlərində idarə edə bilərsiniz.</p>
+<p>Oyunun telefonunuzda saxladığı hər şeyi silmək üçün Android parametrlərində tətbiqin yaddaşını təmizləyin (Parametrlər &gt; Tətbiqlər &gt; Battle Arena Worlds &gt; Yaddaş &gt; Yaddaşı təmizlə) və ya tətbiqi silin. Bu, təkbaşına serverimizdəki pul kisəsini silmir. Tətbiq Android-in ehtiyat nüsxəsini və cihazdan cihaza köçürməni söndürür, buna görə Android bu məlumatların heç bir nüsxəsini Google hesabınızın ehtiyat nüsxəsində saxlamır və onları yeni telefona köçürmür.</p>
 
 <p>Tam <a href="/battle-arena-worlds/privacy/">Battle Arena Worlds məxfilik siyasətinə</a> baxın.</p>
 </main>

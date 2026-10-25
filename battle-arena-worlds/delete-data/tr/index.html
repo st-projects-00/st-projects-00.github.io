@@ -38,11 +38,13 @@
 <table>
 <thead><tr><th>Veri</th><th>Ne olur</th></tr></thead>
 <tbody>
-<tr><td>Cüzdanınız: jetonlar, mücevherler, sahip olunan ve kuşanılan kozmetik öğeler, başlangıç paketi durumu, günlük jeton ve aylık harcama toplamları, ne zaman oluşturulduğu ve en son ne zaman değiştiği</td><td>Silinir</td></tr>
-<tr><td>Cüzdanınıza yansıtılan maç ve satın alım kayıtları</td><td>Silinir. Zaten yansıtılmış bir satın alım başka bir hesaba yeniden yansıtılamaz.</td></tr>
-<tr><td>Satın alma kayıtlarınızdaki oyuncu kimliğiniz ve Google Play'in her sipariş için bildirdiği hesap etiketi</td><td>Kaldırılır</td></tr>
+<tr><td>Cüzdanınız: jetonlar, mücevherler, sahip olunan ve kuşanılan kozmetik öğeler, başlangıç paketi durumu, günlük jeton ve aylık harcama toplamları, ne zaman oluşturulduğu ve en son ne zaman değiştiği</td><td>Canlı veritabanımızdan hemen silinir</td></tr>
+<tr><td>Cüzdanınızın önceki sürümleri (en fazla 2)</td><td>Canlı veritabanımızdan hemen silinir</td></tr>
+<tr><td>Cüzdanınıza yansıtılan maç ve satın alım kayıtları</td><td>Canlı veritabanımızdan hemen silinir. Zaten yansıtılmış bir satın alım başka bir hesaba yeniden yansıtılamaz.</td></tr>
+<tr><td>Satın alma kayıtlarınızdaki oyuncu kimliğiniz ve Google Play'in her sipariş için bildirdiği hesap etiketi</td><td>Canlı veritabanımızdan hemen kaldırılır</td></tr>
 <tr><td>Sunucumuzla olan oturumunuz</td><td>Sonlandırılır</td></tr>
 <tr><td>Satın alma ve sipariş kayıtları (ürün, sipariş numarası, satın alma zamanı, durum, iade bilgileri)</td><td>Vergi, iadeler ve dolandırıcılığın önlenmesi için oyuncu kimliğiniz olmadan <strong>satın alımdan sonra 7 yıl saklanır</strong>, ardından günlük bir temizlik işiyle iade ve iptal bildirimleriyle birlikte otomatik olarak silinir</td></tr>
+<tr><td>Yukarıdaki verilerin şifrelenmiş veritabanı yedeklerimizdeki kopyaları (son 7 güne ait belirli bir zamana kurtarma geçmişi, 7 gün saklanan günlük yedekler, 14 hafta saklanan haftalık yedekler)</td><td>Yedekler düzenlenemez; bu nedenle silinen veriler süreleri dolana kadar yedeklerde kalır: <strong>14 haftaya kadar</strong>. Bunları yalnızca veri kaybından kurtulmak veya bir oyuncunun isteği üzerine cüzdanını geri yüklemek için kullanırız, silinmiş bir cüzdanı geri getirmek için asla kullanmayız.</td></tr>
 <tr><td>Sunucu günlükleri (zaman, istek türü ve sonucu, IP adresi, cihaz kullanıcı aracısı ve bazı satırlarda oyuncu kimliğinizin ilk 12 karakteri, ürün, sipariş numarası, satın alınan öğeler veya yansıtılan jetonlar)</td><td>Yaklaşık 30 gün sonra Google Cloud tarafından otomatik olarak silinir (varsayılan)</td></tr>
 </tbody>
 </table>
@@ -54,7 +56,7 @@
 
 <h2>Telefonunuzdaki veriler</h2>
 <p>Oyunda silmek ayrıca telefonunuzdaki mağaza dosyalarını (cüzdanınızın kopyası, gönderilmeyi bekleyen satın alımlar, yaş sorusuna verdiğiniz yanıt ve bu ayın harcama toplamı), Google ile oturum açma kaydınızı ve Epic cihaz kimliğini kaldırır. Ayarlarınız ve seviyeniz telefonda kalır. Bunlar asla sunucumuza gönderilmez.</p>
-<p>Oyunun telefonunuzda tuttuğu her şeyi kaldırmak için Android ayarlarında uygulamanın depolama alanını temizleyin (Ayarlar &gt; Uygulamalar &gt; Battle Arena Worlds &gt; Depolama &gt; Depolama alanını temizle) veya uygulamayı kaldırın. Bu tek başına sunucumuzdaki cüzdanı silmez. Telefonunuz uygulama verilerini Google hesabınıza yedekliyorsa veya bunları eski bir telefondan kopyaladıysa, bunu telefonunuzun yedekleme ayarlarından yönetebilirsiniz.</p>
+<p>Oyunun telefonunuzda tuttuğu her şeyi kaldırmak için Android ayarlarında uygulamanın depolama alanını temizleyin (Ayarlar &gt; Uygulamalar &gt; Battle Arena Worlds &gt; Depolama &gt; Depolama alanını temizle) veya uygulamayı kaldırın. Bu tek başına sunucumuzdaki cüzdanı silmez. Uygulama, Android'in yedekleme ve cihazlar arası aktarım özelliklerini kapatır; bu nedenle Android bu verilerin hiçbir kopyasını Google hesabınızın yedeğinde tutmaz ve bunları yeni bir telefona taşımaz.</p>
 
 <p>Tam <a href="/battle-arena-worlds/privacy/">Battle Arena Worlds gizlilik politikasına</a> bakın.</p>
 </main>

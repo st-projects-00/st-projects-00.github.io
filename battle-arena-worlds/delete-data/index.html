@@ -37,11 +37,13 @@
 <table>
 <thead><tr><th>Data</th><th>What happens</th></tr></thead>
 <tbody>
-<tr><td>Your wallet: coins, gems, owned and equipped cosmetics, starter pack status, daily coin and monthly spending totals, when it was created and last changed</td><td>Deleted</td></tr>
-<tr><td>The records of matches and purchases credited to your wallet</td><td>Deleted. A purchase that was already credited can't be credited again to another account.</td></tr>
-<tr><td>Your player ID on your purchase records, and the account tag Google Play reported for each order</td><td>Removed</td></tr>
+<tr><td>Your wallet: coins, gems, owned and equipped cosmetics, starter pack status, daily coin and monthly spending totals, when it was created and last changed</td><td>Deleted from our live database immediately</td></tr>
+<tr><td>The earlier versions of your wallet (up to 2)</td><td>Deleted from our live database immediately</td></tr>
+<tr><td>The records of matches and purchases credited to your wallet</td><td>Deleted from our live database immediately. A purchase that was already credited can't be credited again to another account.</td></tr>
+<tr><td>Your player ID on your purchase records, and the account tag Google Play reported for each order</td><td>Removed from our live database immediately</td></tr>
 <tr><td>Your session with our server</td><td>Ended</td></tr>
 <tr><td>Purchase and order records (product, order number, purchase time, status, refund details)</td><td><strong>Kept for 7 years after the purchase</strong> for tax, refunds and fraud prevention, without your player ID, then deleted automatically by a daily clean-up job, with their refund and cancellation notices</td></tr>
+<tr><td>Copies of the data above in our encrypted database backups (a point-in-time recovery history of the last 7 days, daily backups kept for 7 days, weekly backups kept for 14 weeks)</td><td>Backups can't be edited, so deleted data stays in them until they expire: <strong>up to 14 weeks</strong>. We use them only to recover from data loss or to restore a player's wallet at their request, never to bring back a deleted wallet.</td></tr>
 <tr><td>Server logs (time, request type and result, IP address, device user agent, and on some lines the first 12 characters of your player ID, the product, the order number, items bought or coins credited)</td><td>Deleted automatically by Google Cloud after about 30 days (the default)</td></tr>
 </tbody>
 </table>
@@ -53,7 +55,7 @@
 
 <h2>Data on your phone</h2>
 <p>Deleting in the game also removes the shop files from your phone (the copy of your wallet, purchases waiting to be sent, your answer to the age question and this month's spending total), the record of your Google sign-in and the Epic device ID. Your settings and level stay on the phone. They are never sent to our server.</p>
-<p>To remove everything the game keeps on your phone, clear the app's storage in Android settings (Settings &gt; Apps &gt; Battle Arena Worlds &gt; Storage &gt; Clear storage) or uninstall the app. On its own, this does not delete the wallet on our server. If your phone backs up app data to your Google account, or copied it from an old phone, you can manage that in your phone's backup settings.</p>
+<p>To remove everything the game keeps on your phone, clear the app's storage in Android settings (Settings &gt; Apps &gt; Battle Arena Worlds &gt; Storage &gt; Clear storage) or uninstall the app. On its own, this does not delete the wallet on our server. The app turns off Android's backup and device transfer, so Android keeps no copy of this data in your Google account's backup and does not move it to a new phone.</p>
 
 <p>See the full <a href="/battle-arena-worlds/privacy/">Battle Arena Worlds privacy policy</a>.</p>
 </main>

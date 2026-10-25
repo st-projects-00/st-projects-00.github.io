@@ -38,11 +38,13 @@
 <table>
 <thead><tr><th>Données</th><th>Ce qui se passe</th></tr></thead>
 <tbody>
-<tr><td>Votre portefeuille : pièces, gemmes, cosmétiques possédés et équipés, statut du pack de départ, totaux quotidiens de pièces et mensuels de dépenses, date de création et de dernière modification</td><td>Supprimé</td></tr>
-<tr><td>Les enregistrements des parties et des achats crédités à votre portefeuille</td><td>Supprimés. Un achat déjà crédité ne peut pas être crédité à nouveau sur un autre compte.</td></tr>
-<tr><td>Votre identifiant joueur dans vos enregistrements d'achats, et l'étiquette de compte que Google Play a indiquée pour chaque commande</td><td>Retirés</td></tr>
+<tr><td>Votre portefeuille : pièces, gemmes, cosmétiques possédés et équipés, statut du pack de départ, totaux quotidiens de pièces et mensuels de dépenses, date de création et de dernière modification</td><td>Supprimé immédiatement de notre base de données active</td></tr>
+<tr><td>Les versions antérieures de votre portefeuille (jusqu'à 2)</td><td>Supprimées immédiatement de notre base de données active</td></tr>
+<tr><td>Les enregistrements des parties et des achats crédités à votre portefeuille</td><td>Supprimés immédiatement de notre base de données active. Un achat déjà crédité ne peut pas être crédité à nouveau sur un autre compte.</td></tr>
+<tr><td>Votre identifiant joueur dans vos enregistrements d'achats, et l'étiquette de compte que Google Play a indiquée pour chaque commande</td><td>Retirés immédiatement de notre base de données active</td></tr>
 <tr><td>Votre session avec notre serveur</td><td>Fermée</td></tr>
 <tr><td>Enregistrements d'achats et de commandes (produit, numéro de commande, heure de l'achat, statut, détails de remboursement)</td><td><strong>Conservés 7 ans après l'achat</strong> pour la fiscalité, les remboursements et la prévention de la fraude, sans votre identifiant joueur, puis supprimés automatiquement par une tâche de nettoyage quotidienne, avec leurs notifications de remboursement et d'annulation</td></tr>
+<tr><td>Copies des données ci-dessus dans nos copies de secours chiffrées de la base de données (un historique de restauration à un instant donné couvrant les 7 derniers jours, des copies de secours quotidiennes conservées pendant 7 jours, des copies de secours hebdomadaires conservées pendant 14 semaines)</td><td>Les copies de secours ne pouvant pas être modifiées, les données supprimées y restent jusqu'à leur expiration : <strong>jusqu'à 14 semaines</strong>. Nous les utilisons uniquement pour remédier à une perte de données ou pour restaurer le portefeuille d'un joueur à sa demande, jamais pour faire revenir un portefeuille supprimé.</td></tr>
 <tr><td>Journaux du serveur (heure, type de requête et résultat, adresse IP, agent utilisateur de l'appareil, et sur certaines lignes les 12 premiers caractères de votre identifiant joueur, le produit, le numéro de commande, les objets achetés ou les pièces créditées)</td><td>Supprimés automatiquement par Google Cloud après environ 30 jours (valeur par défaut)</td></tr>
 </tbody>
 </table>
@@ -54,7 +56,7 @@
 
 <h2>Données sur votre téléphone</h2>
 <p>La suppression dans le jeu retire aussi de votre téléphone les fichiers de la boutique (la copie de votre portefeuille, les achats en attente d'envoi, votre réponse à la question sur l'âge et le total des dépenses du mois), l'enregistrement de votre connexion Google et l'identifiant d'appareil Epic. Vos paramètres et votre niveau restent sur le téléphone. Ils ne sont jamais envoyés à notre serveur.</p>
-<p>Pour retirer tout ce que le jeu conserve sur votre téléphone, videz le stockage de l'application dans les paramètres Android (Paramètres &gt; Applications &gt; Battle Arena Worlds &gt; Stockage &gt; Vider le stockage) ou désinstallez l'application. À elle seule, cette action ne supprime pas le portefeuille sur notre serveur. Si votre téléphone sauvegarde les données des applications sur votre compte Google, ou les a copiées depuis un ancien téléphone, vous pouvez gérer cela dans les paramètres de sauvegarde de votre téléphone.</p>
+<p>Pour retirer tout ce que le jeu conserve sur votre téléphone, videz le stockage de l'application dans les paramètres Android (Paramètres &gt; Applications &gt; Battle Arena Worlds &gt; Stockage &gt; Vider le stockage) ou désinstallez l'application. À elle seule, cette action ne supprime pas le portefeuille sur notre serveur. L'application désactive la sauvegarde et le transfert entre appareils d'Android : Android ne garde donc aucune copie de ces données dans la sauvegarde de votre compte Google et ne les transfère pas sur un nouveau téléphone.</p>
 
 <p>Consultez la <a href="/battle-arena-worlds/privacy/">politique de confidentialité de Battle Arena Worlds</a> complète.</p>
 </main>

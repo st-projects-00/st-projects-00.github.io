@@ -12,7 +12,7 @@
 <main>
 <h1>Siyaasadda Asturnaanta ee Battle Arena Worlds</h1>
 <p class="note translation-note">Tani waa turjumaad. Haddii ay ka duwan tahay <a href="/battle-arena-worlds/privacy/?lang=en">nooca Ingiriisiga</a>, nooca Ingiriisiga ayaa la raacayaa.</p>
-<p class="date">Wuxuu dhaqan galay 9 Oktoobar 2026</p>
+<p class="date">Wuxuu dhaqan galay 25 Oktoobar 2026</p>
 
 <p>Battle Arena Worlds waa ciyaar battle royale ah oo ciyaartoy badan leh oo loogu talagalay Android, waxaana daabacay ST Projects ("annaga"), horumariye madax-bannaan oo fadhigiisu yahay Maraykanka. Siyaasaddani waxay sharraxaysaa macluumaadka ay ciyaartu ururiso, sababta, iyo waxa ku dhaca. Waxay khusaysaa app-ka Android-ka ee lagu daabacay magaca xirmada <code>com.stprojects.battlearenaworlds</code>.</p>
 
@@ -61,6 +61,7 @@
 <tr><td>Qadaadiicda maanta la kasbaday iyo maalinta abaalmarintaadii ugu dambeysay ee guusha koowaad</td><td>Si loo dabaqo xadka qadaadiicda maalinlaha ah iyo abaalmarinta maalintii hal mar.</td></tr>
 <tr><td>Lacagta dhabta ah ee lagu kharash gareeyay bishan kalandarka</td><td>Si loo dabaqo xadka kharashka bishii (eeg "Iibsashada").</td></tr>
 <tr><td>Diiwaannada ciyaaraha iyo iibsashooyinka horey laguugu daray (aqoonsiga ciyaarta oo la socda aqoonsigaaga ciyaartoyga, ama hash hal-dhinac ah oo token-ka iibsashada)</td><td>Si isla ciyaar ama iibsasho aan weligeed laba jeer laguugu darin.</td></tr>
+<tr><td>Ilaa 2 nooc oo hore oo jeebkaaga ah</td><td>Kaydad, si jeebkaaga loo soo celin karo haddii wax qaldamaan. Mid cusub waxaa la hayaa ugu badnaan hal mar saacaddii, kuwa ka duugsanna si otomaatig ah ayaa loo tirtiraa.</td></tr>
 </tbody>
 </table>
 </div>
@@ -89,7 +90,7 @@
 <li>Inta aad ku jirto ciyaar online ah, qoraal gaaban oo ku saabsan qolka iyo ciyaarta (si ciyaartu dib ugu biiri karto haddii ay xiranto). Waa la tirtiraa marka ciyaartu dhammaato.</li>
 <li>Fayl yar oo waxqabad ah fadhi kasta (heerka fareemyada ciyaarta iyo dejinta sawirka), oo lagu hayo telefoonkaaga oo aan weligiis la soo gelin internetka.</li>
 </ul>
-<p>App-ku wuxuu oggol yahay <strong>Kaydinta Otomaatigga ah</strong> (Auto Backup) ee Android, sidaas darteed Android waxay xogtan ku dari kartaa kaydka qalabkaaga ee akoonkaaga Google, ama u koobiyeyn kartaa telefoon cusub, iyadoo ku xiran dejinta telefoonkaaga. Kaydkaas waxaa maareeya Google, mana arki karno.</p>
+<p>App-ku wuxuu damiyaa kaydinta Android iyo u wareejinta qalab kale, sidaas darteed Android uma koobiyeeyo xogtan kaydka akoonkaaga Google ama telefoon cusub. Jeebkaaga waxaa lagu hayaa server-kayaga: si aad u haysato markaad u guurto telefoon cusub, marka hore ku gal Google.</p>
 
 <h2>Oggolaanshaha</h2>
 <p>Ciyaartu weligeed kaa ma codsato oggolaansho. Manifest-ka Android-keedu wuxuu sheegaa oo keliya oggolaanshaha Android bixiso iyadoo aan wax weydiin:</p>
@@ -122,9 +123,10 @@
 <h2>Inta aan hayno</h2>
 <ul>
 <li><strong>Telefoonkaaga:</strong> ilaa aad tirtirto xogta app-ka ama aad ka saarto app-ka. Qoraalka dib-u-biirista waa la tirtiraa marka ciyaar kasta dhammaato.</li>
-<li><strong>Jeebkaaga, iyo diiwaannada ciyaaraha iyo iibsashooyinka horey laguugu daray:</strong> inta akoonkaagu jiro, ilaa aad ka tirtirto ciyaarta ama aad iimayl nagu weydiisato. Hadda ma jiro tirtiris otomaatig ah oo jeebabka aan la isticmaalin. Haddii aan mid soo bandhigno, halkan ayaan ku sheegi doonnaa.</li>
+<li><strong>Jeebkaaga, iyo diiwaannada ciyaaraha iyo iibsashooyinka horey laguugu daray:</strong> inta akoonkaagu jiro, ilaa aad ka tirtirto ciyaarta ama aad iimayl nagu weydiisato. Hadda ma jiro tirtiris otomaatig ah oo jeebabka aan la isticmaalin. Haddii aan mid soo bandhigno, halkan ayaan ku sheegi doonnaa. Waxaa la hayaa ugu badnaan 2 nooc oo hore oo jeebkaaga ah, oo u dhexeeya ugu yaraan hal saac.</li>
 <li><strong>Diiwaannada iibsashada iyo dalabyada:</strong> waxaa la hayaa 7 sano kadib iibsashada, canshuuraha, lacag-celinta iyo ka-hortagga khiyaanada awgood. Kadib hawl nadiifin maalinle ah ayaa tirtirta diiwaan kasta, oo ay la socdaan diiwaankiisa dalabka iyo ogeysiisyadiisa lacag-celinta ama joojinta.</li>
 <li><strong>Diiwaannada server-ka:</strong> qiyaastii 30 maalmood si caadi ah, kadibna Google Cloud ayaa si otomaatig ah u tirtirta.</li>
+<li><strong>Kaydadka xog-ururinta:</strong> waxaan sidoo kale ku haynaa nuqullo sir ah oo dhammaan kaydka xogtayada ah Google Cloud: taariikh soo celin oo loo celin karo wakhti kasta oo 7-dii maalmood ee ugu dambeeyay ah, kaydad maalinle ah oo la hayo 7 maalmood iyo kaydad toddobaadle ah oo la hayo 14 toddobaad. Waxaan u isticmaalnaa oo keliya si aan uga soo kabanno lumitaan xog ama si aan u soo celinno jeebka ciyaartoy markuu codsado. Kaydadka lama beddeli karo, sidaas darteed xogta aad tirtirto (oo ay ku jirto aqoonsigaaga ciyaartoyga ee laga saaray diiwaannada iibsashada) way ku jirtaa ilaa ay ka dhacaan: ilaa 14 toddobaad kadib markaad tirtirto.</li>
 <li><strong>Epic Online Services:</strong> waxaa haya Epic iyadoo raacaysa siyaasaddeeda asturnaanta. Xiriirka Google waa la hayaa ilaa aad xogtaada ka tirtirto ciyaarta.</li>
 </ul>
 
@@ -135,6 +137,7 @@
 <li>Epic: xiriirka akoonkaaga Google, haddii aad samaysay, iyo aqoonsiga qalabka, si aan qofna dib ugu geli karin aqoonsigaas ciyaartoyga;</li>
 <li>telefoonkaaga: faylasha dukaanka (nuqulka jeebkaaga, iibsashooyinka sugaya in la diro, jawaabtaada su'aasha da'da iyo wadarta kharashka bishan), diiwaanka gelitaankaaga Google iyo qoraalka dib-u-biirista.</li>
 </ul>
+<p>Noocyada hore ee jeebkaaga ayaa lala tirtiraa. Xogta la tirtiray isla markiiba waxaa laga saaraa kaydka xogtayada firfircoon, laakiin waxay ku sii jiri kartaa kaydadka sirta ah ee kaydka xogtayada ilaa ay ka dhacaan: ilaa 14 toddobaad. Weligeen uma isticmaalno inaan soo celinno jeeb la tirtiray.</p>
 <p>Kadib ciyaartu waxay bilaabaysaa akoon ciyaartoy oo cusub oo madhan. Haddii aad mar kale ciyaarto, waxaad ku bilaabaysaa jeeb madhan. Qadaadiicda, dhagxaanta qaaliga ah iyo qurxinta la tirtiray dib looma soo celin karo. Haddii aad ciyaarta ka saartay laakiin aad ku gashay Google, dib ayaad u rakibi kartaa, ku geli kartaa isla akoonka Google oo halkaas ka tirtiri kartaa.</p>
 <p><strong>Iimayl ahaan:</strong> haddii aadan isticmaali karin ciyaarta, iimayl u dir <a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a>, sheeg inay ku saabsan tahay Battle Arena Worlds, oo ku dar koodhka ciyaartoygaaga (Dejinta &gt; Akoon) ama lambarka dalabka (wuxuu ku bilaabmaa GPA.) ee rasiidka Google Play ee iibsasho kasta oo dhagxaan qaali ah ama xirmada bilowga. Waxaan ku jawaabi doonnaa 30 maalmood gudahood, waxaana xaqiijin doonnaa marka xogtaada la tirtiro. Marka aan iimayl ku tirtirno, telefoonkaagu wuxuu weli hayaa isla aqoonsiga ciyaartoyga, sidaas darteed ciyaartu waxay ku furi doontaa jeeb cusub oo madhan marka xigta ee ay bilaabato. Si taas looga hortago, tirtir xogta ciyaarta ama ka saar. Haddii aadan waxba iibsan oo aadan hadda haysan ciyaarta, jeebkaagu ma laha magac, iimayl ama faahfaahin xiriir, mana jiro hab aan ku aqoonsan karno.</p>
 <p>Google Play waxay haysaa nuqulkeeda calaamadda akoonka ee hash-ka ah ee dalab kasta, mana ka saari karno. Inta kale ee diiwaanka Epic u hayso aqoonsigaaga ciyaartoyga (magaca ciyaartoyga iyo moodeelka telefoonka) waxaa haya Epic iyadoo raacaysa siyaasaddeeda asturnaanta. Tallaabooyinka oo dhammaystiran waxay ku yaallaan <a href="/battle-arena-worlds/delete-data/">bogga tirtirista xogta</a>.</p>
