@@ -1,4 +1,4 @@
-// The Bad Guys policy pages in the reader's language.
+// Villain's Crew (formerly The Bad Guys) policy pages in the reader's language.
 // English lives at /thebadguys/<page>/, translations at /thebadguys/<page>/<code>/ (same codes as the game).
 // On an English page, a browser set to a supported language is sent to that translation once, unless
 // ?lang=en is in the address (the "English" choice in the menu). Every page gets a language menu.
