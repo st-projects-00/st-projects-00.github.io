@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BossDuel Data Deletion</title>
+<meta name="description" content="How to delete your BossDuel cloud save and other data.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+<h1>Delete your BossDuel data</h1>
+<p class="date">BossDuel by ST Projects &middot; package <code>com.stprojects.bossduel</code></p>
+
+<p>BossDuel has no accounts of its own. You play as a guest, and your progress is saved on your phone. The only account link is the optional Google Play Games sign-in, which is being added in an update together with cloud save and an in-game store. The data we keep on our server that is linked to you is your <strong>cloud save</strong> and the tag on purchases you made while signed in, and they exist only if you played while signed in to Google Play Games. If your version of the game has no Account screen, we hold nothing about you on our server. You can delete your data yourself in the game, or ask us to delete it by email.</p>
+
+<h2>Option 1: in the game (immediate)</h2>
+<ol>
+<li>Open BossDuel.</li>
+<li>Open the <strong>Account</strong> screen.</li>
+<li>Tap <strong>Delete cloud data</strong> and confirm.</li>
+</ol>
+<p>The button appears while you are signed in to cloud save. If you see "Not signed in", tap <strong>Sign in</strong> first. You need an internet connection.</p>
+
+<h2>Option 2: by email</h2>
+<p>Email <a href="mailto:battlearenaunlimited@gmail.com?subject=BossDuel%20data%20deletion">battlearenaunlimited@gmail.com</a> with the subject "BossDuel data deletion". Include the <strong>Player code</strong> shown on the Account screen while you are signed in (it looks like <code>3FA9-0C21-7B4E</code>), so we can find your data. If you can't open the game, send the order number (it starts with GPA.) from a Google Play receipt instead. We will reply within 30 days, and we will confirm when your data has been deleted.</p>
+
+<h2>What is deleted, what is kept, and for how long</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Data</th><th>What happens</th></tr></thead>
+<tbody>
+<tr><td>Your cloud save and its summary (story chapter, last played, device label)</td><td>Deleted from our live database immediately</td></tr>
+<tr><td>The earlier versions of your save (up to 2)</td><td>Deleted from our live database immediately</td></tr>
+<tr><td>The record linking your Play Games player ID to your data (with when you first and last signed in)</td><td>Deleted from our live database immediately</td></tr>
+<tr><td>Your player account ID on your purchase records</td><td>Removed from our live database immediately</td></tr>
+<tr><td>Purchase and order records (product, order ID, purchase time, status)</td><td><strong>Kept for 7 years after the purchase</strong> for tax, refunds and fraud prevention, then deleted automatically by a daily clean-up job. After you delete your cloud data, they no longer carry your player account ID. Google Play keeps its own copy of the tag on each order, and we cannot remove it.</td></tr>
+<tr><td>Copies of the data above in our encrypted database backups (a point-in-time recovery history of the last 7 days, daily backups kept for 7 days, weekly backups kept for 14 weeks)</td><td>Backups can't be edited, so deleted data stays in them until they expire: <strong>up to 14 weeks</strong>. We use them only to recover from data loss or to restore a player's progress at their request.</td></tr>
+<tr><td>Server logs (time, request type and result, IP address, device user agent, the product and order ID for purchase checks, and on some lines the first 12 characters of your player account ID)</td><td>Deleted automatically by Google Cloud after 30 days (the default)</td></tr>
+</tbody>
+</table>
+</div>
+<p>After you delete your cloud data, cloud save stays off on that phone until you tap <strong>Sign in</strong> again.</p>
+
+<h2>Data on your phone</h2>
+<p>Deleting cloud data does not touch the progress saved on your phone. It does remove your Play Games player ID, display name and session token from the phone. To remove everything the game keeps on your phone, including your story progress and settings, clear the app's storage in Android settings (Settings &gt; Apps &gt; BossDuel &gt; Storage &gt; Clear storage) or uninstall the app. If your phone backs up app data to your Google account, or copied it from an old phone during device transfer, you can manage that in your phone's backup settings.</p>
+
+<p>See the full <a href="/bossduel/privacy/">BossDuel privacy policy</a>.</p>
+</main>
+<footer>This page is provided by the developer of BossDuel, ST Projects.</footer>
+</body>
+</html>

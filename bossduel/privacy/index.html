@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BossDuel Privacy Policy</title>
+<meta name="description" content="What information the BossDuel Android game collects, why, and what happens to it.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+<h1>BossDuel Privacy Policy</h1>
+<p class="date">Effective 1 November 2026</p>
+
+<p>BossDuel is a single-player action game for Android: a story mode of one-on-one boss fights with cinematic scenes. It is published by ST Projects ("we", "us"), an independent developer based in the United States. This policy explains what information the game collects, why, and what happens to it. It applies to the Android app published under the package name <code>com.stprojects.bossduel</code>.</p>
+
+<p class="note">In short: you don't create an account with us, and you can play the whole game as a guest. Your progress is saved on your phone. The game shows no ads and contains no analytics or advertising SDK. Two optional features are being added in updates: <strong>Google Play Games sign-in with cloud save</strong>, and an <strong>in-game store</strong> that uses Google Play Billing. This policy already describes what they will collect. A feature that is not in the version of the game you have collects nothing, and today the game sends nothing to us.</p>
+
+<h2>Information stored on your phone</h2>
+<p>The game saves the following in the app's own storage on your phone:</p>
+<ul>
+<li>Story progress: whether you have started the story, the chapter and scene to continue from, which chapters are unlocked, whether you have finished the story, which scenes and boss moves you have already seen, and your dialogue auto-play preference.</li>
+<li>Settings, such as sound volumes and graphics options.</li>
+<li>Once the store is added: purchase information, namely what you bought and when, your monthly spending total, the order IDs of delivered purchases (so a purchase is never granted twice), and your answer to the "18 or older" question asked before a first purchase.</li>
+<li>Once cloud save is added, if you use it: your Google Play Games player ID and display name (shown as "signed in as"), and a session token that keeps you connected to our server.</li>
+</ul>
+<p>This data stays on your phone unless you use cloud save (below). Android's Auto Backup may include it in your device backup to your Google account, or copy it to a new phone during device transfer, depending on your phone's settings. That backup is handled by Google, and we cannot see it.</p>
+
+<h2>Permissions</h2>
+<p>The game never asks you for a permission, and it cannot access your location, contacts, photos, camera, microphone or files. Its Android manifest declares only permissions that Android grants without asking:</p>
+<ul>
+<li>Internet access, and viewing network and Wi-Fi state (used by the game engine and by Google Play to download the game's data).</li>
+<li>Google Play's license check.</li>
+<li>Vibration, keeping the phone awake, and changing audio settings (used by the game engine).</li>
+<li>Foreground service (data sync), and starting after the phone restarts: used by the Google Play libraries that download and set up the game's data, and by Android's background-task library.</li>
+<li>One permission of the app's own, which only the app itself holds, used by Android libraries inside it.</li>
+</ul>
+<p>When the game first downloads its data after you install it, Google Play delivers it, under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The app package also contains Google Play services libraries that the game engine adds, including Play Games Services, which starts itself when the app opens. Until Play Games sign-in is added to the game, it does not sign you in or create a Play Games profile for the game.</p>
+
+<h2>Ads, analytics and crash reports</h2>
+<p>BossDuel shows <strong>no ads</strong> and contains no advertising SDK. It does not use your device's advertising ID. It contains no analytics or crash-reporting libraries of our own, and it does not track you across other apps or websites.</p>
+
+<h2>Cloud save (optional, through Google Play Games; being added)</h2>
+<p>You will never need to sign in to play. When cloud save is added, you will be able to sign in with Google Play Games so that your progress is saved on our server and you can restore it after reinstalling or on a new phone. If you don't sign in, none of the information in this section is sent.</p>
+<p>When cloud save is on, our server stores:</p>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Information</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>Your Google Play Games player ID</td><td>To know which save is yours. Your records are filed under your player account ID, a one-way hash of the app's package name and your player ID.</td></tr>
+<tr><td>Your game save</td><td>Everything listed under "Information stored on your phone" about your progress and purchases, compressed, so it can be restored.</td></tr>
+<tr><td>A small summary of the save</td><td>Your story chapter and when you last played, shown if your phone and the cloud have different progress and you need to choose one.</td></tr>
+<tr><td>A device label</td><td>Your phone model and Android version (for example "Pixel 8 (Android 15)"), shown in the same choice screen.</td></tr>
+<tr><td>Up to 2 earlier versions of your save</td><td>Backups, so progress can be recovered if something goes wrong. A new one is kept at most once an hour, and older ones are deleted automatically.</td></tr>
+<tr><td>When you first and last signed in</td><td>To manage the link between you and your save.</td></tr>
+<tr><td>Your player account ID on your purchase records</td><td>Purchases you make while signed in carry it (see "Purchases" below), so they can be restored on another phone.</td></tr>
+</tbody>
+</table>
+</div>
+<p>Our server does not store your Play Games display name, your email address, or your Google sign-in tokens. The game asks Google for no extra permissions beyond Play Games sign-in. Google's handling of your Play Games account is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>While you are signed in, the game's Account screen will show your <strong>Player code</strong>, for example <code>3FA9-0C21-7B4E</code>. It is the first 12 characters of your player account ID. Quote it if you email us about your data, so we can find it without asking you for anything else.</p>
+
+<h2>Purchases (Google Play Billing; being added)</h2>
+<p>When the in-game store is added, purchases will be handled by <strong>Google Play Billing</strong>. You pay Google, and Google's payment terms and privacy policy apply to the payment. We never see or store your card number, bank details, billing address or Google account email.</p>
+<p>When you buy something, the app sends the purchase details from Google Play (the product ID, the purchase token and the order ID) to our verification server. The server checks with Google Play that the purchase is genuine, has not been used before and has not been refunded, and only then is the item granted. We keep a record of each purchase (product, order ID, purchase time and status, such as refunded) so we can confirm purchases, prevent fraud, handle refunds and meet tax and legal obligations. The record is filed under a one-way hash of the purchase token, and the token itself is not kept. Google also tells our server when a purchase is refunded or cancelled.</p>
+<p>If you are signed in to Google Play Games when you buy, the game tags the purchase with your player account ID: a one-way hash of the app's package name and your Play Games player ID, not the ID itself. The tag goes to Google Play with the order (as Google's "obfuscated account ID") and to our server with the purchase check.</p>
+<p>Real-money purchases are for players 18 or older. The game will ask before your first purchase and turn purchases off for players who say they are younger, and it will limit real-money purchases to a monthly amount stated in the game. The store will have no loot boxes or other paid random items.</p>
+
+<h2>Information shared with third parties</h2>
+<p><strong>Google Play</strong> delivers the game and its data, and, once those features are added, handles payments and Play Games sign-in and receives the player account ID tag on orders you place while signed in. Our server contacts Google Play to verify purchases and your sign-in. <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p><strong>Google Cloud</strong> hosts our server (Cloud Run) and database (Firestore). Google processes this data on our behalf. <a href="https://cloud.google.com/terms/cloud-privacy-notice">Google Cloud Privacy Notice</a>.</p>
+<p>We do not sell your information, and we do not share it with anyone else, except where the law requires it.</p>
+
+<h2>Where your information is stored</h2>
+<p>Our server and database run on Google Cloud in the us-central1 region, in the United States. The game is offered through Google Play in many countries. Wherever you use it, the information described under "Cloud save" and "Purchases" is sent to and processed in the United States, where data protection laws may differ from those where you are. Wherever you live, this policy applies to you, and the section "Your rights" explains extra rights that people in some places have under local law.</p>
+
+<h2>How your information is protected</h2>
+<p>All communication between the app and our server is encrypted in transit (HTTPS). Your session with our server is tied to this app and your player ID, and it expires after 30 days. The server limits how many requests it accepts, to prevent abuse.</p>
+<p>Our server's logs record the time, the type of request and its result, how long it took, and the IP address it came from. Google Cloud's request logs also record your device's user agent (your phone model and Android version). For purchase checks the logs include the product ID and the order ID, and refund notifications from Google log the order ID. To help us trace problems, some log lines include the first 12 characters of your player account ID (the same as your Player code) or of the purchase token's hash. The logs never contain your save, your full player ID or player account ID, or any tokens. We use them for security, to limit abuse and to fix problems. Google Cloud keeps them for 30 days by default.</p>
+
+<h2>How long we keep it</h2>
+<ul>
+<li><strong>On your phone:</strong> until you clear the app's data or uninstall the app. Once cloud save is added, your Play Games player ID, display name and session token are also removed when you tap Delete cloud data.</li>
+<li><strong>Cloud save and its earlier versions:</strong> until you delete them. Each new save replaces the previous one, and at most 2 earlier versions are kept. There is currently no automatic deletion of inactive saves. If we introduce one, we will say so here.</li>
+<li><strong>Purchase and order records:</strong> kept for 7 years after the purchase, for tax, refunds and fraud prevention. A daily clean-up job then deletes each record, with its refund or cancellation events. If you delete your cloud data, your player account ID is removed from them straight away, and the rest of each record is kept until the same 7-year point.</li>
+<li><strong>Server logs:</strong> 30 days by default, then deleted automatically by Google Cloud.</li>
+<li><strong>Database backups:</strong> we also keep encrypted copies of our whole database on Google Cloud: a point-in-time recovery history of the last 7 days, daily backups kept for 7 days and weekly backups kept for 14 weeks. We use them only to recover from data loss or to restore a player's progress at their request. Backups can't be edited, so data you delete stays in them until they expire: up to 14 weeks after you delete it.</li>
+</ul>
+
+<h2>Deleting your data</h2>
+<p><strong>In the game (once cloud save is added):</strong> open the Account screen and tap <strong>Delete cloud data</strong>. This immediately deletes your cloud save, its earlier versions and the record linking your Play Games player ID to your data from our live database, and removes your player account ID from your purchase records. The purchase records themselves are kept until 7 years after each purchase, as described above, without your player account ID. Progress on your phone is kept. Deleted data can remain in our encrypted backups until they expire: up to 14 weeks. After that, cloud save stays off on that phone until you sign in again. Google Play keeps its own copy of the tag on each order, and we cannot remove it.</p>
+<p><strong>By email:</strong> you can ask us to delete your data at any time by emailing <a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a>. Please say it is about BossDuel and include your Player code from the Account screen. If you can't open the game, send the order number (it starts with GPA.) from a Google Play receipt instead. We will reply within 30 days, and we will confirm when your data has been deleted.</p>
+<p><strong>On your phone:</strong> to remove everything the game keeps on your phone, including your progress and settings, clear the app's data in Android settings or uninstall the app. The full steps are on the <a href="/bossduel/delete-data/">data deletion page</a>.</p>
+
+<h2>Your rights</h2>
+<p><strong>If you are in the EEA, the UK or Switzerland</strong>, data protection law (GDPR or UK GDPR) gives you the right to access the personal data we hold about you, correct it, have it deleted, restrict or object to how we use it, and receive a copy of it. You can also complain to your local data protection authority. We use your information to provide the game and the cloud save you ask for, for our legitimate interests in preventing fraud and keeping the service secure, and to meet legal obligations such as keeping tax records.</p>
+<p><strong>If you are in California or another US state with a privacy law</strong>, you have the right to know what personal information we collect, to have it deleted or corrected, and to opt out of its sale or sharing. We do not sell personal information, and we do not share it for cross-context behavioural advertising. We will not treat you differently for using these rights.</p>
+<p>To use any of these rights, email us at the address below and include your Player code or a Google Play order number, so we can find your data. We will reply within 30 days.</p>
+
+<h2>Children</h2>
+<p>BossDuel is a fantasy combat game for teens and adults. It is not directed at children under 13, and we do not knowingly collect personal information from them. If you believe a child under 13 has used cloud save, contact us at the address below and we will delete the data.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the updated version will be published at this address with a new effective date. If the change is significant, we will also mention it in the app or its store listing.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:battlearenaunlimited@gmail.com">battlearenaunlimited@gmail.com</a></p>
+
+<h2>Data safety summary</h2>
+<p>This table summarises the data the app handles, in the terms used by Google Play's Data safety section. It covers the optional cloud save and store described above, which are being added in updates.</p>
+<div class="table-wrap">
+<table class="wide">
+<thead><tr><th>Data type</th><th>Collected / shared</th><th>Required or optional</th><th>Purposes</th></tr></thead>
+<tbody>
+<tr><td>User IDs (Play Games player ID, and the player account ID made from it)</td><td>Collected by us. Not shared.</td><td>Optional: only when signed in to Play Games</td><td>App functionality, Fraud prevention, Account management</td></tr>
+<tr><td>App activity: other actions (your game save, its summary and the device label)</td><td>Collected by us. Not shared.</td><td>Optional: only when signed in to Play Games</td><td>App functionality</td></tr>
+<tr><td>Purchase history (product, order ID, time, status)</td><td>Collected by us. Not shared.</td><td>Optional: only if you make a purchase</td><td>App functionality, Fraud prevention</td></tr>
+</tbody>
+</table>
+</div>
+<p>All of this data is encrypted in transit. You can ask for your data to be deleted in the game (Delete cloud data on the Account screen, once cloud save is added) or by email, as described under "Deleting your data". Purchase records are then kept until 7 years after each purchase, without your player account ID.</p>
+</main>
+<footer>This policy is provided by the developer of BossDuel, ST Projects.</footer>
+</body>
+</html>
